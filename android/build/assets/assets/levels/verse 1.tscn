@@ -1,0 +1,149 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/levels/verse 1.gd" type="Script" id=3]
+[ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 64
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 90
+font_data = ExtResource( 2 )
+
+[node name="verse 1" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="jumpPoint" type="Area2D" parent="."]
+position = Vector2( 696, -24 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jumpPoint"]
+shape = SubResource( 1 )
+
+[node name="jumpPoint2" type="Area2D" parent="."]
+position = Vector2( 2624, 288 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jumpPoint2"]
+shape = SubResource( 1 )
+
+[node name="jumpPoint3" type="Area2D" parent="."]
+position = Vector2( 3208, 296 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jumpPoint3"]
+shape = SubResource( 1 )
+
+[node name="TileMap" parent="." instance=ExtResource( 4 )]
+tile_data = PoolIntArray( -65524, 0, 0, -65523, 0, 196610, -65522, 0, 196610, -65521, 0, 196610, -65520, 0, 196610, -65519, 0, 0, 0, 0, 196609, 1, 0, 196610, 2, 0, 196610, 3, 0, 196610, 4, 0, 196610, 5, 0, 196610, 6, 0, 196610, 7, 0, 196610, 8, 0, 196610, 9, 0, 196610, 10, 0, 196610, 11, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 65558, 0, 0, 65559, 0, 0, 65560, 0, 0, 131097, 0, 0, 131098, 0, 0, 131099, 0, 0, 262186, 0, 0, 262187, 0, 0, 262188, 0, 0, 262196, 0, 0, 262197, 0, 0, 262198, 0, 0, 262199, 0, 0, 327708, 0, 0, 327709, 0, 0, 327710, 0, 0, 327711, 0, 0, 327712, 0, 0, 327713, 0, 0, 327714, 0, 0, 327715, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, 0, 0, 327721, 0, 0, 327725, 0, 0, 327726, 0, 0, 327727, 0, 0, 327728, 0, 0, 327729, 0, 0, 327730, 0, 0, 393273, 0, 0, 393274, 0, 0, 393275, 0, 0, 393276, 0, 0, 393277, 0, 0, 393278, 0, 0, 393279, 0, 0, 393280, 0, 0, 393281, 0, 0, 393282, 0, 0 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 32, -32 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="they" type="Label" parent="Node"]
+margin_left = 2536.0
+margin_top = 304.0
+margin_right = 2662.0
+margin_bottom = 368.0
+custom_fonts/font = SubResource( 4 )
+text = "they"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MOAN" type="Label" parent="Node"]
+margin_left = 2696.0
+margin_top = 240.0
+margin_right = 2871.0
+margin_bottom = 322.0
+custom_fonts/font = SubResource( 5 )
+text = "MOAN"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="in a" type="Label" parent="Node"]
+margin_left = 3024.0
+margin_top = 304.0
+margin_right = 3537.0
+margin_bottom = 435.0
+custom_fonts/font = SubResource( 6 )
+text = "in a
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="euphoric" type="Label" parent="Node"]
+margin_left = 3328.0
+margin_top = 240.0
+margin_right = 3841.0
+margin_bottom = 304.0
+custom_fonts/font = SubResource( 6 )
+text = "euphoric"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="state" type="Label" parent="Node"]
+margin_left = 3752.0
+margin_top = 360.0
+margin_right = 4194.0
+margin_bottom = 550.0
+custom_fonts/font = SubResource( 7 )
+text = "state"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="spent_and" parent="." instance=ExtResource( 5 )]
+position = Vector2( 464, -16 )
+text = "Spent and"
+fontSize = 48
+
+[node name="SCREAMING" parent="." instance=ExtResource( 5 )]
+position = Vector2( 768, -80 )
+text = "SCREAMING"
+fontSize = 60
+
+[node name="at_the_foot" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1056, -16 )
+text = "at the foot"
+fontSize = 60
+
+[node name="of" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1512, 48 )
+text = "of"
+fontSize = 50
+
+[node name="my" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1712, 112 )
+text = "my"
+fontSize = 50
+
+[node name="bed" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1992, 280 )
+text = "bed"
+fontSize = 140

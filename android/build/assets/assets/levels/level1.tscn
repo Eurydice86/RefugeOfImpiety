@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/levels/level1.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 104, 56 )
+
+[node name="level1" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TileMap" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( -524308, 0, 196610, -524307, 0, 196610, -458770, 0, 196610, -458769, 0, 196610, -393232, 0, 196610, -393231, 0, 196610, -327694, 0, 196610, -327693, 0, 196610, -262156, 0, 196610, -262155, 0, 196610, -196618, 0, 196610, -196617, 0, 196610, -131080, 0, 196610, -131079, 0, 196610, -65542, 0, 196610, -65541, 0, 196610, -131070, 0, 196608, -131067, 0, 196608, -4, 0, 196610, -3, 0, 196610, 65534, 0, 196610, 65535, 0, 196610, 65536, 0, 196610, 65537, 0, 196610, 65538, 0, 196610, 65539, 0, 196610, 65540, 0, 196610, 65541, 0, 196610, 65542, 0, 196610, 65543, 0, 196610, 65544, 0, 196610, 65545, 0, 196610, 65546, 0, 196610, 65547, 0, 196610, 65548, 0, 196610, 65549, 0, 196610, 65550, 0, 196610, 65551, 0, 196610, 65552, 0, 196611 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 354, 34 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 1320, 424 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

@@ -1,0 +1,66 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/player/sprites/run/adventurer-run-03-1.3.png" type="Texture" id=1]
+[ext_resource path="res://assets/player/player.gd" type="Script" id=2]
+[ext_resource path="res://assets/player/sprites/run/adventurer-run-04-1.3.png" type="Texture" id=4]
+[ext_resource path="res://assets/player/sprites/run/adventurer-run-05-1.3.png" type="Texture" id=5]
+[ext_resource path="res://assets/player/sprites/run/adventurer-run-01-1.3.png" type="Texture" id=6]
+[ext_resource path="res://assets/player/sprites/run/adventurer-run-02-1.3.png" type="Texture" id=7]
+[ext_resource path="res://assets/player/sprites/run/adventurer-run-00-1.3.png" type="Texture" id=8]
+[ext_resource path="res://assets/player/sprites/jump/adventurer-jump-01-1.3.png" type="Texture" id=9]
+[ext_resource path="res://assets/player/sprites/jump/adventurer-jump-03-1.3.png" type="Texture" id=10]
+[ext_resource path="res://assets/player/sprites/fall/adventurer-fall-01-1.3.png" type="Texture" id=11]
+[ext_resource path="res://assets/player/sprites/jump/adventurer-jump-02-1.3.png" type="Texture" id=12]
+[ext_resource path="res://assets/player/sprites/jump/adventurer-jump-00-1.3.png" type="Texture" id=13]
+[ext_resource path="res://assets/player/sprites/fall/adventurer-fall-00-1.3.png" type="Texture" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "run",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "jump",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "fall",
+"speed": 8.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+[node name="player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 1 )
+animation = "run"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -271.636, 47.1434 )
+offset = Vector2( 299.903, -50 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_speed = 2.5
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2( 3, 3 )
+shape = SubResource( 3 )
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

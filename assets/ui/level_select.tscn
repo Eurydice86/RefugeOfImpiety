@@ -1,0 +1,106 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/themes/menu.tres" type="Theme" id=1]
+[ext_resource path="res://assets/ui/level_select.gd" type="Script" id=2]
+
+[node name="level_select" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="intro" type="Button" parent="VBoxContainer"]
+margin_top = 182.0
+margin_right = 1920.0
+margin_bottom = 238.0
+text = "Intro"
+
+[node name="verse1" type="Button" parent="VBoxContainer"]
+margin_top = 242.0
+margin_right = 1920.0
+margin_bottom = 298.0
+text = "Verse 1"
+
+[node name="chorus1" type="Button" parent="VBoxContainer"]
+margin_top = 302.0
+margin_right = 1920.0
+margin_bottom = 358.0
+text = "Chorus 1"
+
+[node name="soaring" type="Button" parent="VBoxContainer"]
+margin_top = 362.0
+margin_right = 1920.0
+margin_bottom = 418.0
+text = "Soaring"
+
+[node name="verse2" type="Button" parent="VBoxContainer"]
+margin_top = 422.0
+margin_right = 1920.0
+margin_bottom = 478.0
+text = "Verse 2"
+
+[node name="chorus2" type="Button" parent="VBoxContainer"]
+margin_top = 482.0
+margin_right = 1920.0
+margin_bottom = 538.0
+text = "Chorus 2"
+
+[node name="roaring" type="Button" parent="VBoxContainer"]
+margin_top = 542.0
+margin_right = 1920.0
+margin_bottom = 598.0
+text = "Roaring"
+
+[node name="bridge1" type="Button" parent="VBoxContainer"]
+margin_top = 602.0
+margin_right = 1920.0
+margin_bottom = 658.0
+text = "Bridge 1"
+
+[node name="solo" type="Button" parent="VBoxContainer"]
+margin_top = 662.0
+margin_right = 1920.0
+margin_bottom = 718.0
+text = "Solo"
+
+[node name="bridge2" type="Button" parent="VBoxContainer"]
+margin_top = 722.0
+margin_right = 1920.0
+margin_bottom = 778.0
+text = "Bridge 2"
+
+[node name="outroSlow" type="Button" parent="VBoxContainer"]
+margin_top = 782.0
+margin_right = 1920.0
+margin_bottom = 838.0
+text = "Outro slow"
+
+[node name="outroFast" type="Button" parent="VBoxContainer"]
+margin_top = 842.0
+margin_right = 1920.0
+margin_bottom = 898.0
+text = "Outro fast"
+
+[connection signal="pressed" from="VBoxContainer/intro" to="." method="_on_intro_pressed"]
+[connection signal="pressed" from="VBoxContainer/verse1" to="." method="_on_verse1_pressed"]
+[connection signal="pressed" from="VBoxContainer/chorus1" to="." method="_on_chorus1_pressed"]
+[connection signal="pressed" from="VBoxContainer/soaring" to="." method="_on_soaring_pressed"]
+[connection signal="pressed" from="VBoxContainer/verse2" to="." method="_on_verse2_pressed"]
+[connection signal="pressed" from="VBoxContainer/chorus2" to="." method="_on_chorus2_pressed"]
+[connection signal="pressed" from="VBoxContainer/roaring" to="." method="_on_roaring_pressed"]
+[connection signal="pressed" from="VBoxContainer/bridge1" to="." method="_on_bridge1_pressed"]
+[connection signal="pressed" from="VBoxContainer/solo" to="." method="_on_solo_pressed"]
+[connection signal="pressed" from="VBoxContainer/bridge2" to="." method="_on_bridge2_pressed"]
+[connection signal="pressed" from="VBoxContainer/outroSlow" to="." method="_on_outroSlow_pressed"]
+[connection signal="pressed" from="VBoxContainer/outroFast" to="." method="_on_outroFast_pressed"]
