@@ -350,19 +350,43 @@ position = Vector2( -2456, 8608 )
 position = Vector2( -2584, 8608 )
 
 [node name="explodingTile16" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2392, 8608 )
+position = Vector2( -2904, 8608 )
 
 [node name="explodingTile17" parent="." instance=ExtResource( 7 )]
 position = Vector2( -2520, 8608 )
 
 [node name="explodingTile18" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2200, 8608 )
+position = Vector2( -2712, 8608 )
 
 [node name="explodingTile19" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2328, 8608 )
+position = Vector2( -2840, 8608 )
 
 [node name="explodingTile20" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2136, 8608 )
+position = Vector2( -2648, 8608 )
 
 [node name="explodingTile21" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2264, 8608 )
+position = Vector2( -2776, 8608 )
+
+[node name="explodingTile22" parent="." instance=ExtResource( 7 )]
+position = Vector2( -2968, 8608 )
+
+[node name="explodingTile23" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3096, 8608 )
+
+[node name="explodingTile24" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3416, 8608 )
+
+[node name="explodingTile25" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3032, 8608 )
+
+[node name="explodingTile26" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3224, 8608 )
+
+[node name="explodingTile27" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3352, 8608 )
+
+[node name="explodingTile28" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3160, 8608 )
+
+[node name="explodingTile29" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3288, 8608 )
