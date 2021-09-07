@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/entrance.png-43a9fd3f50b777f0d171c85a0f613836.stex"
+path="res://.import/ropeBridge.png-e9c41427afd4444eec8202eb5e6bfcb1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entrance.png"
-dest_files=[ "res://.import/entrance.png-43a9fd3f50b777f0d171c85a0f613836.stex" ]
+source_file="res://assets/textures/sprites/ropeBridge.png"
+dest_files=[ "res://.import/ropeBridge.png-e9c41427afd4444eec8202eb5e6bfcb1.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

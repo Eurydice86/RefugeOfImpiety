@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/levels/roaring.gd" type="Script" id=1]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/textures/waterfall.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/textures/ropeBridge.tscn" type="PackedScene" id=7]
 
 [node name="roaring" type="Node2D"]
 script = ExtResource( 1 )
@@ -45,3 +46,6 @@ position = Vector2( 1462.35, -35.9595 )
 
 [node name="waterfall2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3488, -16 )
+
+[node name="ropeBridge" parent="." instance=ExtResource( 7 )]
+tile_data = PoolIntArray( -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, -65503, 0, 0, -65502, 0, 0, -65501, 0, 0, -65500, 0, 0, -65499, 0, 0, -65498, 0, 0, -65497, 0, 0, -65496, 0, 0, -65495, 0, 0, -65494, 0, 0, -65493, 0, 0, -65492, 0, 0, -65491, 0, 0, -65490, 0, 0, -65489, 0, 0, -65488, 0, 0, -65487, 0, 0, -65486, 0, 0, -65485, 0, 0, -65484, 0, 0, -65483, 0, 0, -65482, 0, 0, -65481, 0, 0, -65480, 0, 0, -65479, 0, 0, -65478, 0, 0, -65477, 0, 0, -65476, 0, 0, -65475, 0, 0, -65474, 0, 0, -65473, 0, 0 )
