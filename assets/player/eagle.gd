@@ -59,7 +59,7 @@ func _on_Area2D_area_entered(area):
 		forceStrength = area.forceStrength
 		forceDirection = area.forceDirection
 	elif area.name[0] == "d":
-		$AnimatedSprite.play("soar")
+		$AnimatedSprite.play("dive")
 		$Timer.start()
 		
 

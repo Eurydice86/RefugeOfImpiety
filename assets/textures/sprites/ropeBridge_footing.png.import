@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/ropeBridge_footing.png-fb074274c3a1239d94e7e56e6c38c3b7.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/sprites/ropeBridge_footing.png"
+dest_files=[ "res://.import/ropeBridge_footing.png-fb074274c3a1239d94e7e56e6c38c3b7.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+<<<<<<< Updated upstream
+flags/filter=false
+=======
+flags/filter=true
+>>>>>>> Stashed changes
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
