@@ -12,10 +12,10 @@
 
 [sub_resource type="RectangleShape2D" id=2]
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16, 16 )
 
-[sub_resource type="Environment" id=3]
+[sub_resource type="Environment" id=4]
 background_mode = 4
 dof_blur_near_enabled = true
 dof_blur_near_amount = 0.0
@@ -89,13 +89,13 @@ tile_data = PoolIntArray( -393179, 0, 0, -393178, 0, 0, -393177, 0, 0, -393163, 
 position = Vector2( 2512, -32 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lightningStrike"]
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="lightningStrike2" type="Area2D" parent="."]
 position = Vector2( 3536, -32 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lightningStrike2"]
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="floodlights" type="Node2D" parent="."]
 position = Vector2( 32, -8 )
@@ -732,7 +732,7 @@ position = Vector2( 14248, -384 )
 position = Vector2( 14440, -384 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 3 )
+environment = SubResource( 4 )
 
 [connection signal="body_entered" from="stop_moving" to="." method="_on_stop_moving_body_entered"]
 [connection signal="timeout" from="stop_moving/Timer" to="." method="_on_Timer_timeout"]
