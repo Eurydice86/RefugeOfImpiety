@@ -1,25 +1,48 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/player/eagle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/levels/verse1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/levels/chorus1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Node2D.gd" type="Script" id=4]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/levels/soaring.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/levels/intro.tscn" type="PackedScene" id=7]
+[ext_resource path="res://import/images/entrance.png" type="Texture" id=8]
+[ext_resource path="res://import/images/door.png" type="Texture" id=9]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
 
+[node name="soaring" parent="." instance=ExtResource( 6 )]
+position = Vector2( 35296, 8816 )
+
+[node name="chorus1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 28928, 4032 )
+
+[node name="verse1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 20736, 2304 )
+start = 52.5
+
+[node name="intro" parent="." instance=ExtResource( 7 )]
+
+[node name="TileMap" parent="." instance=ExtResource( 5 )]
+position = Vector2( 64, 0 )
+tile_data = PoolIntArray( 2359615, 0, 0, 2359616, 0, 0, 2359617, 0, 0, 2359618, 0, 0 )
+
+[node name="door" type="Sprite" parent="."]
+position = Vector2( 596, -64 )
+scale = Vector2( 1.375, 2 )
+texture = ExtResource( 9 )
+
 [node name="player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 32, -32 )
 
-[node name="TileMap" parent="." instance=ExtResource( 5 )]
+[node name="walls" type="Sprite" parent="."]
+position = Vector2( 280, -256 )
+scale = Vector2( 2.1875, 1 )
+texture = ExtResource( 8 )
 
-[node name="soaring" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6208, 4816 )
-
-[node name="chorus1" parent="." instance=ExtResource( 2 )]
-start = 72
-
-[node name="eagle" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6240, 4784 )
+[node name="walls2" type="Sprite" parent="."]
+position = Vector2( 320, -536 )
+scale = Vector2( 2.5, 1.59375 )
+texture = ExtResource( 8 )
