@@ -6,7 +6,7 @@ var velocity = Vector2()
 var direction = Vector2()
 var forceStrength = 0
 var forceDirection = direction
-export var speed = 0
+export var speed = 1000
 
 var gravity = 0
 
@@ -20,6 +20,7 @@ var zooming = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	direction = Vector2(1,-1).normalized()
+	set_physics_process(false)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -59,7 +60,7 @@ func _on_Area2D_area_entered(area):
 		forceStrength = area.forceStrength
 		forceDirection = area.forceDirection
 	elif area.name[0] == "d":
-		$AnimatedSprite.play("dive")
+		$AnimatedSprite.play("soar")
 		$Timer.start()
 		
 

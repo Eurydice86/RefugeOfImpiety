@@ -24,8 +24,8 @@ func _on_stop_body_entered(body):
 func _on_start_eagle_body_entered(body):
 	if body.name[0] == "p":
 		# replace the next line with the six alternative lines for the full scene
-		$eagle.speed = 1000
-		
+		$eagle.set_physics_process(true)
+	
 		
 #		var children = get_parent().get_children()
 #		var egl

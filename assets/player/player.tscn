@@ -28,20 +28,20 @@ animations = [ {
 "name": "idle",
 "speed": 3.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 17 ) ],
 "loop": true,
-"name": "fall",
-"speed": 5.0
+"name": "jump",
+"speed": 12.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "run",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 19 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 17 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "jump",
-"speed": 12.0
+"name": "fall",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -74,6 +74,7 @@ scale = Vector2( 3, 3 )
 shape = SubResource( 3 )
 
 [node name="exit" type="Button" parent="."]
+visible = false
 margin_left = 373.461
 margin_top = 136.929
 margin_right = 464.461
