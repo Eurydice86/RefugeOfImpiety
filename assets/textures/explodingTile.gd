@@ -1,15 +1,19 @@
 extends Particles2D
 
+<<<<<<< Updated upstream
+=======
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+>>>>>>> Stashed changes
+export (Resource) var image
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$Sprite.texture = image
+<<<<<<< Updated upstream
+	print(get_material().shader)
+=======
 
+>>>>>>> Stashed changes
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

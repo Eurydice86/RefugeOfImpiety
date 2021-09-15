@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://import/images/whitePixel.png" type="Texture" id=2]
 [ext_resource path="res://assets/textures/explodingTile.gd" type="Script" id=3]
+[ext_resource path="res://import/images/door.png" type="Texture" id=4]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type particles;
@@ -244,6 +245,7 @@ visibility_rect = Rect2( -100, -100, 500, 500 )
 process_material = SubResource( 2 )
 texture = ExtResource( 2 )
 script = ExtResource( 3 )
+image = ExtResource( 4 )
 
 [node name="explodingArea2D" type="Area2D" parent="."]
 position = Vector2( -32, 0 )
