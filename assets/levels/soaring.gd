@@ -6,8 +6,8 @@ export var start = 90
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#remove the next two lines for the overall scene
-	#$eagle.set_physics_process(true)
-	#$eagle/Camera2D.current = true
+	$eagle.set_physics_process(true)
+	$eagle/Camera2D.current = true
 	$eagle.direction = Vector2(1, -1).normalized()
 	$eagle.speed = 1000
 	Global.audio.seek(start)
