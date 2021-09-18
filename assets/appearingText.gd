@@ -2,11 +2,13 @@ extends Node2D
 
 export var text = ""
 export var fontSize = 100
+export var offset = 100
 
 var font = DynamicFont.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Label.margin_left = offset
 	font.font_data = load("res://import/fonts/Dark Mage.ttf")
 	font.size = fontSize
 	$Label.set("custom_fonts/font", font)
