@@ -41,3 +41,6 @@ func _on_outroSlow_pressed():
 
 func _on_outroFast_pressed():
 	get_tree().change_scene("res://assets/levels/outro_fast.tscn")
+
+func _on_tragos_pressed():
+	get_tree().change_scene("res://assets/levels/tragos.tscn")
