@@ -7,4 +7,3 @@ export var start = 0.0
 func _ready():
 	Global.audio.seek(start)
 	Global.audio.stream_paused = false
-
