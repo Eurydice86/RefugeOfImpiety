@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/levels/chorus1.gd" type="Script" id=3]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=4]
+[ext_resource path="res://import/images/Sprite-0005.png" type="Texture" id=5]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=6]
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://assets/player/eagle.tscn" type="PackedScene" id=8]
@@ -24,6 +25,18 @@ font_data = ExtResource( 7 )
 
 [node name="chorus1" type="Node2D"]
 script = ExtResource( 3 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 0 )
+motion_mirroring = Vector2( 960, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 0, -270 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+centered = false
 
 [node name="static_text" type="Node2D" parent="."]
 
