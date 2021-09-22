@@ -16,6 +16,7 @@ func _ready():
 	$eagle.speed = 1000
 	Global.audio.seek(start)
 	Global.audio.stream_paused = false
+	$ColorRect.visible = true
 	$ColorRect.color = Color(1, 1, 1, alpha)
 	
 	

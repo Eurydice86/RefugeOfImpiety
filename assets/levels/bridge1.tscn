@@ -50,8 +50,9 @@ __meta__ = {
 }
 
 [node name="price" parent="." instance=ExtResource( 5 )]
-position = Vector2( 632, -24 )
+position = Vector2( 600, -24 )
 text = "PRICE"
+offset = 50
 
 [node name="you_pay_for" type="Label" parent="."]
 margin_left = 984.0
@@ -68,6 +69,7 @@ __meta__ = {
 [node name="your" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1200, -32 )
 text = "your"
+offset = 50
 
 [node name="is_only" type="Label" parent="."]
 margin_left = 2656.0
@@ -108,14 +110,14 @@ position = Vector2( 3272, 4432 )
 position = Vector2( 2816, 4568 )
 
 [node name="jumpPoint6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2160, 4760 )
+position = Vector2( 2216, 4768 )
 
 [node name="must" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3240, 72 )
 text = "must"
 
 [node name="directionChange" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4288, 4344 )
+position = Vector2( 4336, 4344 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -183,6 +185,6 @@ text = "sweet"
 offset = -150
 
 [node name="perversion" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2960, 4584 )
+position = Vector2( 3120, 4592 )
 text = "perversion"
 offset = -400
