@@ -73,15 +73,6 @@ tile_data = PoolIntArray( -26869089, 0, 0, -26869088, 0, 10, -26869087, 0, 0, -2
 
 [node name="eagle" parent="." instance=ExtResource( 1 )]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -1111.0
-margin_top = -6221.0
-margin_right = 19767.0
-margin_bottom = 25695.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="flashStart" type="Area2D" parent="."]
 position = Vector2( 12787.7, 7946.41 )
 collision_mask = 513
@@ -91,11 +82,21 @@ position = Vector2( 0, 16.9514 )
 shape = SubResource( 4 )
 
 [node name="changeScene" type="Area2D" parent="."]
-position = Vector2( 12522.2, 13953.3 )
+position = Vector2( 12368, 15008 )
 collision_mask = 513
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="changeScene"]
 shape = SubResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = -1111.0
+margin_top = -6221.0
+margin_right = 19767.0
+margin_bottom = 25695.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="body_entered" from="zoomOut" to="." method="_on_zoomOut_body_entered"]
 [connection signal="body_entered" from="zoomIn" to="." method="_on_zoomIn_body_entered"]

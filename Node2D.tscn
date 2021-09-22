@@ -14,20 +14,19 @@
 script = ExtResource( 4 )
 
 [node name="soaring" parent="." instance=ExtResource( 6 )]
-position = Vector2( 35296, 8816 )
+position = Vector2( 35232, 8816 )
 
 [node name="chorus1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 28928, 4032 )
+position = Vector2( 28992, 4032 )
 
 [node name="verse1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 20736, 2304 )
+position = Vector2( 20672, 2176 )
 start = 52.5
 
 [node name="intro" parent="." instance=ExtResource( 7 )]
 
 [node name="TileMap" parent="." instance=ExtResource( 5 )]
 position = Vector2( 64, 0 )
-tile_data = PoolIntArray( 2359615, 0, 0, 2359616, 0, 0, 2359617, 0, 0, 2359618, 0, 0 )
 
 [node name="door" type="Sprite" parent="."]
 position = Vector2( 596, -64 )

@@ -13,3 +13,9 @@ func _ready():
 	randomize()
 	audio = $AudioStreamPlayer
 	audio.stream_paused = true
+
+
+
+func _process(delta):
+	if Input.is_action_just_pressed("jump"):
+		print($AudioStreamPlayer.get_playback_position())

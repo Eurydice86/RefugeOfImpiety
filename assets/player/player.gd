@@ -28,6 +28,7 @@ func _ready():
 	runSpeed = tilesPerSec * tileWidth / secondsPerBeat
 	gravity = (2 * tileHeight / (secondsPerBeat * secondsPerBeat))
 	gravity *= 1.2
+	
 
 func get_input():
 	if running:
