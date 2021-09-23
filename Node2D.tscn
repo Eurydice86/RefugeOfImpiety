@@ -27,6 +27,7 @@ start = 52.5
 
 [node name="TileMap" parent="." instance=ExtResource( 5 )]
 position = Vector2( 64, 0 )
+tile_data = PoolIntArray( 3998148, 0, 0, 3998149, 0, 0, 3998150, 0, 0, 3998151, 0, 0, 3998152, 0, 0, 3998153, 0, 0, 3998154, 0, 0, 3998155, 0, 0 )
 
 [node name="door" type="Sprite" parent="."]
 position = Vector2( 596, -64 )

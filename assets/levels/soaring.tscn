@@ -82,10 +82,11 @@ position = Vector2( 0, 16.9514 )
 shape = SubResource( 4 )
 
 [node name="changeScene" type="Area2D" parent="."]
-position = Vector2( 12368, 15008 )
+position = Vector2( 12368, 15200 )
 collision_mask = 513
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="changeScene"]
+position = Vector2( 0, 384 )
 shape = SubResource( 5 )
 
 [node name="ColorRect" type="ColorRect" parent="."]

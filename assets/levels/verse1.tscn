@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/levels/verse1.gd" type="Script" id=2]
+[ext_resource path="res://assets/levels/survivors.gd" type="Script" id=3]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=6]
@@ -27,6 +28,13 @@ font_data = ExtResource( 1 )
 [sub_resource type="DynamicFont" id=6]
 size = 90
 font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 96
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 32, 48 )
 
 [node name="verse1" type="Node2D"]
 script = ExtResource( 2 )
@@ -195,23 +203,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="static_text"]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="static_text/ParallaxBackground"]
-motion_scale = Vector2( 0.8, 1 )
-
-[node name="survivors" type="Label" parent="static_text/ParallaxBackground/ParallaxLayer"]
-margin_left = 4144.0
-margin_top = 320.0
-margin_right = 4631.0
-margin_bottom = 384.0
-rect_rotation = -27.9177
-custom_fonts/font = SubResource( 4 )
-text = "survivors in my"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="appearing_text" type="Node2D" parent="."]
 
 [node name="at_the_foot" parent="appearing_text" instance=ExtResource( 6 )]
@@ -254,3 +245,23 @@ fontSize = 80
 position = Vector2( 5888, 232 )
 text = "vices"
 fontSize = 80
+
+[node name="survivors" type="RichTextLabel" parent="appearing_text"]
+margin_left = 4560.0
+margin_top = 240.0
+margin_right = 5528.0
+margin_bottom = 472.0
+custom_fonts/normal_font = SubResource( 7 )
+text = "  Survivors in my"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="appearing_text/survivors"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="appearing_text/survivors/Area2D"]
+position = Vector2( -8, 152 )
+shape = SubResource( 8 )
+
+[connection signal="body_entered" from="appearing_text/survivors/Area2D" to="appearing_text/survivors" method="_on_Area2D_body_entered"]
