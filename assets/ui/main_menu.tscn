@@ -66,21 +66,21 @@ valign = 3
 [node name="levelSelect" type="Button" parent="VBoxContainer"]
 margin_top = 316.0
 margin_right = 475.0
-margin_bottom = 364.0
+margin_bottom = 361.0
 custom_fonts/font = SubResource( 3 )
 text = "Level select"
 
 [node name="blank" type="Label" parent="VBoxContainer"]
-margin_top = 368.0
+margin_top = 365.0
 margin_right = 475.0
-margin_bottom = 399.0
+margin_bottom = 394.0
 custom_fonts/font = SubResource( 4 )
 valign = 1
 
 [node name="exit" type="Button" parent="VBoxContainer"]
-margin_top = 403.0
+margin_top = 398.0
 margin_right = 475.0
-margin_bottom = 451.0
+margin_bottom = 443.0
 custom_fonts/font = SubResource( 5 )
 text = "EXIT"
 

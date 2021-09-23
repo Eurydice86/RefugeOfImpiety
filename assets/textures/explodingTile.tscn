@@ -235,6 +235,7 @@ shader_param/sprite = ExtResource( 1 )
 extents = Vector2( 16, 128 )
 
 [node name="explodingTile" type="Particles2D"]
+modulate = Color( 0, 0, 0, 1 )
 emitting = false
 amount = 512
 lifetime = 10.0
@@ -258,4 +259,3 @@ shape = SubResource( 3 )
 texture = ExtResource( 1 )
 
 [connection signal="body_entered" from="explodingArea2D" to="." method="_on_explodingArea2D_body_entered"]
-[connection signal="body_exited" from="explodingArea2D" to="." method="_on_explodingArea2D_body_exited"]

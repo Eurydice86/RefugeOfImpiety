@@ -101,7 +101,7 @@ noise = SubResource( 4 )
 [sub_resource type="ShaderMaterial" id=6]
 shader = SubResource( 1 )
 shader_param/scale = Vector2( 1, 1 )
-shader_param/zoom = 0.166855
+shader_param/zoom = 0.222725
 shader_param/gap_stretch = Vector2( 2, 1 )
 shader_param/refraction_stretch = Vector2( 2, 0.8 )
 shader_param/refraction_strength = 0.02
@@ -116,5 +116,6 @@ shader_param/water_mask = SubResource( 5 )
 [node name="waterfall" type="Sprite"]
 material = SubResource( 6 )
 scale = Vector2( 16, 128 )
+z_index = 10
 texture = ExtResource( 2 )
 script = ExtResource( 1 )

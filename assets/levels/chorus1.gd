@@ -10,15 +10,11 @@ func _ready():
 	Global.audio.stream_paused = false
 
 
-
-
 func _on_stop_body_entered(body):
-	if body.name[0] == "p":
+	if body.name == "player":
 		body.walking = false
 		body.running = false
 
-
 func _on_start_eagle_body_entered(body):
-	if body.name[0] == "p":
-		# replace the next line with the six alternative lines for the full scene
+	if body.name == "player":
 		$eagle.set_physics_process(true)

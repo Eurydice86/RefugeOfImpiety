@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/levels/chorus2.gd" type="Script" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
@@ -11,6 +10,12 @@
 size = 64
 font_data = ExtResource( 1 )
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 128, 64 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 48, 56 )
+
 [node name="chorus2" type="Node2D"]
 script = ExtResource( 4 )
 __meta__ = {
@@ -18,7 +23,7 @@ __meta__ = {
 }
 
 [node name="TileMap" parent="." instance=ExtResource( 3 )]
-tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 262166, 0, 0, 262167, 0, 0, 262168, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 262176, 0, 0, 262177, 0, 0, 262178, 0, 0, 262179, 0, 0, 458805, 0, 0, 458806, 0, 0, 458807, 0, 0, 458808, 0, 0, 458809, 0, 0, 524323, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 0, 0, 524327, 0, 0, 524328, 0, 0, 524329, 0, 0, 524330, 0, 0, 524331, 0, 0, 524332, 0, 0, 524333, 0, 0, 524334, 0, 0, 524335, 0, 0, 524336, 0, 0, 524337, 0, 0, 524338, 0, 0, 524339, 0, 0, 1376349, 0, 0, 1376350, 0, 0, 1376351, 0, 0, 1376352, 0, 0, 1376353, 0, 0, 1376354, 0, 0, 1376355, 0, 0, 1441877, 0, 0, 1441878, 0, 0, 1441879, 0, 0, 1441880, 0, 0, 1441881, 0, 0, 1441882, 0, 0, 1441883, 0, 0, 1507393, 0, 0, 1507394, 0, 0, 1507395, 0, 0, 1507396, 0, 0, 1507397, 0, 0, 1507398, 0, 0, 1507399, 0, 0, 1507400, 0, 0, 1507401, 0, 0, 1507402, 0, 0, 1507403, 0, 0, 1507404, 0, 0, 1507405, 0, 0, 1507406, 0, 0, 1507407, 0, 0, 1507408, 0, 0, 1507409, 0, 0, 1507410, 0, 0, 1507411, 0, 0 )
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 262163, 0, 0, 262164, 0, 0, 262165, 0, 0, 262166, 0, 0, 262167, 0, 0, 262168, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 262176, 0, 0, 262177, 0, 0, 262178, 0, 0, 262179, 0, 0, 458805, 0, 0, 458806, 0, 0, 458807, 0, 0, 458808, 0, 0, 458809, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 0, 0, 524327, 0, 0, 524328, 0, 0, 524329, 0, 0, 524330, 0, 0, 524331, 0, 0, 524332, 0, 0, 524333, 0, 0, 524334, 0, 0, 524335, 0, 0, 524336, 0, 0, 524337, 0, 0, 524338, 0, 0, 524339, 0, 0, 1376349, 0, 0, 1376350, 0, 0, 1376351, 0, 0, 1376352, 0, 0, 1376353, 0, 0, 1376354, 0, 0, 1376355, 0, 0, 1441877, 0, 0, 1441878, 0, 0, 1441879, 0, 0, 1441880, 0, 0, 1441881, 0, 0, 1441882, 0, 0, 1441883, 0, 0, 1441884, 0, 0, 1507390, 0, 0, 1507391, 0, 0, 1507392, 0, 0, 1507393, 0, 0, 1507394, 0, 0, 1507395, 0, 0, 1507396, 0, 0, 1507397, 0, 0, 1507398, 0, 0, 1507399, 0, 0, 1507400, 0, 0, 1507401, 0, 0, 1507402, 0, 0, 1507403, 0, 0, 1507404, 0, 0, 1507405, 0, 0, 1507406, 0, 0, 1507407, 0, 0, 1507408, 0, 0, 1507409, 0, 0, 1507410, 0, 0, 1507411, 0, 0 )
 
 [node name="static_text" type="Node2D" parent="."]
 
@@ -83,5 +88,29 @@ position = Vector2( 5344, 1504 )
 [node name="explodingTile5" parent="." instance=ExtResource( 6 )]
 position = Vector2( 5856, 1440 )
 
-[node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 32, -32 )
+[node name="flashStart" type="Area2D" parent="."]
+position = Vector2( 6584, 1336 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flashStart"]
+shape = SubResource( 2 )
+
+[node name="change_scene" type="Area2D" parent="."]
+position = Vector2( 6720, 1744 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="change_scene"]
+shape = SubResource( 3 )
+
+[node name="cRect" type="Node2D" parent="."]
+z_index = 100
+
+[node name="ColorRect" type="ColorRect" parent="cRect"]
+margin_left = 5616.0
+margin_top = 560.0
+margin_right = 8160.0
+margin_bottom = 2840.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="body_entered" from="flashStart" to="." method="_on_flashStart_body_entered"]
+[connection signal="body_entered" from="change_scene" to="." method="_on_change_scene_body_entered"]

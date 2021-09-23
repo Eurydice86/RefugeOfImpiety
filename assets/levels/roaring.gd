@@ -3,8 +3,23 @@ extends Node2D
 var bpm = Global.bpm
 export var start = 146
 
+var alpha = 1
+var alphaChange = false
+var alphaSpeed = 2.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Global.audio.seek(start)
-	Global.audio.stream_paused = false
+	# remove the next two lines for the overall scene
+#	Global.audio.seek(start)
+#	Global.audio.stream_paused = false
+	$ColorRect.color = Color(1,1,1,alpha)
+
+func _process(delta):
+	if alphaChange:
+		if alpha > 0:
+			alpha -= delta*alphaSpeed
+	$ColorRect.color = Color(1,1,1,alpha)
+
+
+func _on_Timer_timeout():
+	alphaChange = true
