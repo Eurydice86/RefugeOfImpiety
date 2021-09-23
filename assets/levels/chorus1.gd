@@ -22,11 +22,3 @@ func _on_start_eagle_body_entered(body):
 	if body.name[0] == "p":
 		# replace the next line with the six alternative lines for the full scene
 		$eagle.set_physics_process(true)
-		
-	
-#		var children = get_parent().get_children()
-#		var egl
-#		for i in range(len(children)):
-#			if children[i].name[0] == "e":
-#				egl = children[i]
-#		egl.speed = 1000

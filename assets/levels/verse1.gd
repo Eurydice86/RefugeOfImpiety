@@ -9,3 +9,5 @@ export var start = 52.1
 func _ready():
 	Global.audio.seek(start)
 	Global.audio.stream_paused = false
+
+

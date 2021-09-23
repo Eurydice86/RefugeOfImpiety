@@ -1,24 +1,53 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/levels/intro.gd" type="Script" id=2]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=4]
-[ext_resource path="res://import/images/Sprite-0005.png" type="Texture" id=5]
+[ext_resource path="res://import/images/Wasteland/far_rocks.png" type="Texture" id=5]
 [ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
+[ext_resource path="res://import/images/Wasteland/clouds.png" type="Texture" id=7]
+[ext_resource path="res://import/images/Wasteland/Sky.png" type="Texture" id=8]
 
 [node name="intro" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.5, 0.1 )
+[node name="sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
 motion_mirroring = Vector2( 3840, 0 )
 
-[node name="desert" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 0, -540 )
-scale = Vector2( 2, 2 )
+[node name="skySprite" type="Sprite" parent="ParallaxBackground/sky"]
+position = Vector2( 0, -500 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="clouds" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 0.1 )
+motion_mirroring = Vector2( 3840, 0 )
+
+[node name="cloudsSprite" type="Sprite" parent="ParallaxBackground/clouds"]
+position = Vector2( 0, -250 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="far_rocks" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.12, 0.12 )
+motion_mirroring = Vector2( 3840, 0 )
+
+[node name="farRocksSprite" type="Sprite" parent="ParallaxBackground/far_rocks"]
+position = Vector2( 0, -250 )
 texture = ExtResource( 5 )
+centered = false
+
+[node name="close_clouds" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.15, 0.15 )
+motion_mirroring = Vector2( 3840, 0 )
+
+[node name="closeCloudsSprite" type="Sprite" parent="ParallaxBackground/close_clouds"]
+modulate = Color( 0.811765, 0.470588, 0.109804, 0.772549 )
+position = Vector2( 0, -150 )
+texture = ExtResource( 7 )
 centered = false
 
 [node name="ParallaxForeground" type="ParallaxBackground" parent="."]
