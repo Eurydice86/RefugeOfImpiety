@@ -13,7 +13,7 @@
 script = ExtResource( 4 )
 
 [node name="soaring" parent="." instance=ExtResource( 6 )]
-position = Vector2( 35232, 8428.16 )
+position = Vector2( 35256, 8368 )
 
 [node name="chorus1" parent="." instance=ExtResource( 2 )]
 position = Vector2( 28992, 3904 )

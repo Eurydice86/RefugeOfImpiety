@@ -4,7 +4,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
-size = 32
+size = 96
 outline_color = Color( 0.368627, 0.0235294, 0.0235294, 1 )
 extra_spacing_bottom = 8
 font_data = ExtResource( 1 )
