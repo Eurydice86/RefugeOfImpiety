@@ -1,7 +1,5 @@
 extends Node
 
-
-# Declare member variables here. Examples:
 var audio
 var song = preload("res://import/audio/Mammuten - 06 - Refuge of Impiety.mp3")
 export (int) var bpm = 186
@@ -15,7 +13,6 @@ func _ready():
 	audio.stream_paused = true
 
 
-
-func _process(_delta):
+func _process(delta):
 	if Input.is_action_just_pressed("jump"):
 		print($AudioStreamPlayer.get_playback_position())

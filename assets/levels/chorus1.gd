@@ -6,9 +6,9 @@ var eagle
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Global.audio.seek(start)
-	Global.audio.stream_paused = false
-
+#	Global.audio.seek(start)
+#	Global.audio.stream_paused = false
+	pass
 
 func _on_stop_body_entered(body):
 	if body.name == "player":

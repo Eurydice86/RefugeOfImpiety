@@ -22,7 +22,7 @@ func _process(delta):
 	$cRect/ColorRect.color = Color(1, 1, 1, alpha)
 
 func _on_change_scene_body_entered(body):
-	get_tree().change_scene("res://assets/levels/roaring.tscn")
+	get_tree().change_scene("res://Node2D part 3.tscn")
 
 func _on_flashStart_body_entered(body):
 	alphaChange = true

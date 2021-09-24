@@ -139,10 +139,10 @@ __meta__ = {
 }
 
 [node name="they revel" type="Label" parent="static_text"]
-margin_left = 6688.0
-margin_top = 416.0
-margin_right = 7114.0
-margin_bottom = 498.0
+margin_left = 6680.0
+margin_top = 464.0
+margin_right = 7106.0
+margin_bottom = 546.0
 custom_fonts/font = SubResource( 3 )
 text = "they   revel "
 __meta__ = {

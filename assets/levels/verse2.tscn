@@ -212,10 +212,10 @@ __meta__ = {
 
 [node name="toxic" type="Label" parent="static_text"]
 visible = false
-margin_left = 6224.0
-margin_top = 248.0
-margin_right = 6418.0
-margin_bottom = 368.0
+margin_left = 6152.0
+margin_top = 432.0
+margin_right = 6346.0
+margin_bottom = 552.0
 custom_fonts/font = SubResource( 7 )
 custom_colors/font_color = Color( 0.203922, 0.87451, 0.0705882, 1 )
 text = "toxic"
@@ -225,10 +225,10 @@ __meta__ = {
 
 [node name="Earth" type="Label" parent="static_text"]
 visible = false
-margin_left = 6384.0
-margin_top = 520.0
-margin_right = 6519.0
-margin_bottom = 597.0
+margin_left = 6392.0
+margin_top = 536.0
+margin_right = 6527.0
+margin_bottom = 613.0
 custom_fonts/font = SubResource( 8 )
 text = "Earth"
 __meta__ = {
@@ -269,9 +269,13 @@ one_shot = true
 wait_time = 2.9
 one_shot = true
 
+[node name="EarthTimer" type="Timer" parent="earthEntered"]
+wait_time = 3.7
+
 [connection signal="body_entered" from="static_text/DECIMATED/textAppear" to="static_text/DECIMATED" method="_on_textAppear_body_entered"]
 [connection signal="body_entered" from="static_text/no retribution/textAppear" to="static_text/no retribution" method="_on_textAppear_body_entered"]
 [connection signal="body_entered" from="earthEntered" to="." method="_on_earthEntered_body_entered"]
 [connection signal="timeout" from="earthEntered/foreverTimer" to="." method="_on_foreverTimer_timeout"]
 [connection signal="timeout" from="earthEntered/onThisTimer" to="." method="_on_onThisTimer_timeout"]
 [connection signal="timeout" from="earthEntered/toxicEarthTimer" to="." method="_on_toxicEarthTimer_timeout"]
+[connection signal="timeout" from="earthEntered/EarthTimer" to="." method="_on_EarthTimer_timeout"]

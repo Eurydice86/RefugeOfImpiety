@@ -8,6 +8,6 @@
 script = ExtResource( 3 )
 
 [node name="chorus2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6720, 512 )
+position = Vector2( 6728, 512 )
 
 [node name="verse2" parent="." instance=ExtResource( 2 )]

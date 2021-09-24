@@ -25,6 +25,7 @@ func _on_earthEntered_body_entered(body):
 		$earthEntered/foreverTimer.start()
 		$earthEntered/onThisTimer.start()
 		$earthEntered/toxicEarthTimer.start()
+		$earthEntered/EarthTimer.start()
 
 
 func _on_foreverTimer_timeout():
@@ -32,9 +33,13 @@ func _on_foreverTimer_timeout():
 
 
 func _on_onThisTimer_timeout():
-		$static_text/on_this.visible = true
+	$static_text/on_this.visible = true
 
 
 func _on_toxicEarthTimer_timeout():
-		$static_text/toxic.visible = true
-		$static_text/Earth.visible = true
+	$static_text/toxic.visible = true
+
+
+
+func _on_EarthTimer_timeout():
+	$static_text/Earth.visible = true
