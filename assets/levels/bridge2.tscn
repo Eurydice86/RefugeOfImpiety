@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/levels/bridge2.gd" type="Script" id=1]
+[ext_resource path="res://import/images/whitePixel.png" type="Texture" id=2]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/themes/menu.tres" type="Theme" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6.47192, 5.75281 )
 
 [node name="bridge2" type="Node2D"]
 script = ExtResource( 1 )
@@ -58,3 +63,36 @@ position = Vector2( 9504, 1904 )
 
 [node name="explodingTile" parent="." instance=ExtResource( 6 )]
 position = Vector2( 5392, 544 )
+
+[node name="caveEntrance" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 9830, 1824 )
+scale = Vector2( 50.9999, 50.0001 )
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="caveWall" type="Sprite" parent="."]
+modulate = Color( 0.262745, 0.156863, 0.0705882, 1 )
+position = Vector2( 10555.8, 1505.5 )
+scale = Vector2( 352.625, 207.25 )
+z_index = 5
+texture = ExtResource( 2 )
+
+[node name="caveWall2" type="Sprite" parent="."]
+modulate = Color( 0.262745, 0.156863, 0.0705882, 1 )
+position = Vector2( 10494.5, 1262.5 )
+scale = Vector2( 383.25, 239.25 )
+z_index = 5
+texture = ExtResource( 2 )
+
+[node name="change_scene" type="Area2D" parent="."]
+position = Vector2( 10504, 1856 )
+scale = Vector2( 11.125, 11.125 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="change_scene"]
+shape = SubResource( 1 )
+
+[node name="player" parent="." instance=ExtResource( 7 )]
+position = Vector2( 32, -32 )
+
+[connection signal="body_entered" from="change_scene" to="." method="_on_change_scene_body_entered"]
