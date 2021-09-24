@@ -11,7 +11,7 @@ export var speed = 1000
 var gravity = 0
 
 var currentZoom : float = 0.5
-var zoomSpeed : float = 0.2
+var zoomSpeed : float = 0.1
 var minZoom : float = 0.5
 var maxZoom : float = 2.0
 
