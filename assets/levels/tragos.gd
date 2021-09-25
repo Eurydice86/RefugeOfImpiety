@@ -1,7 +1,7 @@
 extends Node2D
 
 var bpm = Global.bpm
-export var start = 345
+export var start = 344.9
 
 
 

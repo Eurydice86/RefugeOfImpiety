@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Mammuten - 06 - Refuge of Impiety.mp3-a23b357f2c1c14
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

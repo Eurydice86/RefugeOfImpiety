@@ -16,11 +16,6 @@ func _ready():
 func _process(delta):
 	$CanvasModulate.color = Global.indoorsLightColor
 
-
-func _on_Timer_timeout(body):
-	pass
-
-
 func _on_startRunning_body_entered(body):
 	if body.name == "player":
 		body.walking = false
