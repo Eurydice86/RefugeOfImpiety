@@ -334,7 +334,7 @@ position = Vector2( 16608, 1944 )
 position = Vector2( 15584, 1696 )
 
 [node name="stop_moving" type="Area2D" parent="."]
-position = Vector2( 17312, 2272 )
+position = Vector2( 17168, 2272 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stop_moving"]
 shape = SubResource( 1 )

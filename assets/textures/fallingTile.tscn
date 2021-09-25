@@ -7,7 +7,7 @@
 extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 32, 128 )
+extents = Vector2( 280, 128 )
 
 [node name="fallingTile" type="RigidBody2D"]
 collision_layer = 0
