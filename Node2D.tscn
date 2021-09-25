@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/levels/verse1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/levels/chorus1.tscn" type="PackedScene" id=2]
@@ -7,17 +7,16 @@
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/levels/soaring.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/levels/intro.tscn" type="PackedScene" id=7]
-[ext_resource path="res://import/images/entrance.png" type="Texture" id=8]
-[ext_resource path="res://import/images/door.png" type="Texture" id=9]
+[ext_resource path="res://parallax.tscn" type="PackedScene" id=8]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
 
 [node name="soaring" parent="." instance=ExtResource( 6 )]
-position = Vector2( 35232, 8816 )
+position = Vector2( 35256, 8368 )
 
 [node name="chorus1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 28992, 4032 )
+position = Vector2( 28992, 3904 )
 
 [node name="verse1" parent="." instance=ExtResource( 1 )]
 position = Vector2( 20672, 2176 )
@@ -28,20 +27,7 @@ start = 52.5
 [node name="TileMap" parent="." instance=ExtResource( 5 )]
 position = Vector2( 64, 0 )
 
-[node name="door" type="Sprite" parent="."]
-position = Vector2( 596, -64 )
-scale = Vector2( 1.375, 2 )
-texture = ExtResource( 9 )
-
 [node name="player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 32, -32 )
 
-[node name="walls" type="Sprite" parent="."]
-position = Vector2( 280, -256 )
-scale = Vector2( 2.1875, 1 )
-texture = ExtResource( 8 )
-
-[node name="walls2" type="Sprite" parent="."]
-position = Vector2( 320, -536 )
-scale = Vector2( 2.5, 1.59375 )
-texture = ExtResource( 8 )
+[node name="Parallax" parent="." instance=ExtResource( 8 )]

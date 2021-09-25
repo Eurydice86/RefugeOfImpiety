@@ -69,6 +69,7 @@ func _on_Area2D_area_entered(area):
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 
 func _on_exit_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://assets/ui/main_menu.tscn")
 
 

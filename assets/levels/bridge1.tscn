@@ -1,7 +1,6 @@
 [gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/levels/bridge1.gd" type="Script" id=3]
 [ext_resource path="res://assets/themes/menu.tres" type="Theme" id=4]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=5]
@@ -11,17 +10,9 @@
 [ext_resource path="res://assets/appearingText_left.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
-size = 32
+size = 64
 outline_size = 1
 outline_color = Color( 0.52549, 0.0313726, 0.0313726, 1 )
-font_data = ExtResource( 8 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 96
-font_data = ExtResource( 8 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 170
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -32,17 +23,28 @@ font_data = ExtResource( 8 )
 size = 32
 font_data = ExtResource( 8 )
 
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://import/fonts/Dark Mage.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 160
+font_data = SubResource( 7 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 250
+font_data = SubResource( 7 )
+
 [node name="bridge1" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
-tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 65560, 0, 0, 65561, 0, 0, 65562, 0, 0, 131099, 0, 0, 131100, 0, 0, 131101, 0, 0, 131102, 0, 0, 131103, 0, 0, 262193, 0, 0, 262194, 0, 0, 262195, 0, 0, 327724, 0, 0, 327725, 0, 0, 327726, 0, 0, 327727, 0, 0, 393249, 0, 0, 393250, 0, 0, 393251, 0, 0, 393252, 0, 0, 393253, 0, 0, 393254, 0, 0, 393255, 0, 0, 393256, 0, 0, 393257, 0, 0, 393258, 0, 0, 393259, 0, 0, 589888, 0, 0, 589889, 0, 0, 786497, 0, 0, 852033, 0, 0, 852034, 0, 0, 852035, 0, 0, 917572, 0, 0, 1048642, 0, 0, 1114178, 0, 0, 1114179, 0, 0, 1114180, 0, 0, 1114181, 0, 0, 1572930, 0, 0, 1572931, 0, 0, 1572932, 0, 0, 1572933, 0, 0, 1572934, 0, 0, 1769539, 0, 0, 1769540, 0, 0, 1769541, 0, 0, 1769542, 0, 0, 4587570, 0, 0, 4587571, 0, 0, 4587572, 0, 0, 4587573, 0, 0, 4587574, 0, 0, 4587575, 0, 0, 4587576, 0, 0, 4587577, 0, 0, 4587578, 0, 0, 4587579, 0, 0, 4587580, 0, 0, 4587581, 0, 0, 4587582, 0, 0, 4587583, 0, 0, 4587584, 0, 0, 4587585, 0, 0, 4587586, 0, 0, 4587587, 0, 0, 4587588, 0, 0, 4587589, 0, 0, 4587590, 0, 0, 4587591, 0, 0, 4587592, 0, 0, 4718636, 0, 0, 4718637, 0, 0, 4718638, 0, 0, 4718639, 0, 0, 4718640, 0, 0, 4915234, 0, 0, 4915235, 0, 0, 4915236, 0, 0, 4915237, 0, 0, 4915238, 0, 0, 4915239, 0, 0, 4915240, 0, 0, 4915241, 0, 0, 4915242, 0, 0 )
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 65560, 0, 0, 65561, 0, 0, 65562, 0, 0, 65563, 0, 0, 196636, 0, 0, 196637, 0, 0, 196638, 0, 0, 196639, 0, 0, 327729, 0, 0, 327730, 0, 0, 327731, 0, 0, 393260, 0, 0, 393261, 0, 0, 393262, 0, 0, 393263, 0, 0, 458785, 0, 0, 458786, 0, 0, 458787, 0, 0, 458788, 0, 0, 458789, 0, 0, 458790, 0, 0, 458791, 0, 0, 458792, 0, 0, 458793, 0, 0, 458794, 0, 0, 458795, 0, 0, 655424, 0, 0, 655425, 0, 0, 852033, 0, 0, 917569, 0, 0, 917570, 0, 0, 917571, 0, 0, 983108, 0, 0, 1114178, 0, 0, 1179714, 0, 0, 1179715, 0, 0, 1179716, 0, 0, 1179717, 0, 0, 1638466, 0, 0, 1638467, 0, 0, 1638468, 0, 0, 1638469, 0, 0, 1638470, 0, 0, 1835075, 0, 0, 1835076, 0, 0, 1835077, 0, 0, 1835078, 0, 0, 4653106, 0, 0, 4653107, 0, 0, 4653108, 0, 0, 4653109, 0, 0, 4653110, 0, 0, 4653111, 0, 0, 4653112, 0, 0, 4653113, 0, 0, 4653114, 0, 0, 4653115, 0, 0, 4653116, 0, 0, 4653117, 0, 0, 4653118, 0, 0, 4653119, 0, 0, 4653120, 0, 0, 4653121, 0, 0, 4653122, 0, 0, 4653123, 0, 0, 4653124, 0, 0, 4653125, 0, 0, 4653126, 0, 0, 4653127, 0, 0, 4653128, 0, 0, 4718636, 0, 0, 4718637, 0, 0, 4718638, 0, 0, 4718639, 0, 0, 4718640, 0, 0, 4915234, 0, 0, 4915235, 0, 0, 4915236, 0, 0, 4915237, 0, 0, 4915238, 0, 0, 4915239, 0, 0, 4915240, 0, 0, 4915241, 0, 0, 4915242, 0, 0, 6881281, 0, 0, 6881282, 0, 0, 6881283, 0, 0, 6881284, 0, 0, 6881285, 0, 0, 6881286, 0, 0, 6881287, 0, 0, 6881288, 0, 0, 6881289, 0, 0, 6881290, 0, 0, 6881291, 0, 0, 6881292, 0, 0, 6881293, 0, 0, 6881294, 0, 0, 6881295, 0, 0, 6881296, 0, 0, 6881297, 0, 0, 6881298, 0, 0, 6881299, 0, 0, 6881300, 0, 0, 6881301, 0, 0, 6881302, 0, 0, 6881303, 0, 0, 6881304, 0, 0, 6881305, 0, 0, 6881306, 0, 0 )
 
 [node name="the" type="Label" parent="."]
-margin_left = 528.0
-margin_top = -8.0
-margin_right = 692.0
-margin_bottom = 42.0
+margin_left = 480.0
+margin_top = -264.0
+margin_right = 644.0
+margin_bottom = -140.0
 theme = ExtResource( 4 )
 text = "The"
 __meta__ = {
@@ -50,15 +52,15 @@ __meta__ = {
 }
 
 [node name="price" parent="." instance=ExtResource( 5 )]
-position = Vector2( 600, -24 )
+position = Vector2( 600, 48 )
 text = "PRICE"
 offset = 50
 
 [node name="you_pay_for" type="Label" parent="."]
-margin_left = 984.0
-margin_top = -96.0
-margin_right = 1182.0
-margin_bottom = -46.0
+margin_left = 960.0
+margin_top = -240.0
+margin_right = 1407.0
+margin_bottom = -116.0
 rect_rotation = -19.847
 theme = ExtResource( 4 )
 text = "you pay for"
@@ -72,10 +74,10 @@ text = "your"
 offset = 50
 
 [node name="is_only" type="Label" parent="."]
-margin_left = 2656.0
-margin_top = 376.0
-margin_right = 2782.0
-margin_bottom = 426.0
+margin_left = 2624.0
+margin_top = 432.0
+margin_right = 2804.0
+margin_bottom = 509.0
 custom_fonts/font = SubResource( 1 )
 text = "is only"
 __meta__ = {
@@ -83,10 +85,10 @@ __meta__ = {
 }
 
 [node name="that_you" type="Label" parent="."]
-margin_left = 2952.0
-margin_top = 168.0
-margin_right = 3226.0
-margin_bottom = 218.0
+margin_left = 2888.0
+margin_top = 136.0
+margin_right = 3215.0
+margin_bottom = 260.0
 rect_rotation = -11.1927
 theme = ExtResource( 4 )
 text = "that you"
@@ -95,73 +97,35 @@ __meta__ = {
 }
 
 [node name="jumpPoint" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2704, 368 )
+position = Vector2( 2704, 424 )
 
 [node name="jumpPoint2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3016, 304 )
+position = Vector2( 3048, 352 )
 
 [node name="jumpPoint3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3240, 240 )
+position = Vector2( 3256, 296 )
 
 [node name="jumpPoint4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3272, 4432 )
+position = Vector2( 3272, 4488 )
 
 [node name="jumpPoint5" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2816, 4568 )
+position = Vector2( 2848, 4568 )
 
 [node name="jumpPoint6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2216, 4768 )
+position = Vector2( 2208, 4768 )
 
 [node name="must" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3240, 72 )
+position = Vector2( 3216, 336 )
 text = "must"
 
 [node name="directionChange" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4336, 4344 )
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.8, 1 )
-
-[node name="salvation" type="Label" parent="ParallaxBackground/ParallaxLayer"]
-margin_left = 1400.0
-margin_top = -112.0
-margin_right = 2082.0
-margin_bottom = 50.0
-custom_fonts/font = SubResource( 2 )
-text = "SALVATION"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 1, 0.65 )
-
-[node name="let_go" type="Label" parent="ParallaxBackground/ParallaxLayer2"]
-margin_left = 3968.0
-margin_top = 264.0
-margin_right = 4092.0
-margin_bottom = 1569.0
-custom_fonts/font = SubResource( 3 )
-text = "L
-E
-T
-
-G
-O"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 32, -32 )
+position = Vector2( 4336, 4400 )
 
 [node name="give_in_wholly" type="Label" parent="."]
 margin_left = 3384.0
-margin_top = 4328.0
+margin_top = 4384.0
 margin_right = 3900.0
-margin_bottom = 4410.0
+margin_bottom = 4466.0
 custom_fonts/font = SubResource( 4 )
 text = "give in wholly"
 __meta__ = {
@@ -170,9 +134,9 @@ __meta__ = {
 
 [node name="to_your" type="Label" parent="."]
 margin_left = 3368.0
-margin_top = 4568.0
+margin_top = 4624.0
 margin_right = 3496.0
-margin_bottom = 4610.0
+margin_bottom = 4666.0
 custom_fonts/font = SubResource( 5 )
 text = "to your"
 __meta__ = {
@@ -180,11 +144,38 @@ __meta__ = {
 }
 
 [node name="sweet" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3232, 4432 )
+position = Vector2( 3232, 4488 )
 text = "sweet"
-offset = -150
+offset = -180
 
 [node name="perversion" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3120, 4592 )
+position = Vector2( 3120, 4648 )
 text = "perversion"
 offset = -400
+
+[node name="SALVATION" type="RichTextLabel" parent="."]
+margin_left = 1544.0
+margin_top = -240.0
+margin_right = 2304.0
+margin_bottom = 112.0
+custom_fonts/normal_font = SubResource( 6 )
+text = "SALVATION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LET GO" type="RichTextLabel" parent="."]
+margin_left = 3672.0
+margin_top = 344.0
+margin_right = 4432.0
+margin_bottom = 2160.0
+custom_fonts/normal_font = SubResource( 8 )
+text = "L
+ E
+  T
+
+    G
+     O"
+__meta__ = {
+"_edit_use_anchors_": false
+}

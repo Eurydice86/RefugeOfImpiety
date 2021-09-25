@@ -1,7 +1,5 @@
 extends Node
 
-
-# Declare member variables here. Examples:
 var audio
 var song = preload("res://import/audio/Mammuten - 06 - Refuge of Impiety.mp3")
 export (int) var bpm = 186
@@ -13,7 +11,6 @@ func _ready():
 	randomize()
 	audio = $AudioStreamPlayer
 	audio.stream_paused = true
-
 
 
 func _process(delta):

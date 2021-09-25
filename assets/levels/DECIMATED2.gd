@@ -4,7 +4,7 @@ extends RichTextLabel
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var appearSpeed = 0.5
+var appearSpeed = 0.6
 var appear = false
 
 # Called when the node enters the scene tree for the first time.

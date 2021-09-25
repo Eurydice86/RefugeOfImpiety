@@ -11,7 +11,7 @@ export var speed = 1000
 var gravity = 0
 
 var currentZoom : float = 0.5
-var zoomSpeed : float = 0.2
+var zoomSpeed : float = 0.1
 var minZoom : float = 0.5
 var maxZoom : float = 2.0
 
@@ -52,6 +52,7 @@ func _on_Area2D_body_entered(body):
 		
 
 func _on_Button_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://assets/ui/main_menu.tscn")
 
 
