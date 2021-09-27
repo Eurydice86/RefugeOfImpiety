@@ -21,6 +21,7 @@ func _on_startRunning_body_entered(body):
 		body.walking = false
 		body.running = true
 		$CanvasModulate.visible = false
+		$ColorRect2.queue_free()
 		
 
 

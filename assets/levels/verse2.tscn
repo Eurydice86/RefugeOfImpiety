@@ -174,7 +174,7 @@ margin_right = 6496.0
 margin_bottom = 432.0
 custom_fonts/normal_font = SubResource( 4 )
 text = "
-   No retribution"
+  No retribution"
 script = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false

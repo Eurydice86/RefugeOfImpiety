@@ -5,7 +5,7 @@ export var start = 147
 
 var alpha = 1
 var alphaChange = false
-var alphaSpeed = 2.0
+var alphaSpeed = 3.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,8 +15,8 @@ func _ready():
 	################################################
 	################################################
 	# remove the next two lines for the overall scene
-	Global.audio.seek(start)
-	Global.audio.stream_paused = false
+#	Global.audio.seek(start)
+#	Global.audio.stream_paused = false
 	$ColorRect.visible = true
 	$ColorRect.color = Color(1,1,1,alpha)
 
