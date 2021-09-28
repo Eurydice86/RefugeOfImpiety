@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/levels/tragos.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/levels/outro_fast.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/levels/outro_slow.tscn" type="PackedScene" id=3]
+
+[node name="Node2D part 4" type="Node2D"]
+
+[node name="tragos" parent="." instance=ExtResource( 1 )]
+position = Vector2( 16128, 8000 )
+
+[node name="outro_fast" parent="." instance=ExtResource( 2 )]
+position = Vector2( 16256, -320 )
+
+[node name="outro_slow" parent="." instance=ExtResource( 3 )]

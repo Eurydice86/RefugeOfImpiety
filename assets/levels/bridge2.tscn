@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/levels/bridge2.gd" type="Script" id=1]
 [ext_resource path="res://import/images/whitePixel.png" type="Texture" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://assets/themes/menu.tres" type="Theme" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6.47192, 5.75281 )
@@ -91,8 +90,5 @@ scale = Vector2( 11.125, 11.125 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="change_scene"]
 shape = SubResource( 1 )
-
-[node name="player" parent="." instance=ExtResource( 7 )]
-position = Vector2( 32, -32 )
 
 [connection signal="body_entered" from="change_scene" to="." method="_on_change_scene_body_entered"]

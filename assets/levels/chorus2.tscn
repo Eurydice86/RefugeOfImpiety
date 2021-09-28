@@ -89,9 +89,10 @@ position = Vector2( 5344, 1504 )
 position = Vector2( 5856, 1440 )
 
 [node name="flashStart" type="Area2D" parent="."]
-position = Vector2( 6584, 1336 )
+position = Vector2( 6632, 1480 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="flashStart"]
+position = Vector2( -16, -96 )
 shape = SubResource( 2 )
 
 [node name="change_scene" type="Area2D" parent="."]
@@ -104,6 +105,7 @@ shape = SubResource( 3 )
 z_index = 100
 
 [node name="ColorRect" type="ColorRect" parent="cRect"]
+visible = false
 margin_left = 5616.0
 margin_top = 560.0
 margin_right = 8160.0
