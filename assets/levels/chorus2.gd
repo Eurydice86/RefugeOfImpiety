@@ -5,7 +5,7 @@ export var start = 129.5
 
 var alpha = 0.0
 var alphaChange = false
-var aplhaSpeed = 2.0
+var aplhaSpeed = 2.2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
