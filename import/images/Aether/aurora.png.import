@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/floodlight.png-764e1d574817b1cfee5ff438906d4da1.stex"
+path="res://.import/aurora.png-58d18e24ad2270865b7939aabd08bf7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/sprites/floodlight.png"
-dest_files=[ "res://.import/floodlight.png-764e1d574817b1cfee5ff438906d4da1.stex" ]
+source_file="res://import/images/Aether/aurora.png"
+dest_files=[ "res://.import/aurora.png-58d18e24ad2270865b7939aabd08bf7b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
