@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/levels/soaring.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/levels/intro.tscn" type="PackedScene" id=7]
-[ext_resource path="res://parallax.tscn" type="PackedScene" id=8]
+[ext_resource path="res://parallaxWasteland.tscn" type="PackedScene" id=8]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
@@ -26,4 +26,4 @@ start = 52.5
 [node name="TileMap" parent="." instance=ExtResource( 5 )]
 position = Vector2( 64, 0 )
 
-[node name="Parallax" parent="." instance=ExtResource( 8 )]
+[node name="ParallaxWasteland" parent="." instance=ExtResource( 8 )]
