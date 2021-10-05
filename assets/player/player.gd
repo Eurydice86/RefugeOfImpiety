@@ -42,7 +42,7 @@ func get_input():
 		if running:
 			$AnimatedSprite.play("run")
 		elif walking:
-			$AnimatedSprite.play("run")
+			$AnimatedSprite.play("walk")
 		else:
 			$AnimatedSprite.play("idle")
 	else:
