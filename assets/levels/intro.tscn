@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
 
 [node name="intro" type="Node2D"]
+position = Vector2( 4752, 1328 )
 script = ExtResource( 2 )
 
 [node name="TileMap" parent="." instance=ExtResource( 3 )]
@@ -150,4 +151,4 @@ position = Vector2( 19992, 1824 )
 position = Vector2( 20376, 1832 )
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 32, -32 )
+position = Vector2( 48, -32 )
