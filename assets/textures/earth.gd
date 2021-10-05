@@ -8,6 +8,7 @@ var bpm = 0
 
 var modulateColour
 var alpha = 1
+var alphaSpeed = 0.5
 var runSpeed
 
 # Called when the node enters the scene tree for the first time.
@@ -20,7 +21,7 @@ func _process(delta):
 	$Sprite.rotation_degrees -= rotatingSpeed * delta
 	$Sprite2.rotation_degrees -= rotatingSpeed * delta
 	if modulateColour:
-		alpha -= 0.2 * delta
+		alpha -= alphaSpeed * delta
 		$Sprite.modulate = (Color(1,1,1,alpha))
 
 
