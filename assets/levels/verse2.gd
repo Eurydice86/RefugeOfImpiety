@@ -8,8 +8,8 @@ var alpha = 1
 func _ready():
 	
 	# remove the next two lines for a change from soaring to this
-	#Global.audio.seek(start)
-	#Global.audio.stream_paused = false
+#	Global.audio.seek(start)
+#	Global.audio.stream_paused = false
 	$ColorRect.visible = true
 	$ColorRect.color = Color(1, 1, 1, alpha)
 
