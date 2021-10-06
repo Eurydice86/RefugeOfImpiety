@@ -35,11 +35,12 @@ motion_mirroring = Vector2( 1920, 1080 )
 
 [node name="aurora" type="ParallaxLayer" parent="ParallaxBackground"]
 z_index = -100
-motion_scale = Vector2( 0.05, 0.05 )
+motion_scale = Vector2( 0.9, 0.5 )
+motion_mirroring = Vector2( 3840, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/aurora"]
-scale = Vector2( 1.1, 0.5 )
 texture = ExtResource( 5 )
+offset = Vector2( 0, 200 )
 
 [node name="ParallaxForeground" type="ParallaxBackground" parent="."]
 
