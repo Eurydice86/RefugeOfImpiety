@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/galaxies.png-2024bee816e0ad8425bc132c18e31ae8.stex"
+path="res://.import/stars2.png-8e460e31a26e767333ae4acd12224f85.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/Aether/galaxies.png"
-dest_files=[ "res://.import/galaxies.png-2024bee816e0ad8425bc132c18e31ae8.stex" ]
+source_file="res://import/images/Aether/stars2.png"
+dest_files=[ "res://.import/stars2.png-8e460e31a26e767333ae4acd12224f85.stex" ]
 
 [params]
 

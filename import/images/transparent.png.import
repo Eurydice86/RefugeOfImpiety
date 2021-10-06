@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/starryBackground.png-6f38ad094b0933a497fe9f740fb9d8bd.stex"
+path="res://.import/transparent.png-2032edbf3bfd4c47e9498b5f42c43d53.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/Aether/starryBackground.png"
-dest_files=[ "res://.import/starryBackground.png-6f38ad094b0933a497fe9f740fb9d8bd.stex" ]
+source_file="res://import/images/transparent.png"
+dest_files=[ "res://.import/transparent.png-2032edbf3bfd4c47e9498b5f42c43d53.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
