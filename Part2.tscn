@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/levels/chorus2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/levels/verse2.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Node2D part 2.gd" type="Script" id=3]
+[ext_resource path="res://Part2.gd" type="Script" id=3]
 [ext_resource path="res://parallaxAether.tscn" type="PackedScene" id=4]
 
 [sub_resource type="Environment" id=1]
