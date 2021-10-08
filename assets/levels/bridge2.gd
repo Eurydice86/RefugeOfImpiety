@@ -14,4 +14,4 @@ func _ready():
 
 func _on_change_scene_body_entered(body):
 	if body.name == "player":
-		get_tree().change_scene("res://Node2D part 4.tscn")
+		get_tree().change_scene("res://Part4.tscn")

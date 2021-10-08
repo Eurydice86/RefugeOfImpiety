@@ -43,4 +43,4 @@ func _on_flashStart_body_entered(body):
 func _on_changeScene_body_entered(body):
 	if body.name == "eagle":
 # warning-ignore:return_value_discarded
-		get_tree().change_scene("res://Node2D part 2.tscn")
+		get_tree().change_scene("res://Part2.tscn")
