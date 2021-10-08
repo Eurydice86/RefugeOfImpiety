@@ -10,7 +10,6 @@ func _ready():
 #	Global.audio.seek(start)
 #	Global.audio.stream_paused = false
 	$CanvasModulate.visible = false
-	$ground.visible = false
 
  #Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -28,7 +27,6 @@ func _on_startRunning_body_entered(body):
 func _on_stop_moving_body_entered(body):
 	body.walking = false
 	body.running = false
-	$ground.visible = true
 	$ColorRect2.visible = true
 	$CanvasModulate.visible = true
 	alpha = 1

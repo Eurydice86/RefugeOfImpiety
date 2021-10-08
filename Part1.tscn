@@ -1,0 +1,29 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/levels/intro.tscn" type="PackedScene" id=2]
+[ext_resource path="res://parallaxWasteland.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/levels/verse1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/levels/soaring.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/levels/chorus1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Part1.gd" type="Script" id=7]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="soaring" parent="." instance=ExtResource( 5 )]
+position = Vector2( 40024, 9584 )
+
+[node name="chorus1" parent="." instance=ExtResource( 6 )]
+position = Vector2( 33760, 5120 )
+
+[node name="verse1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 25440, 3456 )
+start = 52.5
+
+[node name="intro" parent="." instance=ExtResource( 2 )]
+
+[node name="TileMap" parent="." instance=ExtResource( 1 )]
+position = Vector2( 64, 0 )
+
+[node name="ParallaxWasteland" parent="." instance=ExtResource( 3 )]
