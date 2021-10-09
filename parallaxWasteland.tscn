@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://import/images/Wasteland/front_dunes.png" type="Texture" id=1]
 [ext_resource path="res://import/images/Wasteland/far_rocks_plus_sand.png" type="Texture" id=2]
 [ext_resource path="res://import/images/Wasteland/Sky.png" type="Texture" id=3]
 [ext_resource path="res://import/images/Wasteland/front_rocks.png" type="Texture" id=4]
-[ext_resource path="res://import/images/Wasteland/pillar1.png" type="Texture" id=5]
 [ext_resource path="res://import/images/Wasteland/pillar2.png" type="Texture" id=6]
 
 [node name="ParallaxWasteland" type="Node2D"]
@@ -58,12 +57,3 @@ centered = false
 
 [node name="ParallaxForeground" type="ParallaxBackground" parent="."]
 layer = 100
-
-[node name="pillars" type="ParallaxLayer" parent="ParallaxForeground"]
-motion_scale = Vector2( 1.1, 1 )
-motion_mirroring = Vector2( 3000, 0 )
-
-[node name="pillar" type="Sprite" parent="ParallaxForeground/pillars"]
-position = Vector2( 168, 9016 )
-texture = ExtResource( 5 )
-centered = false
