@@ -1,7 +1,7 @@
 extends Node2D
 
 var bpm = Global.bpm
-export var start = 129.5
+export var start = 130
 
 var alpha = 0.0
 var alphaChange = false
@@ -21,7 +21,7 @@ func _process(delta):
 			alpha += delta * aplhaSpeed
 	$cRect/ColorRect.color = Color(1, 1, 1, alpha)
 
-func _on_change_scene_body_entered(body):
+func _on_change_scene_body_entered(_body):
 	get_tree().change_scene("res://Part3.tscn")
 
 func _on_flashStart_body_entered(body):

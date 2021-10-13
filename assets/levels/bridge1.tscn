@@ -15,24 +15,24 @@ outline_size = 1
 outline_color = Color( 0.52549, 0.0313726, 0.0313726, 1 )
 font_data = ExtResource( 8 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=2]
 size = 64
 font_data = ExtResource( 8 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 8 )
 
-[sub_resource type="DynamicFontData" id=7]
+[sub_resource type="DynamicFontData" id=4]
 font_path = "res://import/fonts/Dark Mage.ttf"
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=5]
 size = 160
-font_data = SubResource( 7 )
+font_data = SubResource( 4 )
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=6]
 size = 250
-font_data = SubResource( 7 )
+font_data = SubResource( 4 )
 
 [node name="bridge1" type="Node2D"]
 script = ExtResource( 3 )
@@ -126,7 +126,7 @@ margin_left = 3384.0
 margin_top = 4384.0
 margin_right = 3900.0
 margin_bottom = 4466.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
 text = "give in wholly"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -137,7 +137,7 @@ margin_left = 3368.0
 margin_top = 4624.0
 margin_right = 3496.0
 margin_bottom = 4666.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "to your"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -158,7 +158,7 @@ margin_left = 1544.0
 margin_top = -240.0
 margin_right = 2304.0
 margin_bottom = 112.0
-custom_fonts/normal_font = SubResource( 6 )
+custom_fonts/normal_font = SubResource( 5 )
 text = "SALVATION"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -169,7 +169,7 @@ margin_left = 3672.0
 margin_top = 344.0
 margin_right = 4432.0
 margin_bottom = 2160.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 6 )
 text = "L
  E
   T

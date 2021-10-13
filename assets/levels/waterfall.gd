@@ -1,7 +1,7 @@
 tool
 extends Sprite
 
-func _process(delta):
+func _process(_delta):
 	get_material().set_shader_param("zoom", get_viewport_transform().y.y)
 
 #Connect the item_rect_changed() signal to this function

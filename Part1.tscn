@@ -12,10 +12,10 @@
 script = ExtResource( 7 )
 
 [node name="soaring" parent="." instance=ExtResource( 5 )]
-position = Vector2( 40024, 9584 )
+position = Vector2( 40024, 9456 )
 
 [node name="chorus1" parent="." instance=ExtResource( 6 )]
-position = Vector2( 33760, 5120 )
+position = Vector2( 33760, 4992 )
 
 [node name="verse1" parent="." instance=ExtResource( 4 )]
 position = Vector2( 25440, 3456 )

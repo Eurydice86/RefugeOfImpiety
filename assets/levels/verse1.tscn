@@ -12,18 +12,14 @@
 [ext_resource path="res://import/images/Wasteland/pillar2.png" type="Texture" id=10]
 [ext_resource path="res://import/images/Wasteland/pillar1.png" type="Texture" id=11]
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 48
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
-size = 32
-font_data = ExtResource( 1 )
-
 [sub_resource type="DynamicFont" id=3]
-size = 64
+size = 32
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -31,21 +27,25 @@ size = 64
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 128
+size = 64
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 128
 font_data = ExtResource( 1 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="DynamicFont" id=7]
+size = 128
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 32, 48 )
 
 [node name="verse1" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="TileMap" parent="." instance=ExtResource( 4 )]
-tile_data = PoolIntArray( -131057, -2147483648, 0, -131056, -2147483648, 0, -131055, -2147483648, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 196610, 2, 0, 196610, 3, 0, 196610, 4, 0, 196610, 5, 0, 196610, 6, 0, 196610, 7, 0, 196610, 8, 0, 196610, 9, 0, 0, 21, 0, 0, 65560, 0, 0, 131099, 0, 0, 262187, -2147483648, 0, 262199, 0, 0, 262200, -2147483648, 0, 262238, -2147483648, 0, 262239, -2147483648, 0, 262240, -2147483648, 0, 327711, 0, 0, 327712, 0, 0, 327713, 0, 0, 327714, 0, 0, 327715, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, -2147483648, 0, 327728, 0, 0, 327729, 0, 0, 327730, 0, 0, 327731, -2147483648, 0, 327732, -2147483648, 0, 327771, 0, 0, 393276, 0, 0, 393277, 0, 0, 393278, 0, 0, 393279, 0, 0, 393280, 0, 0, 393281, 0, 0, 393282, 0, 0, 393304, 0, 0, 458821, 0, 0, 458822, 0, 0, 458823, 0, 0, 458824, 0, 0, 458825, 0, 0, 458826, 0, 0, 458827, 0, 0, 458828, 0, 0, 458829, 0, 0, 458830, 0, 0, 458831, 0, 0, 458832, 0, 0, 458833, 0, 0, 458834, 0, 0, 458835, 0, 0, 458836, 0, 0, 458837, 0, 0, 655470, -2147483648, 0, 655471, -2147483648, 0, 655472, -2147483648, 0, 655473, -2147483648, 0, 655474, -2147483648, 0, 655475, -2147483648, 0, 655476, 0, 0, 720998, 0, 0, 720999, -2147483648, 0, 721000, -2147483648, 0, 721001, -2147483648, 0, 721002, -2147483648, 0, 721003, -2147483648, 0, 1376380, 0, 0, 1376381, 0, 0, 1376382, 0, 0, 1376383, 0, 0, 1376384, 0, 0, 1441916, 0, 0, 1441917, 0, 0, 1441918, 0, 0, 1441919, 0, 0, 1441920, 0, 0 )
+tile_data = PoolIntArray( -131057, -2147483648, 0, -131056, -2147483648, 0, -131055, -2147483648, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 196610, 2, 0, 196610, 3, 0, 196610, 4, 0, 196610, 5, 0, 196610, 6, 0, 196610, 7, 0, 196610, 8, 0, 196610, 9, 0, 0, 21, 0, 0, 65560, 0, 0, 131099, 0, 0, 262187, -2147483648, 0, 262199, 0, 0, 262200, -2147483648, 0, 262238, -2147483648, 0, 262239, -2147483648, 0, 262240, -2147483648, 0, 327711, 0, 0, 327712, 0, 0, 327713, 0, 0, 327714, 0, 0, 327715, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, -2147483648, 0, 327728, 0, 0, 327729, 0, 0, 327730, 0, 0, 327731, -2147483648, 0, 327732, -2147483648, 0, 327771, 0, 0, 393276, 0, 0, 393277, 0, 0, 393278, 0, 0, 393279, 0, 0, 393280, 0, 0, 393281, 0, 0, 393282, 0, 0, 393304, 0, 0, 458821, 0, 0, 458822, 0, 0, 458823, 0, 0, 458824, 0, 0, 458825, 0, 0, 458826, 0, 0, 458827, 0, 0, 458828, 0, 0, 458829, 0, 0, 458830, 0, 0, 458831, 0, 0, 458832, 0, 0, 458833, 0, 0, 458834, 0, 0, 458835, 0, 0, 458836, 0, 0, 458837, 0, 0, 524398, 0, 0, 524399, 0, 0, 524400, 0, 0, 524401, 0, 0, 524402, 0, 0, 524403, 0, 0, 524404, 0, 0, 589926, 0, 0, 589927, 0, 0, 589928, 0, 0, 589929, 0, 0, 589930, 0, 0, 589931, 0, 0, 1245308, 0, 0, 1245309, 0, 0, 1245310, 0, 0, 1245311, 0, 0, 1245312, 0, 0, 1310844, 0, 0, 1310845, 0, 0, 1310846, 0, 0, 1310847, 0, 0, 1310848, 0, 0 )
 
 [node name="desertTileMap" parent="." instance=ExtResource( 8 )]
 visible = false
@@ -75,10 +75,10 @@ position = Vector2( 5673.05, 349.39 )
 position = Vector2( 5880, 296 )
 
 [node name="jumpPoint8" parent="jumpPoints" instance=ExtResource( 5 )]
-position = Vector2( 7440, 616 )
+position = Vector2( 7440, 488 )
 
 [node name="jumpPoint10" parent="jumpPoints" instance=ExtResource( 5 )]
-position = Vector2( 6880, 664 )
+position = Vector2( 6880, 536 )
 
 [node name="jumpPoint3" type="Area2D" parent="jumpPoints"]
 position = Vector2( 3360, 296 )
@@ -87,7 +87,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="jumpPoints/jumpPoint3"]
-shape = SubResource( 8 )
+shape = SubResource( 1 )
 
 [node name="pillar1" type="Sprite" parent="."]
 position = Vector2( 1128, 184 )
@@ -149,7 +149,7 @@ margin_left = 704.0
 margin_top = -224.0
 margin_right = 860.0
 margin_bottom = -163.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Spent"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -160,7 +160,7 @@ margin_left = 872.0
 margin_top = -272.0
 margin_right = 934.0
 margin_bottom = -230.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "and"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -171,7 +171,7 @@ margin_left = 960.0
 margin_top = -328.0
 margin_right = 1242.0
 margin_bottom = -267.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "screaming"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -182,7 +182,7 @@ margin_left = 2632.0
 margin_top = 56.0
 margin_right = 2758.0
 margin_bottom = 120.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "they"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -193,7 +193,7 @@ margin_left = 3280.0
 margin_top = 112.0
 margin_right = 3406.0
 margin_bottom = 279.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "in a
 "
 __meta__ = {
@@ -205,7 +205,7 @@ margin_left = 3464.0
 margin_top = 216.0
 margin_right = 3977.0
 margin_bottom = 298.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "euphoric"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -216,7 +216,7 @@ margin_left = 3832.0
 margin_top = 104.0
 margin_right = 4274.0
 margin_bottom = 294.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "state"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -227,7 +227,7 @@ margin_left = 5824.0
 margin_top = 288.0
 margin_right = 5980.0
 margin_bottom = 419.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "of"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -235,10 +235,10 @@ __meta__ = {
 
 [node name="they revel" type="Label" parent="static_text"]
 margin_left = 6680.0
-margin_top = 464.0
+margin_top = 336.0
 margin_right = 7106.0
-margin_bottom = 546.0
-custom_fonts/font = SubResource( 3 )
+margin_bottom = 418.0
+custom_fonts/font = SubResource( 4 )
 text = "they   revel "
 __meta__ = {
 "_edit_use_anchors_": false
@@ -246,21 +246,21 @@ __meta__ = {
 
 [node name="in what" type="Label" parent="static_text"]
 margin_left = 7224.0
-margin_top = 480.0
+margin_top = 352.0
 margin_right = 7536.0
-margin_bottom = 562.0
-custom_fonts/font = SubResource( 3 )
+margin_bottom = 434.0
+custom_fonts/font = SubResource( 4 )
 text = "in what "
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CREATE" type="Label" parent="static_text"]
-margin_left = 7928.0
-margin_top = 1296.0
-margin_right = 8399.0
-margin_bottom = 1486.0
-custom_fonts/font = SubResource( 5 )
+margin_left = 7920.0
+margin_top = 1168.0
+margin_right = 8391.0
+margin_bottom = 1358.0
+custom_fonts/font = SubResource( 6 )
 text = "CREATE"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -269,7 +269,7 @@ __meta__ = {
 [node name="appearing_text" type="Node2D" parent="."]
 
 [node name="at_the_foot" parent="appearing_text" instance=ExtResource( 6 )]
-position = Vector2( 1128, -240 )
+position = Vector2( 1144, -240 )
 text = "at the foot"
 fontSize = 60
 
@@ -295,7 +295,7 @@ fontSize = 160
 offset = 250
 
 [node name="I" parent="appearing_text" instance=ExtResource( 6 )]
-position = Vector2( 7488, 632 )
+position = Vector2( 7488, 504 )
 text = "I"
 fontSize = 150
 
@@ -314,7 +314,7 @@ margin_left = 4560.0
 margin_top = 240.0
 margin_right = 5528.0
 margin_bottom = 608.0
-custom_fonts/normal_font = SubResource( 6 )
+custom_fonts/normal_font = SubResource( 7 )
 text = "  Survivors in my"
 script = ExtResource( 3 )
 __meta__ = {
@@ -325,6 +325,6 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="appearing_text/survivors/Area2D"]
 position = Vector2( -8, 152 )
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [connection signal="body_entered" from="appearing_text/survivors/Area2D" to="appearing_text/survivors" method="_on_Area2D_body_entered"]
