@@ -77,7 +77,7 @@ position = Vector2( 0, 16.9514 )
 shape = SubResource( 4 )
 
 [node name="changeScene" type="Area2D" parent="."]
-position = Vector2( 12424, 14960 )
+position = Vector2( 12424, 14816 )
 collision_mask = 513
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="changeScene"]
@@ -94,8 +94,6 @@ __meta__ = {
 }
 
 [node name="eagle" parent="." instance=ExtResource( 1 )]
-
-[node name="eagle2" parent="." instance=ExtResource( 1 )]
 
 [connection signal="body_entered" from="zoomOut" to="." method="_on_zoomOut_body_entered"]
 [connection signal="body_entered" from="zoomIn" to="." method="_on_zoomIn_body_entered"]
