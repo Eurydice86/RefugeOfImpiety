@@ -22,6 +22,12 @@ func _ready():
 	
 	
 func _process(delta):
+	
+#	var img = get_viewport().get_texture().get_data()
+#	img.flip_y()
+#	yield(VisualServer, "frame_post_draw")
+#	img.save_png("D:\\print.png")
+
 	if changeAlpha:
 		if alpha <=1:
 			alpha += delta
