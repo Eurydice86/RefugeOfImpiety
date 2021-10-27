@@ -58,7 +58,7 @@ position = Vector2( 8432, 1896 )
 position = Vector2( 9056, 1904 )
 
 [node name="jumpPoint11" parent="." instance=ExtResource( 5 )]
-position = Vector2( 9504, 1904 )
+position = Vector2( 9760, 1888 )
 
 [node name="explodingTile" parent="." instance=ExtResource( 6 )]
 position = Vector2( 5392, 544 )
