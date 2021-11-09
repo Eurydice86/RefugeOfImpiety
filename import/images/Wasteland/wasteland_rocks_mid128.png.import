@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wasteland_rocks_right.png-4c2fb63c449c769fe9c50473569484ee.stex"
+path="res://.import/wasteland_rocks_mid128.png-8be661164d646beaaed992cf4f3d97dc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/Wasteland/wasteland_rocks_right.png"
-dest_files=[ "res://.import/wasteland_rocks_right.png-4c2fb63c449c769fe9c50473569484ee.stex" ]
+source_file="res://import/images/Wasteland/wasteland_rocks_mid128.png"
+dest_files=[ "res://.import/wasteland_rocks_mid128.png-8be661164d646beaaed992cf4f3d97dc.stex" ]
 
 [params]
 
