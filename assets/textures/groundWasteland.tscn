@@ -67,7 +67,7 @@
 5/texture = ExtResource( 4 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
-5/region = Rect2( 0, 32, 64, 544 )
+5/region = Rect2( 0, 0, 64, 576 )
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
@@ -81,4 +81,3 @@
 [node name="groundWasteland" type="TileMap"]
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 1114187, 0, 0, 1114189, 1, 0, 1114190, 4, 0 )
