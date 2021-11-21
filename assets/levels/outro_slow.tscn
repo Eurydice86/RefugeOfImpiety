@@ -711,9 +711,9 @@ position = Vector2( 14440, -384 )
 position = Vector2( 336, -32 )
 
 [node name="Light2D" type="Light2D" parent="."]
-position = Vector2( 32, 8 )
+position = Vector2( 205.819, 172.818 )
 rotation = -4.2695
-scale = Vector2( 4.74566, 7.24673 )
+scale = Vector2( 7.07145, 10.8043 )
 z_index = -100
 texture = ExtResource( 6 )
 energy = 0.5
