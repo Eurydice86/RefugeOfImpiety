@@ -53,6 +53,10 @@ pause={
  ]
 }
 
+[layer_names]
+
+2d_physics/layer_32="meteorites"
+
 [physics]
 
 common/enable_pause_aware_picking=true
