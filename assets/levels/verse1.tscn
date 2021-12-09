@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/levels/verse1.gd" type="Script" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/textures/tiles/desertTileMap.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -249,9 +248,10 @@ text = "house"
 fontSize = 80
 
 [node name="vices" parent="appearing_text" instance=ExtResource( 6 )]
-position = Vector2( 5952, 208 )
+position = Vector2( 5920, 216 )
 text = "vices"
 fontSize = 80
+offset = 120
 
 [node name="survivors" type="RichTextLabel" parent="appearing_text"]
 margin_left = 4560.0
@@ -270,8 +270,5 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="appearing_text/survivors/Area2D"]
 position = Vector2( -8, 152 )
 shape = SubResource( 8 )
-
-[node name="player" parent="." instance=ExtResource( 7 )]
-position = Vector2( -104, -56 )
 
 [connection signal="body_entered" from="appearing_text/survivors/Area2D" to="appearing_text/survivors" method="_on_Area2D_body_entered"]
