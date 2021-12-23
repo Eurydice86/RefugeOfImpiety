@@ -11,8 +11,6 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
-outline_size = 1
-outline_color = Color( 0.52549, 0.0313726, 0.0313726, 1 )
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -20,7 +18,7 @@ size = 64
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 32
+size = 46
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFontData" id=4]
@@ -52,15 +50,15 @@ __meta__ = {
 }
 
 [node name="price" parent="." instance=ExtResource( 5 )]
-position = Vector2( 600, 48 )
+position = Vector2( 600, -224 )
 text = "PRICE"
 offset = 50
 
 [node name="you_pay_for" type="Label" parent="."]
 margin_left = 960.0
-margin_top = -240.0
+margin_top = 80.0
 margin_right = 1407.0
-margin_bottom = -116.0
+margin_bottom = 204.0
 rect_rotation = -19.847
 theme = ExtResource( 4 )
 text = "you pay for"
@@ -69,15 +67,15 @@ __meta__ = {
 }
 
 [node name="your" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1200, -32 )
+position = Vector2( 1200, -216 )
 text = "your"
 offset = 50
 
 [node name="is_only" type="Label" parent="."]
-margin_left = 2624.0
-margin_top = 432.0
-margin_right = 2804.0
-margin_bottom = 509.0
+margin_left = 2616.0
+margin_top = 488.0
+margin_right = 2796.0
+margin_bottom = 565.0
 custom_fonts/font = SubResource( 1 )
 text = "is only"
 __meta__ = {
@@ -115,7 +113,7 @@ position = Vector2( 2848, 4568 )
 position = Vector2( 2208, 4768 )
 
 [node name="must" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3216, 336 )
+position = Vector2( 3248, 336 )
 text = "must"
 
 [node name="directionChange" parent="." instance=ExtResource( 7 )]
@@ -134,9 +132,9 @@ __meta__ = {
 
 [node name="to_your" type="Label" parent="."]
 margin_left = 3368.0
-margin_top = 4624.0
+margin_top = 4600.0
 margin_right = 3496.0
-margin_bottom = 4666.0
+margin_bottom = 4642.0
 custom_fonts/font = SubResource( 3 )
 text = "to your"
 __meta__ = {
@@ -149,8 +147,9 @@ text = "sweet"
 offset = -180
 
 [node name="perversion" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3120, 4648 )
+position = Vector2( 3072, 4544 )
 text = "perversion"
+fontSize = 120
 offset = -400
 
 [node name="SALVATION" type="RichTextLabel" parent="."]

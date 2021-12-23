@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/levels/bridge2.gd" type="Script" id=1]
 [ext_resource path="res://import/images/whitePixel.png" type="Texture" id=2]
@@ -10,6 +10,25 @@
 [ext_resource path="res://assets/levels/ANNIHILATION.gd" type="Script" id=9]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=10]
 
+[sub_resource type="Animation" id=5]
+length = 0.001
+
+[sub_resource type="Animation" id=6]
+resource_name = "colorRectFadeOut"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1.8025, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
 [sub_resource type="DynamicFont" id=2]
 size = 140
 font_data = ExtResource( 8 )
@@ -17,14 +36,36 @@ font_data = ExtResource( 8 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 33, 320 )
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 6.47192, 5.75281 )
+[sub_resource type="DynamicFont" id=4]
+size = 85
+font_data = ExtResource( 8 )
+
+[sub_resource type="RectangleShape2D" id=7]
 
 [node name="bridge2" type="Node2D"]
 script = ExtResource( 1 )
 
+[node name="colorRectNode" type="Node2D" parent="."]
+position = Vector2( 9632, 1568 )
+z_index = 10
+
+[node name="ColorRect" type="ColorRect" parent="colorRectNode"]
+visible = false
+margin_left = -760.0
+margin_top = -336.0
+margin_right = 1760.0
+margin_bottom = 896.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="colorRectNode"]
+anims/RESET = SubResource( 5 )
+anims/colorRectFadeOut = SubResource( 6 )
+
 [node name="TileMap" parent="." instance=ExtResource( 3 )]
-tile_data = PoolIntArray( -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, 65529, 0, 0, 65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 65592, 0, 0, 65593, 0, 0, 65594, 0, 0, 131125, 0, 0, 131126, 0, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 0, 0, 196655, 0, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 0, 0, 196668, 0, 0, 196669, 0, 0, 196670, 0, 0, 196671, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524357, 0, 0, 524358, 0, 0, 524359, 0, 0, 524360, 0, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 0, 0, 524366, 0, 0, 524367, 0, 0, 524368, 0, 0, 524369, 0, 0, 524370, 0, 0, 524371, 0, 0, 589910, 0, 0, 589911, 0, 0, 589912, 0, 0, 720986, 0, 0, 720987, 0, 0, 720988, 0, 0, 852061, 0, 0, 852062, 0, 0, 852063, 0, 0, 852064, 0, 0, 852065, 0, 0, 852066, 0, 0, 852067, 0, 0, 1638507, 0, 0, 1638508, 0, 0, 1638509, 0, 0, 1638510, 0, 0, 1638511, 0, 0, 1638512, 0, 0, 1638513, 0, 0, 1638514, 0, 0, 1638515, 0, 0, 1638516, 0, 0, 1638517, 0, 0, 1966199, 0, 0, 1966200, 0, 0, 1966201, 0, 0, 1966202, 0, 0, 1966203, 0, 0, 1966204, 0, 0, 1966205, 0, 0, 1966206, 0, 0, 1966207, 0, 0, 1966208, 0, 0, 1966209, 0, 0, 1966210, 0, 0, 1966211, 0, 0, 1966214, 0, 0, 1966215, 0, 0, 1966216, 0, 0, 1966217, 0, 0, 1966218, 0, 0, 1966219, 0, 0, 1966220, 0, 0, 1966221, 0, 0, 1966224, 0, 0, 1966225, 0, 0, 1966226, 0, 0, 1966227, 0, 0, 1966230, 0, 0, 1966231, 0, 0, 1966232, 0, 0, 1966233, 0, 0, 1966234, 0, 0, 1966235, 0, 0, 1966236, 0, 0, 1966237, 0, 0, 1966238, 0, 0, 1966239, 0, 0, 1966240, 0, 0, 1966241, 0, 0, 1966242, 0, 0, 1966243, 0, 0, 1966244, 0, 0, 1966245, 0, 0, 1966246, 0, 0, 1966247, 0, 0, 1966248, 0, 0, 1966249, 0, 0, 1966250, 0, 0, 1966251, 0, 0, 1966252, 0, 0 )
+tile_data = PoolIntArray( -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 65592, 0, 0, 65593, 0, 0, 65594, 0, 0, 131125, 0, 0, 131126, 0, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 0, 0, 196655, 0, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 0, 0, 196668, 0, 0, 196669, 0, 0, 196670, 0, 0, 196671, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524357, 0, 0, 524358, 0, 0, 524359, 0, 0, 524360, 0, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 0, 0, 524366, 0, 0, 524367, 0, 0, 524368, 0, 0, 524369, 0, 0, 524370, 0, 0, 524371, 0, 0, 589910, 0, 0, 589911, 0, 0, 589912, 0, 0, 720986, 0, 0, 720987, 0, 0, 720988, 0, 0, 852061, 0, 0, 852062, 0, 0, 852063, 0, 0, 852064, 0, 0, 852065, 0, 0, 852066, 0, 0, 852067, 0, 0, 1638507, 0, 0, 1638508, 0, 0, 1638509, 0, 0, 1638510, 0, 0, 1638511, 0, 0, 1638512, 0, 0, 1638513, 0, 0, 1638514, 0, 0, 1638515, 0, 0, 1638516, 0, 0, 1638517, 0, 0, 1966199, 0, 0, 1966200, 0, 0, 1966201, 0, 0, 1966202, 0, 0, 1966203, 0, 0, 1966204, 0, 0, 1966205, 0, 0, 1966206, 0, 0, 1966207, 0, 0, 1966208, 0, 0, 1966209, 0, 0, 1966210, 0, 0, 1966211, 0, 0, 1966214, 0, 0, 1966215, 0, 0, 1966216, 0, 0, 1966217, 0, 0, 1966218, 0, 0, 1966219, 0, 0, 1966220, 0, 0, 1966221, 0, 0, 1966224, 0, 0, 1966225, 0, 0, 1966226, 0, 0, 1966227, 0, 0, 1966230, 0, 0, 1966231, 0, 0, 1966232, 0, 0, 1966233, 0, 0, 1966234, 0, 0, 1966235, 0, 0, 1966236, 0, 0, 1966237, 0, 0, 1966238, 0, 0, 1966239, 0, 0, 1966240, 0, 0, 1966241, 0, 0, 1966242, 0, 0, 1966243, 0, 0, 1966244, 0, 0, 1966245, 0, 0, 1966246, 0, 0, 1966247, 0, 0, 1966248, 0, 0, 1966249, 0, 0, 1966250, 0, 0, 1966251, 0, 0, 1966252, 0, 0 )
 
 [node name="i_have_saved_you_from" type="Label" parent="."]
 margin_left = 616.0
@@ -63,22 +104,22 @@ position = Vector2( 2576, 232 )
 text = "and inside this arc"
 
 [node name="I am" parent="." instance=ExtResource( 10 )]
-position = Vector2( 3240, -56 )
+position = Vector2( 3248, 72 )
 text = "I am"
 
 [node name="the" parent="." instance=ExtResource( 10 )]
-position = Vector2( 3480, -112 )
+position = Vector2( 3472, 8 )
 text = "the"
 
 [node name="law" parent="." instance=ExtResource( 10 )]
-position = Vector2( 3696, -216 )
+position = Vector2( 3696, 120 )
 text = "LAW"
 fontSize = 200
 
 [node name="give_in_wholly_to_your" type="RichTextLabel" parent="."]
-margin_left = 4432.0
+margin_left = 4536.0
 margin_top = 344.0
-margin_right = 5160.0
+margin_right = 5264.0
 margin_bottom = 464.0
 theme = ExtResource( 4 )
 text = "give in wholly to your"
@@ -93,18 +134,20 @@ margin_right = 6368.0
 margin_bottom = 536.0
 rect_rotation = -15.0
 theme = ExtResource( 4 )
+custom_fonts/normal_font = SubResource( 4 )
 text = "per"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ver" type="RichTextLabel" parent="."]
-margin_left = 5936.0
-margin_top = 560.0
-margin_right = 6664.0
-margin_bottom = 680.0
+margin_left = 5928.0
+margin_top = 544.0
+margin_right = 6656.0
+margin_bottom = 664.0
 rect_rotation = -15.0
 theme = ExtResource( 4 )
+custom_fonts/normal_font = SubResource( 4 )
 text = "ver"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -112,11 +155,12 @@ __meta__ = {
 
 [node name="sion" type="RichTextLabel" parent="."]
 margin_left = 6168.0
-margin_top = 680.0
+margin_top = 664.0
 margin_right = 6896.0
-margin_bottom = 800.0
+margin_bottom = 784.0
 rect_rotation = -15.0
 theme = ExtResource( 4 )
+custom_fonts/normal_font = SubResource( 4 )
 text = "sion"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -184,12 +228,11 @@ scale = Vector2( 383.25, 239.25 )
 z_index = 5
 texture = ExtResource( 2 )
 
-[node name="change_scene" type="Area2D" parent="."]
-position = Vector2( 10496, 1856 )
-scale = Vector2( 11.125, 11.125 )
+[node name="fadeOut" type="Area2D" parent="."]
+position = Vector2( 9768, 1888 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="change_scene"]
-shape = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fadeOut"]
+shape = SubResource( 7 )
 
 [connection signal="body_entered" from="ANNIHILATION/Area2D" to="ANNIHILATION" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="change_scene" to="." method="_on_change_scene_body_entered"]
+[connection signal="body_entered" from="fadeOut" to="." method="_on_fadeOut_body_entered"]

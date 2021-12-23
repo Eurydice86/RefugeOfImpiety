@@ -21,8 +21,9 @@ func _process(delta):
 	$Sprite.rotation_degrees -= rotatingSpeed * delta
 	$Sprite2.rotation_degrees -= rotatingSpeed * delta
 	if modulateColour:
-		alpha -= alphaSpeed * delta
-		$Sprite.modulate = (Color(1,1,1,alpha))
+		if alpha > 0.25:
+			alpha -= alphaSpeed * delta
+			$Sprite.modulate = (Color(1,1,1,alpha))
 
 
 

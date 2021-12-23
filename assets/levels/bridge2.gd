@@ -9,6 +9,7 @@ export var start = 207.2
 func _ready():
 	#Global.audio.seek(start)
 	#Global.audio.stream_paused = false
+	$colorRectNode/ColorRect.visible = false
 	pass
 
 
@@ -18,3 +19,10 @@ func _on_change_scene_body_entered(body):
 			print ("An unexpected error occured when trying to switch to the Readme scene")
 		else:
 			get_tree().change_scene("res://Part4.tscn")
+
+
+func _on_fadeOut_body_entered(body):
+	$colorRectNode/ColorRect.visible = true
+	$colorRectNode/AnimationPlayer.play("colorRectFadeOut")
+	yield($colorRectNode/AnimationPlayer, "animation_finished")
+	get_tree().change_scene("res://Part4.tscn")

@@ -9,6 +9,7 @@ var alphaDecay = 0.1
 func _ready():
 #	Global.audio.seek(start)
 #	Global.audio.stream_paused = false
+	$fadeIn.play("fadeIn")
 	$CanvasModulate.visible = false
 
  #Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,20 +21,15 @@ func _on_startRunning_body_entered(body):
 		body.walking = false
 		body.running = true
 		$CanvasModulate.visible = false
-		$ColorRect2.queue_free()
-		
 
 
 func _on_stop_moving_body_entered(body):
 	body.walking = false
 	body.running = false
-	$ColorRect2.visible = true
 	$CanvasModulate.visible = true
 	alpha = 1
-	
-	yield(get_tree().create_timer(10.08),"timeout")
+	yield(get_tree().create_timer(10.28),"timeout")
 	body.walking = true
-	$ColorRect2.visible = true
 
 
 func _on_lightningStrike_body_entered(body):
