@@ -13,3 +13,4 @@ position = Vector2( 16128, 8000 )
 position = Vector2( 16256, -320 )
 
 [node name="outro_slow" parent="." instance=ExtResource( 3 )]
+position = Vector2( -8, 0 )

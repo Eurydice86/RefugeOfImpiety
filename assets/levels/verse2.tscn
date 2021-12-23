@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/levels/verse2.gd" type="Script" id=1]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
@@ -29,10 +29,6 @@ extents = Vector2( 16, 48 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 32
-font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=7]
-size = 100
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=8]
@@ -217,7 +213,6 @@ margin_top = 432.0
 margin_right = 6346.0
 margin_bottom = 552.0
 custom_colors/font_color = Color( 0.203922, 0.87451, 0.0705882, 1 )
-custom_fonts/font = SubResource( 7 )
 text = "toxic"
 __meta__ = {
 "_edit_use_anchors_": false
