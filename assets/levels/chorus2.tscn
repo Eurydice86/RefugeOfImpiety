@@ -90,10 +90,10 @@ __meta__ = {
 }
 
 [node name="my door" parent="appearing_text" instance=ExtResource( 7 )]
-position = Vector2( 2136, 56 )
+position = Vector2( 2256, 48 )
 text = "my door"
 fontSize = 120
-offset = 120
+offset = 0
 
 [node name="sins" parent="appearing_text" instance=ExtResource( 7 )]
 position = Vector2( 5232, 1296 )

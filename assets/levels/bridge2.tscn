@@ -99,9 +99,9 @@ __meta__ = {
 position = Vector2( 16, 216 )
 shape = SubResource( 3 )
 
-[node name="and_inside_this_arc" parent="." instance=ExtResource( 10 )]
+[node name="and_inside_this_ark" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2576, 232 )
-text = "and inside this arc"
+text = "and inside this ark"
 
 [node name="I am" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3248, 72 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/levels/verse2.gd" type="Script" id=1]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
@@ -29,6 +29,10 @@ extents = Vector2( 16, 48 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 32
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 64
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=8]
@@ -121,9 +125,10 @@ __meta__ = {
 }
 
 [node name="face of" parent="static_text" instance=ExtResource( 10 )]
-position = Vector2( 3352, 184 )
+position = Vector2( 3320, 184 )
 text = "face of"
 fontSize = 120
+offset = 120
 
 [node name="DEATH" type="Label" parent="static_text"]
 margin_left = 3840.0
@@ -208,11 +213,12 @@ __meta__ = {
 
 [node name="toxic" type="Label" parent="static_text"]
 visible = false
-margin_left = 6152.0
-margin_top = 432.0
-margin_right = 6346.0
-margin_bottom = 552.0
+margin_left = 6104.0
+margin_top = 344.0
+margin_right = 6298.0
+margin_bottom = 464.0
 custom_colors/font_color = Color( 0.203922, 0.87451, 0.0705882, 1 )
+custom_fonts/font = SubResource( 10 )
 text = "toxic"
 __meta__ = {
 "_edit_use_anchors_": false
