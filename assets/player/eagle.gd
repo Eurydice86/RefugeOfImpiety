@@ -50,10 +50,6 @@ func _on_Area2D_body_entered(body):
 		$Camera2D.current = true
 		zooming = 1
 		
-
-func _on_Button_pressed():
-# warning-ignore:return_value_discarded
-	get_tree().change_scene("res://assets/ui/main_menu.tscn")
 	
 func _on_pause_pressed():
 	get_tree().paused = !get_tree().paused
@@ -66,7 +62,6 @@ func _on_Area2D_area_entered(area):
 	elif area.name[0] == "d":
 		$AnimatedSprite.play("soar")
 		$Timer.start()
-		
 
 
 func _on_Timer_timeout():

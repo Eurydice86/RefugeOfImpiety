@@ -8,7 +8,7 @@ var bpm = 0
 
 var modulateColour
 var alpha = 1
-var alphaSpeed = 0.5
+var alphaSpeed = 0.25
 var runSpeed
 
 # Called when the node enters the scene tree for the first time.
