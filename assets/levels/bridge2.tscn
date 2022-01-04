@@ -1,17 +1,15 @@
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/levels/bridge2.gd" type="Script" id=1]
-[ext_resource path="res://import/images/whitePixel.png" type="Texture" id=2]
+[ext_resource path="res://import/images/caveEntrance.png" type="Texture" id=2]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/themes/menu.tres" type="Theme" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/textures/TileMap_rocks.tscn" type="PackedScene" id=7]
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://assets/levels/ANNIHILATION.gd" type="Script" id=9]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=10]
-
-[sub_resource type="Animation" id=5]
-length = 0.001
 
 [sub_resource type="Animation" id=6]
 resource_name = "colorRectFadeOut"
@@ -41,6 +39,7 @@ size = 85
 font_data = ExtResource( 8 )
 
 [sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 37, 33 )
 
 [node name="bridge2" type="Node2D"]
 script = ExtResource( 1 )
@@ -55,13 +54,12 @@ margin_left = -760.0
 margin_top = -336.0
 margin_right = 1760.0
 margin_bottom = 896.0
-color = Color( 0, 0, 0, 1 )
+color = Color( 0, 0, 0, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="colorRectNode"]
-anims/RESET = SubResource( 5 )
 anims/colorRectFadeOut = SubResource( 6 )
 
 [node name="TileMap" parent="." instance=ExtResource( 3 )]
@@ -117,9 +115,9 @@ text = "LAW"
 fontSize = 200
 
 [node name="give_in_wholly_to_your" type="RichTextLabel" parent="."]
-margin_left = 4536.0
+margin_left = 4640.0
 margin_top = 344.0
-margin_right = 5264.0
+margin_right = 5368.0
 margin_bottom = 464.0
 theme = ExtResource( 4 )
 text = "give in wholly to your"
@@ -209,30 +207,26 @@ position = Vector2( 5392, 544 )
 
 [node name="caveEntrance" type="Sprite" parent="."]
 modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 9830, 1824 )
-scale = Vector2( 50.9999, 50.0001 )
-z_index = -1
-texture = ExtResource( 2 )
-
-[node name="caveWall" type="Sprite" parent="."]
-modulate = Color( 0.262745, 0.156863, 0.0705882, 1 )
-position = Vector2( 10555.8, 1505.5 )
-scale = Vector2( 352.625, 207.25 )
-z_index = 5
-texture = ExtResource( 2 )
-
-[node name="caveWall2" type="Sprite" parent="."]
-modulate = Color( 0.262745, 0.156863, 0.0705882, 1 )
-position = Vector2( 10494.5, 1262.5 )
-scale = Vector2( 383.25, 239.25 )
+position = Vector2( 9760, 1672 )
 z_index = 5
 texture = ExtResource( 2 )
 
 [node name="fadeOut" type="Area2D" parent="."]
-position = Vector2( 9768, 1888 )
+position = Vector2( 9632, 1888 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fadeOut"]
+position = Vector2( -27, -23 )
 shape = SubResource( 7 )
+
+[node name="TileMap_rocks" parent="." instance=ExtResource( 7 )]
+position = Vector2( 220, -256 )
+z_index = 5
+tile_data = PoolIntArray( 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, 0, 0 )
+
+[node name="TileMap_rocks2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 220, -256 )
+z_index = -1
+tile_data = PoolIntArray( 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 327715, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, 0, 0 )
 
 [connection signal="body_entered" from="ANNIHILATION/Area2D" to="ANNIHILATION" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="fadeOut" to="." method="_on_fadeOut_body_entered"]

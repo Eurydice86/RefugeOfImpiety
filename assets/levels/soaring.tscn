@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/textures/eagleTurn.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 64, 352 )
+extents = Vector2( 92, 352 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 64, 64 )
@@ -43,6 +43,7 @@ forceStrength = 0.8
 position = Vector2( 11064, -6784 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dive"]
+position = Vector2( -28, 0 )
 shape = SubResource( 1 )
 
 [node name="eagleTurn4" parent="." instance=ExtResource( 4 )]
