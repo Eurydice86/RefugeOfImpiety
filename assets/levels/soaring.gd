@@ -23,6 +23,10 @@ func _ready():
 	
 func _process(delta):
 	
+#	To export the mountain in real size, Add a Camera2D with zoom(30,30),
+#	uncomment the following lines and resize the exported png my 3000%
+#	without any antialiasing in IrfanView
+
 #	var img = get_viewport().get_texture().get_data()
 #	img.flip_y()
 #	yield(VisualServer, "frame_post_draw")

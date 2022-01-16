@@ -46,6 +46,13 @@ func _on_trigger_body_entered(body):
 		$Sprite.position = updatedPosition
 		$Sprite.visible = true
 		velocity = Vector2(offset,0) - updatedPosition
+		
+		var bodyChildren = body.get_children()
+		for c in bodyChildren:
+			if c.name == "Camera2D":
+				yield(get_tree().create_timer(.4), "timeout")
+				var z = randf()
+				c.trauma = 1
 
 
 

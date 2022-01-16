@@ -29,6 +29,8 @@ tracks/0/keys = {
 
 [sub_resource type="DynamicFont" id=2]
 size = 140
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 8 )
 
 [sub_resource type="RectangleShape2D" id=3]
