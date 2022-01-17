@@ -9,10 +9,14 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 60
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="RectangleShape2D" id=3]
@@ -91,7 +95,7 @@ __meta__ = {
 }
 
 [node name="my door" parent="appearing_text" instance=ExtResource( 7 )]
-position = Vector2( 2256, 48 )
+position = Vector2( 2256, -8 )
 text = "my door"
 fontSize = 120
 offset = 0
@@ -105,7 +109,7 @@ position = Vector2( 5808, 1176 )
 text = "let me"
 
 [node name="hear_you_roar" parent="appearing_text" instance=ExtResource( 7 )]
-position = Vector2( 6312, 1152 )
+position = Vector2( 6296, 1120 )
 text = "hear you roar"
 
 [node name="jumpPoint" parent="." instance=ExtResource( 5 )]

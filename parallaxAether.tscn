@@ -16,6 +16,14 @@ z_index = -50
 motion_scale = Vector2( 0.9, 0.9 )
 motion_mirroring = Vector2( 1920, 1080 )
 
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground/stars1"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/stars1"]
 texture = ExtResource( 2 )
 centered = false

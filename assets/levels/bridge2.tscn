@@ -38,6 +38,8 @@ extents = Vector2( 33, 320 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 85
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 8 )
 
 [sub_resource type="RectangleShape2D" id=7]
@@ -104,7 +106,7 @@ position = Vector2( 2576, 232 )
 text = "and inside this ark"
 
 [node name="I am" parent="." instance=ExtResource( 10 )]
-position = Vector2( 3248, 72 )
+position = Vector2( 3272, 72 )
 text = "I am"
 
 [node name="the" parent="." instance=ExtResource( 10 )]
@@ -167,7 +169,7 @@ __meta__ = {
 }
 
 [node name="sweet" parent="." instance=ExtResource( 10 )]
-position = Vector2( 5304, 352 )
+position = Vector2( 5304, 248 )
 text = "sweet"
 offset = 80
 
