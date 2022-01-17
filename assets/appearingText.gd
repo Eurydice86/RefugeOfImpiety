@@ -11,6 +11,8 @@ func _ready():
 	$Label.margin_left = offset
 	font.font_data = load("res://import/fonts/Dark Mage.ttf")
 	font.size = fontSize
+	font.outline_color = Color(0,0,0)
+	font.outline_size = 1
 	$Label.set("custom_fonts/font", font)
 	$Label.visible = false
 	$Label.text = text
