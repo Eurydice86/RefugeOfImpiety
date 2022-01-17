@@ -37,7 +37,8 @@ func _on_trigger_body_entered(body):
 	if body.name == "player":
 		var wantedHeight = 500
 		# pick a random angle between -45 and 45 degrees (zero is the y-axis)
-		var theta = randf()*PI/2 - PI/4
+		#var theta = randf()*PI/2 - PI/4
+		var theta = PI + PI/4
 		var y = -cos(theta)
 		var scaling = -wantedHeight / y
 		y = scaling * y
