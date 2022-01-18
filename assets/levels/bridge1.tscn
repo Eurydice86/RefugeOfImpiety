@@ -9,28 +9,38 @@
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://assets/ui/appearingText_left.tscn" type="PackedScene" id=9]
 
-[sub_resource type="DynamicFont" id=1]
-size = 64
-font_data = ExtResource( 8 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 64
-font_data = ExtResource( 8 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 46
-font_data = ExtResource( 8 )
-
 [sub_resource type="DynamicFontData" id=4]
 font_path = "res://import/fonts/Dark Mage.ttf"
 
 [sub_resource type="DynamicFont" id=5]
 size = 160
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 250
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 46
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
 
 [node name="bridge1" type="Node2D"]
 script = ExtResource( 3 )
@@ -70,6 +80,17 @@ __meta__ = {
 position = Vector2( 1200, -216 )
 text = "your"
 offset = 50
+
+[node name="SALVATION" type="RichTextLabel" parent="."]
+margin_left = 1544.0
+margin_top = -240.0
+margin_right = 2304.0
+margin_bottom = 112.0
+custom_fonts/normal_font = SubResource( 5 )
+text = "SALVATION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="is_only" type="Label" parent="."]
 margin_left = 2616.0
@@ -116,6 +137,22 @@ position = Vector2( 2208, 4768 )
 position = Vector2( 3248, 336 )
 text = "must"
 
+[node name="LET GO" type="RichTextLabel" parent="."]
+margin_left = 3672.0
+margin_top = 344.0
+margin_right = 4432.0
+margin_bottom = 2160.0
+custom_fonts/normal_font = SubResource( 6 )
+text = "L
+ E
+  T
+
+    G
+     O"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="directionChange" parent="." instance=ExtResource( 7 )]
 position = Vector2( 4336, 4400 )
 
@@ -151,30 +188,3 @@ position = Vector2( 3072, 4544 )
 text = "perversion"
 fontSize = 120
 offset = -400
-
-[node name="SALVATION" type="RichTextLabel" parent="."]
-margin_left = 1544.0
-margin_top = -240.0
-margin_right = 2304.0
-margin_bottom = 112.0
-custom_fonts/normal_font = SubResource( 5 )
-text = "SALVATION"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="LET GO" type="RichTextLabel" parent="."]
-margin_left = 3672.0
-margin_top = 344.0
-margin_right = 4432.0
-margin_bottom = 2160.0
-custom_fonts/normal_font = SubResource( 6 )
-text = "L
- E
-  T
-
-    G
-     O"
-__meta__ = {
-"_edit_use_anchors_": false
-}
