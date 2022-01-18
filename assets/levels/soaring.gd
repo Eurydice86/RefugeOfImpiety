@@ -17,8 +17,8 @@ func _ready():
 
 #	Global.audio.seek(start)
 #	Global.audio.stream_paused = false
-	$ColorRect.visible = true
-	$ColorRect.color = Color(1, 1, 1, alpha)
+	$Node2D/ColorRect.visible = true
+	$Node2D/ColorRect.color = Color(1, 1, 1, alpha)
 	
 	
 func _process(delta):
@@ -35,7 +35,7 @@ func _process(delta):
 	if changeAlpha:
 		if alpha <=1:
 			alpha += delta
-	$ColorRect.color = Color(1, 1, 1, alpha)
+	$Node2D/ColorRect.color = Color(1, 1, 1, alpha)
 
 
 func _on_zoomOut_body_entered(body):

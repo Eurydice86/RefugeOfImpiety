@@ -8,6 +8,7 @@ var mtr = preload("res://assets/textures/meteorLine.tscn")
 
 var meteors = []
 export var amount = 10
+export var maxSpeed = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

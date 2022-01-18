@@ -86,12 +86,14 @@ collision_mask = 513
 [node name="CollisionShape2D" type="CollisionShape2D" parent="changeScene"]
 shape = SubResource( 5 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( -1111, -6221 )
+z_index = 1000
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
 visible = false
-margin_left = -1111.0
-margin_top = -6221.0
-margin_right = 19767.0
-margin_bottom = 25695.0
+margin_right = 20878.0
+margin_bottom = 31916.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
