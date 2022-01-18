@@ -30,4 +30,4 @@ position = Vector2( 64, 0 )
 [node name="ParallaxWasteland" parent="." instance=ExtResource( 3 )]
 
 [node name="player" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4784, 1296 )
+position = Vector2( 4880, 1296 )

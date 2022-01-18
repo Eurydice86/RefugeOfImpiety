@@ -6,7 +6,6 @@ extends Node2D
 # var b = "text"
 
 var velocity = Vector2(0,0)
-var rotationSpeed
 export var offset = -1
 
 
@@ -14,8 +13,7 @@ export var offset = -1
 func _ready():
 	$AnimatedSprite.visible = false
 	$AnimatedSprite.stop()
-	rotationSpeed = 2*PI*randf() - PI
-	$Sprite.visible = false
+	$meteorAnimatedSprite.visible = false
 	if offset == -1:
 		offset = randi()%600 - 300
 	pass # Replace with function body.
@@ -26,8 +24,7 @@ func _ready():
 #	pass
 
 func _process(delta):
-	$Sprite.position += velocity * 3 * delta
-	$Sprite.rotation_degrees += rotationSpeed*delta
+	$meteorAnimatedSprite.position += velocity * 3 * delta
 	if velocity.length() > 0:
 		velocity += Vector2(0,100*delta)
 	pass
@@ -44,8 +41,8 @@ func _on_trigger_body_entered(body):
 		y = scaling * y
 		var x = scaling * sin(theta)
 		var updatedPosition = Vector2(x,y)
-		$Sprite.position = updatedPosition
-		$Sprite.visible = true
+		$meteorAnimatedSprite.position = updatedPosition
+		$meteorAnimatedSprite.visible = true
 		velocity = Vector2(offset,0) - updatedPosition
 		
 		var bodyChildren = body.get_children()
@@ -65,8 +62,8 @@ func _on_trigger_mouse_entered():
 	y = scaling * y
 	var x = scaling * sin(theta)
 	var updatedPosition = Vector2(x,y)
-	$Sprite.position = updatedPosition
-	$Sprite.visible = true
+	$meteorAnimatedSprite.position = updatedPosition
+	$meteorAnimatedSprite.visible = true
 	velocity = Vector2(offset,0) - updatedPosition
 	
 	$Line2D.add_point(Vector2(0,0))
@@ -74,8 +71,8 @@ func _on_trigger_mouse_entered():
 
 
 func _on_Area2D_body_entered(body):
-	$Sprite.visible = false
-	$AnimatedSprite.position = Vector2(offset,0)
+	$meteorAnimatedSprite.visible = false
+	$AnimatedSprite.position = Vector2(offset,32)
 	$AnimatedSprite.visible = true
 	$AnimatedSprite.set_frame(0)
 	$AnimatedSprite.play()

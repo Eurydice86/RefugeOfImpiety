@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	maxSize = 100/get_parent().speed + 30
-	width = get_parent().speed / 5
+	width = get_parent().speed
 	point = get_parent().pos
 	add_point(point)
 	if points.size() >maxSize:
