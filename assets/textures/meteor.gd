@@ -11,8 +11,8 @@ export var offset = -1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$AnimatedSprite.visible = false
-	$AnimatedSprite.stop()
+	$explosionAnimatedSprite.visible = false
+	$explosionAnimatedSprite.stop()
 	$meteorAnimatedSprite.visible = false
 	if offset == -1:
 		offset = randi()%600 - 300
@@ -72,10 +72,10 @@ func _on_trigger_mouse_entered():
 
 func _on_Area2D_body_entered(body):
 	$meteorAnimatedSprite.visible = false
-	$AnimatedSprite.position = Vector2(offset,32)
-	$AnimatedSprite.visible = true
-	$AnimatedSprite.set_frame(0)
-	$AnimatedSprite.play()
+	$explosionAnimatedSprite.position = Vector2(offset,32)
+	$explosionAnimatedSprite.visible = true
+	$explosionAnimatedSprite.set_frame(0)
+	$explosionAnimatedSprite.play()
 
 
 func _on_AnimatedSprite_animation_finished():
