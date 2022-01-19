@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/levels/verse1.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/textures/tiles/desertTileMap.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -80,7 +81,7 @@ position = Vector2( 5464, 415.663 )
 position = Vector2( 5673.05, 349.39 )
 
 [node name="jumpPoint9" parent="jumpPoints" instance=ExtResource( 5 )]
-position = Vector2( 5880, 296 )
+position = Vector2( 5888, 296 )
 
 [node name="jumpPoint8" parent="jumpPoints" instance=ExtResource( 5 )]
 position = Vector2( 7440, 488 )
@@ -280,5 +281,8 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="appearing_text/survivors/Area2D"]
 position = Vector2( -8, 152 )
 shape = SubResource( 8 )
+
+[node name="player" parent="." instance=ExtResource( 7 )]
+position = Vector2( -48, -56 )
 
 [connection signal="body_entered" from="appearing_text/survivors/Area2D" to="appearing_text/survivors" method="_on_Area2D_body_entered"]
