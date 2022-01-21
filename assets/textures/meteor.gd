@@ -78,5 +78,5 @@ func _on_Area2D_body_entered(body):
 	$explosionAnimatedSprite.play()
 
 
-func _on_AnimatedSprite_animation_finished():
+func _on_explosionAnimatedSprite_animation_finished():
 	queue_free()

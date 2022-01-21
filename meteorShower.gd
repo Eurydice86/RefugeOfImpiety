@@ -1,14 +1,11 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var mtr = preload("res://assets/textures/meteorLine.tscn")
+#var mtr = preload("res://assets/textures/Meteorite.tscn")
 
 var meteors = []
 export var amount = 10
-export var maxSpeed = 1
+export var maxSpeed = 500
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,6 +18,6 @@ func _process(delta):
 		add_child(newMtr)
 		meteors.append(newMtr)
 	for m in meteors:
-		if m.pos.y > 1300:
+		if m.position.y > 1300:
 			meteors.erase(m)
 
