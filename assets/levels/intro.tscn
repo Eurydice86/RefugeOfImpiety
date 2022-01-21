@@ -142,18 +142,6 @@ position = Vector2( 12720, -32 )
 position = Vector2( 12848, -32 )
 offset = 0
 
-[node name="meteor30" parent="meteorites" instance=ExtResource( 5 )]
-position = Vector2( 12848, -32 )
-offset = 0
-
-[node name="meteor31" parent="meteorites" instance=ExtResource( 5 )]
-position = Vector2( 12848, -32 )
-offset = 0
-
-[node name="meteor32" parent="meteorites" instance=ExtResource( 5 )]
-position = Vector2( 12848, -32 )
-offset = 0
-
 [node name="meteor33" parent="meteorites" instance=ExtResource( 5 )]
 position = Vector2( 16928, 928 )
 offset = 0

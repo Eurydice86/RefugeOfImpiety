@@ -11,10 +11,12 @@
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="sky" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 0, 1000 )
 motion_scale = Vector2( 0, 0 )
 motion_mirroring = Vector2( 3840, 0 )
 
 [node name="skySprite" type="Sprite" parent="ParallaxBackground/sky"]
+position = Vector2( 0, -500 )
 texture = ExtResource( 3 )
 centered = false
 offset = Vector2( 0, -1700 )
@@ -24,35 +26,37 @@ motion_scale = Vector2( 0.03, 0.03 )
 motion_mirroring = Vector2( 3840, 0 )
 
 [node name="farRocksSprite" type="Sprite" parent="ParallaxBackground/far_rocks"]
+position = Vector2( 0, 100 )
 texture = ExtResource( 2 )
 centered = false
 offset = Vector2( 0, -1150 )
 
 [node name="meteorShowerFar" parent="ParallaxBackground/far_rocks/farRocksSprite" instance=ExtResource( 5 )]
 position = Vector2( 0, -500 )
-amount = 50
+amount = 40
 
 [node name="sand_middle" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.1, 0.1 )
 motion_mirroring = Vector2( 3840, 0 )
 
 [node name="sand_middle" type="Sprite" parent="ParallaxBackground/sand_middle"]
+position = Vector2( 0, -1700 )
 texture = ExtResource( 1 )
 centered = false
-offset = Vector2( 0, -1000 )
 
 [node name="front_rocks" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.5, 0.15 )
 motion_mirroring = Vector2( 3840, 0 )
 
 [node name="front_rocks" type="Sprite" parent="ParallaxBackground/front_rocks"]
+position = Vector2( 0, -1350 )
 texture = ExtResource( 4 )
 centered = false
 offset = Vector2( 0, 1000 )
 
 [node name="meteorShowerMiddle" parent="ParallaxBackground/front_rocks" instance=ExtResource( 5 )]
 position = Vector2( 0, -500 )
-amount = 5
+amount = 4
 maxSpeed = 10
 
 [node name="ParallaxForeground" type="ParallaxBackground" parent="."]
@@ -63,5 +67,5 @@ motion_scale = Vector2( 1.5, 1.5 )
 motion_mirroring = Vector2( 3840, 0 )
 
 [node name="meteorShower" parent="ParallaxForeground/ParallaxLayer" instance=ExtResource( 5 )]
-amount = 1
+amount = 2
 maxSpeed = 30

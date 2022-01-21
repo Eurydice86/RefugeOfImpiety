@@ -16,7 +16,9 @@ func _ready():
 	pos = Vector2(randi()%1920*2+200,-(randi() %200))
 	angle = PI - PI/4
 	speed = randf() * 2 * maxSpeed + maxSpeed
+	var width = speed / 25
 	velocity = speed * Vector2(cos(angle), sin(angle))
+	$AnimatedSprite.scale = Vector2(width, width)
 	if pos.y > 1300:
 		queue_free()
 		
