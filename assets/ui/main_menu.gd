@@ -6,9 +6,5 @@ func _ready():
 	pass # Replace with function body.
 
 
-func _on_exit_pressed():
-	get_tree().quit()
-
-func _on_levelSelect_pressed():
-# warning-ignore:return_value_discarded
-	get_tree().change_scene("res://assets/ui/level_select.tscn")
+func _on_Start_button_up():
+	get_tree().change_scene("res://Part1.tscn")

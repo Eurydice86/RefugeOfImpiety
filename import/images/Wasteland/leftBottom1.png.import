@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileset_mountain_tiles.png-b9857d08aab4e760571dde52c5ed7ee9.stex"
+path="res://.import/leftBottom1.png-b8e674add6c51349723131804c45762a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/tiles/mountain_tiles/tileset_mountain_tiles.png"
-dest_files=[ "res://.import/tileset_mountain_tiles.png-b9857d08aab4e760571dde52c5ed7ee9.stex" ]
+source_file="res://import/images/Wasteland/leftBottom1.png"
+dest_files=[ "res://.import/leftBottom1.png-b8e674add6c51349723131804c45762a.stex" ]
 
 [params]
 

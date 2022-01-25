@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mountain.png-11d673138507e8c01e04deee50e6eb2f.stex"
+path="res://.import/leftBottom3.png-1c4c1691be8f86f4e6d89032e985c280.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/tiles/mountain.png"
-dest_files=[ "res://.import/mountain.png-11d673138507e8c01e04deee50e6eb2f.stex" ]
+source_file="res://import/images/Wasteland/leftBottom3.png"
+dest_files=[ "res://.import/leftBottom3.png-1c4c1691be8f86f4e6d89032e985c280.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

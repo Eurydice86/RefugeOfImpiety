@@ -1,7 +1,6 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/textures/meteor.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/levels/chorus1.gd" type="Script" id=3]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=6]
@@ -145,13 +144,6 @@ position = Vector2( 5720, 4192 )
 
 [node name="jumpPoint6" parent="control_points" instance=ExtResource( 4 )]
 position = Vector2( 6320, 4128 )
-
-[node name="meteor" parent="control_points" instance=ExtResource( 2 )]
-position = Vector2( 2288, 1760 )
-
-[node name="meteor2" parent="control_points" instance=ExtResource( 2 )]
-position = Vector2( 4336, 3968 )
-scale = Vector2( 2, 2 )
 
 [node name="start_eagle" type="Area2D" parent="control_points"]
 position = Vector2( 6480, 4072 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/indoorsTiles.png-15eacffa898132ca02a635a2613eaa39.stex"
+path="res://.import/waste_mountain_layout_scaled.png-9d3c33b26a3aa54a4f86e451682296d9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/tiles/indoorsTiles.png"
-dest_files=[ "res://.import/indoorsTiles.png-15eacffa898132ca02a635a2613eaa39.stex" ]
+source_file="res://import/images/Wasteland/waste_mountain_layout_scaled.png"
+dest_files=[ "res://.import/waste_mountain_layout_scaled.png-9d3c33b26a3aa54a4f86e451682296d9.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
