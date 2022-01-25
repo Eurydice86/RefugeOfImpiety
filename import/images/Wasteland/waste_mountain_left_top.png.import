@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trail.png-7113367003db0b4670eb877791d361ba.stex"
+path="res://.import/waste_mountain_left_top.png-cb26796e22fd5b09647bc0ac57aa4ff0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/meteors/trail.png"
-dest_files=[ "res://.import/trail.png-7113367003db0b4670eb877791d361ba.stex" ]
+source_file="res://import/images/Wasteland/waste_mountain_left_top.png"
+dest_files=[ "res://.import/waste_mountain_left_top.png-cb26796e22fd5b09647bc0ac57aa4ff0.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

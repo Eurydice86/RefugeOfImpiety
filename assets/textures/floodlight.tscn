@@ -13,8 +13,8 @@ script = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Light2D" type="Light2D" parent="."]
-position = Vector2( 0, 4 )
-scale = Vector2( 1, 2.0625 )
+position = Vector2( 0, -112 )
+scale = Vector2( 1, 3.875 )
 texture = ExtResource( 1 )
 range_layer_max = 128
 shadow_enabled = true

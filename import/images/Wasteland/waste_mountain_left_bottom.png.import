@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stoneBridgeFooting.png-7cb669b22b7b40cb589b6c1b81958c87.stex"
+path="res://.import/waste_mountain_left_bottom.png-ae8ef065eab8030924ca6c0ea02ae81a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/sprites/stoneBridgeFooting.png"
-dest_files=[ "res://.import/stoneBridgeFooting.png-7cb669b22b7b40cb589b6c1b81958c87.stex" ]
+source_file="res://import/images/Wasteland/waste_mountain_left_bottom.png"
+dest_files=[ "res://.import/waste_mountain_left_bottom.png-ae8ef065eab8030924ca6c0ea02ae81a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

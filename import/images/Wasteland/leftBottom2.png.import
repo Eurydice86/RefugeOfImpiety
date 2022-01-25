@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/effect_3.png-89e47c372ccc2f914811976f562d5cb5.stex"
+path="res://.import/leftBottom2.png-af0c4643d3eb9134149c55e81f32820f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/meteors/effect_3.png"
-dest_files=[ "res://.import/effect_3.png-89e47c372ccc2f914811976f562d5cb5.stex" ]
+source_file="res://import/images/Wasteland/leftBottom2.png"
+dest_files=[ "res://.import/leftBottom2.png-af0c4643d3eb9134149c55e81f32820f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

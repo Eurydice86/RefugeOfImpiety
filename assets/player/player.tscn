@@ -106,25 +106,25 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
-"loop": true,
-"name": "run",
-"speed": 12.0
-}, {
 "frames": [ ExtResource( 19 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "jump",
 "speed": 12.0
 }, {
-"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
 "loop": true,
-"name": "walk",
-"speed": 8.0
+"name": "run",
+"speed": 12.0
 }, {
 "frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "fall",
 "speed": 10.0
+}, {
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "walk",
+"speed": 8.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=23]
@@ -138,7 +138,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 22 )
 animation = "run"
-frame = 6
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
