@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/levels/bridge2.gd" type="Script" id=1]
 [ext_resource path="res://import/images/caveEntrance.png" type="Texture" id=2]
@@ -10,7 +10,6 @@
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://assets/ui/ANNIHILATION.gd" type="Script" id=9]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=10]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=11]
 
 [sub_resource type="Animation" id=6]
 resource_name = "colorRectFadeOut"
@@ -184,10 +183,10 @@ position = Vector2( 2579.87, 209.786 )
 position = Vector2( 3296, 160 )
 
 [node name="jumpPoint4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3504, 112 )
+position = Vector2( 3512, 112 )
 
 [node name="jumpPoint5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3712, 42 )
+position = Vector2( 3720, 42 )
 
 [node name="jumpPoint6" parent="." instance=ExtResource( 5 )]
 position = Vector2( 5352, 488 )
@@ -232,9 +231,6 @@ tile_data = PoolIntArray( 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0
 position = Vector2( 220, -256 )
 z_index = -1
 tile_data = PoolIntArray( 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 327715, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, 0, 0 )
-
-[node name="player" parent="." instance=ExtResource( 11 )]
-position = Vector2( 432, -64 )
 
 [connection signal="body_entered" from="ANNIHILATION/Area2D" to="ANNIHILATION" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="fadeOut" to="." method="_on_fadeOut_body_entered"]
