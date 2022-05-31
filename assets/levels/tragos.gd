@@ -16,3 +16,9 @@ func _on_stop_moving_body_entered(body):
 	if body.name == "player":
 		body.walking = false
 		body.running = false
+
+
+func _on_start_walking_body_entered(body):
+	if body.name == "player":
+		body.walking = true
+		body.running = false
