@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/levels/intro.tscn" type="PackedScene" id=2]
@@ -8,10 +8,15 @@
 [ext_resource path="res://assets/levels/chorus1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Part1.gd" type="Script" id=7]
 [ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=8]
+[ext_resource path="res://cache_loading.gd" type="Script" id=9]
+[ext_resource path="res://assets/textures/meteor_shower.tscn" type="PackedScene" id=10]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -224, -96 )
 script = ExtResource( 7 )
+
+[node name="cache" type="Node" parent="."]
+script = ExtResource( 9 )
 
 [node name="soaring" parent="." instance=ExtResource( 5 )]
 position = Vector2( 39928, 9600 )
@@ -31,5 +36,8 @@ tile_data = PoolIntArray( 1179723, 0, 0 )
 
 [node name="ParallaxWasteland" parent="." instance=ExtResource( 3 )]
 
+[node name="meteor_shower" parent="." instance=ExtResource( 10 )]
+position = Vector2( 4896, 1288 )
+
 [node name="player" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4896, 1296 )
+position = Vector2( 4896, 1288 )

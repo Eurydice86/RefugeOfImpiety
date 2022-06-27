@@ -5,8 +5,11 @@ export (int) var jumpSpeed = -512
 export (float) var gravity = 1200
 export (int) var tilesPerSec = 2
 
+var counter = 0 
+
 export var tileWidth = 64
 export var tileHeight = 64
+
 
 var direction = 1
 var running
@@ -18,7 +21,7 @@ var jumping = false
 func _ready():
 	running = true
 	walking = false
-	var bpm = get_parent().bpm
+	var bpm = Global.bpm
 	var secondsPerBeat
 	if bpm>0:
 		secondsPerBeat = 60.0 / bpm
@@ -46,7 +49,7 @@ func get_input():
 		else:
 			$AnimatedSprite.play("idle")
 	else:
-		if velocity.y >= 0 :
+		if velocity.y >= 0:
 			$AnimatedSprite.play("fall")
 		else:
 			$AnimatedSprite.play("jump")
@@ -63,11 +66,21 @@ func _on_Area2D_area_entered(area):
 	if area.name[0] == "j" and is_on_floor():
 		velocity.y = jumpSpeed
 	elif area.name[0] == "c":
-		Global.indoorsLightColor = pickRandomColor()
+		if area.name[1] == "a":
+			$Camera2D.trauma = area.trauma
+		elif area.name[1] == "o":
+			Global.indoorsLightColor = pickRandomColor()
 	elif area.name[0] == "d":
 		direction *= -1
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 
+func _process(_delta):
+	counter += 1
+	if counter == 1000:
+		counter = 0
+		print(position)
+		print(get_node("./meteor_shower").position)
+	
 
 func _on_pause_pressed():
 	get_tree().paused = !get_tree().paused

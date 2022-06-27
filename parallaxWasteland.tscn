@@ -1,9 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://import/images/Wasteland/front_dunes.png" type="Texture" id=1]
 [ext_resource path="res://import/images/Wasteland/far_rocks_plus_sand.png" type="Texture" id=2]
 [ext_resource path="res://import/images/Wasteland/Sky.png" type="Texture" id=3]
-[ext_resource path="res://import/images/Wasteland/front_rocks.png" type="Texture" id=4]
 
 [node name="ParallaxWasteland" type="Node2D"]
 
@@ -30,30 +28,9 @@ texture = ExtResource( 2 )
 centered = false
 offset = Vector2( 0, -1150 )
 
-[node name="sand_middle" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.1, 0.1 )
-motion_mirroring = Vector2( 3840, 0 )
-
-[node name="sand_middle" type="Sprite" parent="ParallaxBackground/sand_middle"]
-visible = false
-position = Vector2( 0, -1700 )
-texture = ExtResource( 1 )
-centered = false
-
-[node name="front_rocks" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.5, 0.15 )
-motion_mirroring = Vector2( 3840, 0 )
-
-[node name="front_rocks" type="Sprite" parent="ParallaxBackground/front_rocks"]
-visible = false
-position = Vector2( 0, -1350 )
-texture = ExtResource( 4 )
-centered = false
-offset = Vector2( 0, 1000 )
-
 [node name="ParallaxForeground" type="ParallaxBackground" parent="."]
 layer = 100
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxForeground"]
-motion_scale = Vector2( 1.5, 1.5 )
+z_index = 10
 motion_mirroring = Vector2( 3840, 0 )
