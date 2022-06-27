@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/textures/groundWasteland.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/levels/intro.gd" type="Script" id=2]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/textures/camera_shake.tscn" type="PackedScene" id=5]
 
 [node name="intro" type="Node2D"]
 position = Vector2( 4752, 1328 )
@@ -52,3 +53,97 @@ position = Vector2( 19992, 1824 )
 
 [node name="jumpPoint12" parent="jumpPoints" instance=ExtResource( 4 )]
 position = Vector2( 20376, 1832 )
+
+[node name="camera_shake_points" type="Node2D" parent="."]
+
+[node name="camera_shake" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 4768, -40 )
+
+[node name="camera_shake2" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 5792, -40 )
+
+[node name="camera_shake3" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 6816, -40 )
+
+[node name="camera_shake4" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 7840, -32 )
+
+[node name="camera_shake5" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 8864, -40 )
+
+[node name="camera_shake6" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 9888, -40 )
+
+[node name="camera_shake7" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 10912, -48 )
+
+[node name="camera_shake8" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11936, -48 )
+
+[node name="camera_shake26" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 12064, -48 )
+
+[node name="camera_shake9" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 9120, -40 )
+
+[node name="camera_shake10" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 10144, -40 )
+
+[node name="camera_shake11" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11168, -48 )
+
+[node name="camera_shake12" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 12192, -48 )
+
+[node name="camera_shake27" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 12320, -48 )
+
+[node name="camera_shake13" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 9376, -40 )
+
+[node name="camera_shake14" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 10400, -48 )
+
+[node name="camera_shake15" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11424, -48 )
+
+[node name="camera_shake16" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 12448, -48 )
+
+[node name="camera_shake28" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 12576, -48 )
+
+[node name="camera_shake17" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 9632, -40 )
+
+[node name="camera_shake18" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 10656, -48 )
+
+[node name="camera_shake21" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 10784, -48 )
+
+[node name="camera_shake22" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11040, -48 )
+
+[node name="camera_shake23" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11296, -48 )
+
+[node name="camera_shake24" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11552, -48 )
+
+[node name="camera_shake19" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11680, -48 )
+
+[node name="camera_shake25" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 11808, -48 )
+
+[node name="camera_shake20" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 12704, -48 )
+
+[node name="camera_shake29" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 12816, -40 )
+trauma = 1.1
+
+[node name="camera_shake30" parent="camera_shake_points" instance=ExtResource( 5 )]
+position = Vector2( 16920, 928 )
+trauma = 1.1
