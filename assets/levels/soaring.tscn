@@ -18,7 +18,7 @@ extents = Vector2( 64, 64 )
 extents = Vector2( 100, 100 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 1808.63, 133.128 )
+extents = Vector2( 5886.46, 133.128 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 3428, 75.2598 )
@@ -80,6 +80,7 @@ position = Vector2( 12787.7, 7944 )
 collision_mask = 513
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="flashStart"]
+position = Vector2( 4077.83, 0 )
 shape = SubResource( 4 )
 
 [node name="changeScene" type="Area2D" parent="."]
@@ -87,7 +88,7 @@ position = Vector2( 13416, 14368 )
 collision_mask = 513
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="changeScene"]
-position = Vector2( 756, -19.2598 )
+position = Vector2( 3981, 4456 )
 shape = SubResource( 5 )
 
 [node name="Node2D" type="Node2D" parent="."]

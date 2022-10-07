@@ -79,7 +79,7 @@ func _process(_delta):
 	if counter == 1000:
 		counter = 0
 		print(position)
-		print(get_node("./meteor_shower").position)
+		#print(get_node("./meteor_shower").position)
 	
 
 func _on_pause_pressed():
