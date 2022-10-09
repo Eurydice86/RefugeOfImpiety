@@ -13,7 +13,8 @@ motion_scale = Vector2( 0, 0 )
 motion_mirroring = Vector2( 3840, 0 )
 
 [node name="skySprite" type="Sprite" parent="ParallaxBackground/sky"]
-position = Vector2( 0, -500 )
+position = Vector2( 0, -1052.81 )
+scale = Vector2( 1, 0.674815 )
 texture = ExtResource( 3 )
 centered = false
 offset = Vector2( 0, -1700 )
