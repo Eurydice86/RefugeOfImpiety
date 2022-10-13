@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/levels/roaring.gd" type="Script" id=1]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=2]
@@ -6,10 +6,15 @@
 [ext_resource path="res://assets/textures/waterfall.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/textures/Rock Ledges Tilemap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://import/images/mountains/waterfall_rock.png" type="Texture" id=8]
 
 [node name="roaring" type="Node2D"]
 script = ExtResource( 1 )
+
+[node name="Rock Ledges Tilemap" parent="." instance=ExtResource( 7 )]
+position = Vector2( 0, -16 )
+tile_data = PoolIntArray( -196511, 0, 0, -196509, 0, 0, -196507, 0, 0, -196505, 0, 0, -196503, 0, 0, -196501, 0, 0, -196499, 0, 0, -196497, 0, 0, -130991, 0, 0, -130989, 0, 0, -130987, 0, 0, -130985, 0, 0, -130983, 0, 0, -130981, 0, 0, -130979, 0, 0, -130977, 0, 0, -65471, 0, 0, -65469, 0, 0, -65467, 0, 0, -65465, 0, 0, -65463, 0, 0, -65461, 0, 0, -65459, 0, 0, -65457, 0, 0, 3, 0, 0, 5, 0, 0, 7, 0, 0, 9, 0, 0, 11, 0, 0, 13, 0, 0, 15, 0, 0, 17, 0, 0, 19, 0, 0, 21, 0, 0, 23, 0, 0, 25, 0, 0, 27, 0, 0, 29, 0, 0, 31, 0, 0, 33, 0, 0, 35, 0, 0, 37, 0, 0, 39, 0, 0, 41, 0, 0, 43, 0, 0, 45, 0, 0, 47, 0, 0, 49, 0, 0, 51, 0, 0, 53, 0, 0, 55, 0, 0, 57, 0, 0, 59, 0, 0, 61, 0, 0, 63, 0, 0 )
 
 [node name="jumpPoint" parent="." instance=ExtResource( 5 )]
 position = Vector2( 4048, -32 )
@@ -42,7 +47,7 @@ position = Vector2( 1536, 208 )
 position = Vector2( 3464, 240 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 488, -288 )
+position = Vector2( 520, -288 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
@@ -60,6 +65,7 @@ one_shot = true
 autostart = true
 
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
+visible = false
 tile_data = PoolIntArray( -196511, 0, 0, -196510, 0, 0, -196509, 0, 0, -196508, 0, 0, -196507, 0, 0, -196506, 0, 0, -196505, 0, 0, -196504, 0, 0, -196503, 0, 0, -196502, 0, 0, -196501, 0, 0, -196500, 0, 0, -196499, 0, 0, -196498, 0, 0, -196497, 0, 0, -130991, 0, 0, -130990, 0, 0, -130989, 0, 0, -130988, 0, 0, -130987, 0, 0, -130986, 0, 0, -130985, 0, 0, -130984, 0, 0, -130983, 0, 0, -130982, 0, 0, -130981, 0, 0, -130980, 0, 0, -130979, 0, 0, -130978, 0, 0, -130977, 0, 0, -65471, 0, 0, -65470, 0, 0, -65469, 0, 0, -65468, 0, 0, -65467, 0, 0, -65466, 0, 0, -65465, 0, 0, -65464, 0, 0, -65463, 0, 0, -65462, 0, 0, -65461, 0, 0, -65460, 0, 0, -65459, 0, 0, -65458, 0, 0, -65457, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 32, 0, 0, 33, 0, 0, 34, 0, 0, 35, 0, 0, 36, 0, 0, 37, 0, 0, 38, 0, 0, 39, 0, 0, 40, 0, 0, 41, 0, 0, 42, 0, 0, 43, 0, 0, 44, 0, 0, 45, 0, 0, 46, 0, 0, 47, 0, 0, 48, 0, 0, 49, 0, 0, 50, 0, 0, 51, 0, 0, 52, 0, 0, 53, 0, 0, 54, 0, 0, 55, 0, 0, 56, 0, 0, 57, 0, 0, 58, 0, 0, 59, 0, 0, 60, 0, 0, 61, 0, 0, 62, 0, 0, 63, 0, 0 )
 
 [node name="ground" type="Node2D" parent="."]

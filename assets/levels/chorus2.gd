@@ -1,7 +1,5 @@
 extends Node2D
 
-var bpm = Global.bpm
-export var start = 130
 
 var alpha = 0.0
 var alphaChange = false
@@ -25,4 +23,5 @@ func _on_change_scene_body_entered(_body):
 	get_tree().change_scene("res://Part3.tscn")
 
 func _on_flashStart_body_entered(body):
-	alphaChange = true
+	if body.name == "player":
+		alphaChange = true

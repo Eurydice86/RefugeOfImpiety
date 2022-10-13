@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var runSpeed : float
 export (int) var jumpSpeed = -512
-export (float) var gravity = 1200
+export (float) var gravity = 1200.0
 export (int) var tilesPerSec = 2
 
 var counter = 0 
@@ -68,7 +68,7 @@ func _on_Area2D_area_entered(area):
 	elif area.name[0] == "c":
 		if area.name[1] == "a":
 			$Camera2D.trauma = area.trauma
-		elif area.name[1] == "o":
+		elif area.name[1] == "h":
 			Global.indoorsLightColor = pickRandomColor()
 	elif area.name[0] == "d":
 		direction *= -1
@@ -78,7 +78,6 @@ func _process(_delta):
 	counter += 1
 	if counter == 1000:
 		counter = 0
-		print(position)
 		#print(get_node("./meteor_shower").position)
 	
 
