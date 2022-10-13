@@ -9,8 +9,8 @@ export var stopTime = 10.28
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-#	Global.audio.seek(start)
-#	Global.audio.stream_paused = false
+	Global.audio.seek(start)
+	Global.audio.stream_paused = false
 	$fadeIn.play("fadeIn")
 	$CanvasModulate.visible = false
 

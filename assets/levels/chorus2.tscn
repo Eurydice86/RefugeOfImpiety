@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/levels/chorus2.gd" type="Script" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/ui/appearingText.tscn" type="PackedScene" id=8]
 
@@ -128,24 +127,6 @@ position = Vector2( 5840, 1376 )
 
 [node name="jumpPoint7" parent="." instance=ExtResource( 5 )]
 position = Vector2( 6352, 1320 )
-
-[node name="explodingTile" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2272, 288 )
-
-[node name="explodingTile2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5944, 1376 )
-
-[node name="explodingTile6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 6368, 1376 )
-
-[node name="explodingTile3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5440, 1440 )
-
-[node name="explodingTile4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5344, 1504 )
-
-[node name="explodingTile5" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5856, 1440 )
 
 [node name="flashStart" type="Area2D" parent="."]
 position = Vector2( 6632, 1480 )

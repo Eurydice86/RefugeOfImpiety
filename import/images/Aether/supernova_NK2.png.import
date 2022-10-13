@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spaceship_foreground.png-bb4bcd054a5286304d08e15c2e1e0833.stex"
+path="res://.import/supernova_NK2.png-05ac8c7b2537868b9b717e613b78bc70.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/rocks/spaceship_foreground.png"
-dest_files=[ "res://.import/spaceship_foreground.png-bb4bcd054a5286304d08e15c2e1e0833.stex" ]
+source_file="res://import/images/Aether/supernova_NK2.png"
+dest_files=[ "res://.import/supernova_NK2.png-05ac8c7b2537868b9b717e613b78bc70.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

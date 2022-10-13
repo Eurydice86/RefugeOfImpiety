@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://assets/textures/explodingTile.gd" type="Script" id=1]
 [ext_resource path="res://import/images/whitePixel.png" type="Texture" id=2]
-[ext_resource path="res://assets/textures/explodingTile.gd" type="Script" id=3]
+[ext_resource path="res://import/images/rocks/cave_manmade_tiles.png" type="Texture" id=3]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type particles;
@@ -228,12 +228,12 @@ shader_param/emission_box_extents = Vector3( 32, 32, 1 )
 shader_param/color_value = Color( 1, 1, 1, 1 )
 shader_param/trail_divisor = 1
 shader_param/gravity = Vector3( 0, 98, 0 )
-shader_param/sprite = ExtResource( 1 )
+shader_param/sprite = ExtResource( 3 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16, 128 )
 
-[node name="explodingTile" type="Particles2D"]
+[node name="manMadeexplodingTile" type="Particles2D"]
 emitting = false
 amount = 512
 lifetime = 10.0
@@ -243,8 +243,8 @@ explosiveness = 1.0
 visibility_rect = Rect2( -100, -100, 500, 500 )
 process_material = SubResource( 2 )
 texture = ExtResource( 2 )
-script = ExtResource( 3 )
-image = ExtResource( 1 )
+script = ExtResource( 1 )
+image = ExtResource( 3 )
 
 [node name="explodingArea2D" type="Area2D" parent="."]
 position = Vector2( -32, 0 )
@@ -254,6 +254,6 @@ position = Vector2( 32, 0 )
 shape = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 
 [connection signal="body_entered" from="explodingArea2D" to="." method="_on_explodingArea2D_body_entered"]

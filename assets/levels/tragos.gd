@@ -13,7 +13,7 @@ func _ready():
 #	Global.audio.stream_paused = false
 	pass
 
-func _process(delta):
+func _physics_process(_delta):
 	if zoomOut:
 		if $player/Camera2D.zoom.x < 5:
 			$player/Camera2D.zoom += Vector2(zoomRate,zoomRate)
