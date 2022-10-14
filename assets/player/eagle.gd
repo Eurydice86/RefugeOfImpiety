@@ -35,7 +35,6 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	$AnimatedSprite.rotation = 	direction.angle()
 	
-
 	# zooming in or out
 	if zooming == 1:
 		if currentZoom < maxZoom:
