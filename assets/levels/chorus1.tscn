@@ -153,7 +153,7 @@ position = Vector2( 6480, 4072 )
 shape = SubResource( 3 )
 
 [node name="stop" type="Area2D" parent="control_points"]
-position = Vector2( 6616, 4072 )
+position = Vector2( 6568, 4072 )
 collision_layer = 513
 __meta__ = {
 "_edit_group_": true

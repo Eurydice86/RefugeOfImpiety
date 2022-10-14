@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/waste_mountain_left_bottom.png-ae8ef065eab8030924ca6c0ea02ae81a.stex"
+path="res://.import/waste_mountain_left_bottom_right.png-6cc9f6965e5143a61c360038264a19ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/Wasteland/waste_mountain_left_bottom.png"
-dest_files=[ "res://.import/waste_mountain_left_bottom.png-ae8ef065eab8030924ca6c0ea02ae81a.stex" ]
+source_file="res://import/images/Wasteland/waste_mountain_left_bottom_right.png"
+dest_files=[ "res://.import/waste_mountain_left_bottom_right.png-6cc9f6965e5143a61c360038264a19ad.stex" ]
 
 [params]
 
