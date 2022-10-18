@@ -72,6 +72,8 @@ func _on_Area2D_area_entered(area):
 			Global.indoorsLightColor = pickRandomColor()
 	elif area.name[0] == "d":
 		direction *= -1
+		$Camera2D.position.x *= -1
+		print($Camera2D.offset)
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 
 func _process(_delta):
