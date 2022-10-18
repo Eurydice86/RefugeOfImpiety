@@ -1,13 +1,12 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/levels/tragos.gd" type="Script" id=2]
 [ext_resource path="res://import/images/rocks/spaceship.png" type="Texture" id=3]
-[ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/textures/Manmade Tiles.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/textures/ManMadeexplodingTile.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -21,318 +20,318 @@ tile_data = PoolIntArray( -262002, 0, 0, -262000, 0, 0, -196594, 0, 0, -196591, 
 
 [node name="exploding_tiles" type="Node2D" parent="."]
 
-[node name="explodingTile2" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile2" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1120, 32 )
 
-[node name="explodingTile7" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile7" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1184, 32 )
 
-[node name="explodingTile11" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile11" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1376, 32 )
 
-[node name="explodingTile15" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile15" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1504, 32 )
 
-[node name="explodingTile19" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile19" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1696, 32 )
 
-[node name="explodingTile94" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile94" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1760, 32 )
 
-[node name="explodingTile3" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile3" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1440, 32 )
 
-[node name="explodingTile4" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile4" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1632, 32 )
 
-[node name="explodingTile5" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile5" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1952, 32 )
 
-[node name="explodingTile95" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile95" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 1888, 32 )
 
-[node name="explodingTile6" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile6" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2016, 32 )
 
-[node name="explodingTile8" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile8" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2144, 32 )
 
-[node name="explodingTile9" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile9" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2208, 32 )
 
-[node name="explodingTile10" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile10" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2272, 32 )
 
-[node name="explodingTile12" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile12" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2400, 32 )
 
-[node name="explodingTile13" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile13" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2464, 32 )
 
-[node name="explodingTile14" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile14" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2528, 32 )
 
-[node name="explodingTile16" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile16" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2656, 32 )
 
-[node name="explodingTile17" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile17" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2720, 32 )
 
-[node name="explodingTile18" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile18" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2784, 32 )
 
-[node name="explodingTile20" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile20" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2976, 32 )
 
-[node name="explodingTile96" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile96" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2912, 32 )
 
-[node name="explodingTile97" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile97" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 2848, 32 )
 
-[node name="explodingTile21" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile21" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3168, 32 )
 
-[node name="explodingTile98" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile98" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3232, 32 )
 
-[node name="explodingTile99" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile99" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3104, 32 )
 
-[node name="explodingTile87" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile87" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3424, 32 )
 
-[node name="explodingTile90" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile90" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3552, 32 )
 
-[node name="explodingTile22" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile22" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3488, 32 )
 
-[node name="explodingTile23" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile23" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3680, 32 )
 
-[node name="explodingTile92" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile92" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3744, 32 )
 
-[node name="explodingTile93" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile93" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3808, 32 )
 
-[node name="explodingTile24" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile24" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4000, 32 )
 
-[node name="explodingTile100" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile100" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 3936, 32 )
 
-[node name="explodingTile25" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile25" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4064, 32 )
 
-[node name="explodingTile27" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile27" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4192, 32 )
 
-[node name="explodingTile28" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile28" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4256, 32 )
 
-[node name="explodingTile29" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile29" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4320, 32 )
 
-[node name="explodingTile31" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile31" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4448, 32 )
 
-[node name="explodingTile32" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile32" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4512, 32 )
 
-[node name="explodingTile33" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile33" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4576, 32 )
 
-[node name="explodingTile35" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile35" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4704, 32 )
 
-[node name="explodingTile36" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile36" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4768, 32 )
 
-[node name="explodingTile37" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile37" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4832, 32 )
 
-[node name="explodingTile38" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile38" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4896, 32 )
 
-[node name="explodingTile91" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile91" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 4960, 32 )
 
-[node name="explodingTile39" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile39" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5024, 32 )
 
-[node name="explodingTile101" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile101" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5088, 32 )
 
-[node name="explodingTile40" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile40" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5216, 32 )
 
-[node name="explodingTile102" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile102" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5280, 32 )
 
-[node name="explodingTile103" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile103" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5344, 32 )
 
-[node name="explodingTile104" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile104" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5408, 32 )
 
-[node name="explodingTile105" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile105" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5472, 32 )
 
-[node name="explodingTile106" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile106" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5600, 32 )
 
-[node name="explodingTile107" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile107" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5792, 32 )
 
-[node name="explodingTile108" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile108" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5856, 32 )
 
-[node name="explodingTile41" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile41" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5536, 32 )
 
-[node name="explodingTile42" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile42" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5728, 32 )
 
-[node name="explodingTile43" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile43" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6048, 32 )
 
-[node name="explodingTile64" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile64" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 5984, 32 )
 
-[node name="explodingTile44" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile44" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6112, 32 )
 
-[node name="explodingTile46" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile46" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6240, 32 )
 
-[node name="explodingTile47" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile47" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6304, 32 )
 
-[node name="explodingTile48" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile48" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6368, 32 )
 
-[node name="explodingTile49" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile49" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6432, 32 )
 
-[node name="explodingTile50" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile50" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6496, 32 )
 
-[node name="explodingTile51" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile51" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6560, 32 )
 
-[node name="explodingTile52" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile52" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6624, 32 )
 
-[node name="explodingTile53" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile53" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6688, 32 )
 
-[node name="explodingTile54" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile54" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6752, 32 )
 
-[node name="explodingTile55" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile55" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6816, 32 )
 
-[node name="explodingTile56" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile56" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6880, 32 )
 
-[node name="explodingTile57" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile57" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 6944, 32 )
 
-[node name="explodingTile58" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile58" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7072, 32 )
 
-[node name="explodingTile109" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile109" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7136, 32 )
 
-[node name="explodingTile110" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile110" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7328, 32 )
 
-[node name="explodingTile111" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile111" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7392, 32 )
 
-[node name="explodingTile112" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile112" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7648, 32 )
 
-[node name="explodingTile113" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile113" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7840, 32 )
 
-[node name="explodingTile114" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile114" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7904, 32 )
 
-[node name="explodingTile59" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile59" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7264, 32 )
 
-[node name="explodingTile60" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile60" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7584, 32 )
 
-[node name="explodingTile61" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile61" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 7776, 32 )
 
-[node name="explodingTile62" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile62" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 8096, 32 )
 
-[node name="explodingTile63" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile63" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 8160, 32 )
 
-[node name="explodingTile65" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile65" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 8288, 32 )
 
-[node name="explodingTile66" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile66" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 8416, 32 )
 
-[node name="explodingTile67" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile67" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 8672, 32 )
 
-[node name="explodingTile68" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile68" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 8952, 32 )
 
-[node name="explodingTile77" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile77" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 9120, 64 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile78" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile78" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 10144, 384 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile79" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile79" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 11168, 704 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile80" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile80" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 12192, 1024 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile81" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile81" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 13216, 1344 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile82" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile82" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 13536, 1280 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile83" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile83" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 14240, 1600 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile84" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile84" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 14560, 1536 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile85" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile85" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 15264, 1856 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile86" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile86" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 16288, 2112 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile88" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile88" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 16608, 2048 )
 scale = Vector2( 2, 2 )
 
-[node name="explodingTile89" parent="exploding_tiles" instance=ExtResource( 4 )]
+[node name="explodingTile89" parent="exploding_tiles" instance=ExtResource( 8 )]
 position = Vector2( 15584, 1792 )
 scale = Vector2( 2, 2 )
 

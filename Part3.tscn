@@ -25,6 +25,7 @@ position = Vector2( 7872, 64 )
 [node name="roaring" parent="." instance=ExtResource( 2 )]
 
 [node name="TileMap" parent="." instance=ExtResource( 3 )]
+visible = false
 tile_data = PoolIntArray( 65650, 0, 0, 65651, 0, 0, 65652, 0, 0, 65653, 0, 0, 65654, 0, 0, 65655, 0, 0, 65656, 0, 0, 65657, 0, 0, 65658, 0, 0, 11927723, 0, 0 )
 
 [node name="parallaxMountains" parent="." instance=ExtResource( 6 )]
