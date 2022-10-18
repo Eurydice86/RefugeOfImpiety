@@ -68,7 +68,7 @@ _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.520202, 0.629545 ), -0.189
 curve = SubResource( 15 )
 
 [sub_resource type="ParticlesMaterial" id=17]
-lifetime_randomness = 0.3
+lifetime_randomness = 1.0
 emission_shape = 1
 emission_sphere_radius = 5.0
 flag_disable_z = true
@@ -90,7 +90,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 rotation = 0.785398
 frames = SubResource( 11 )
-frame = 1
+frame = 8
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -99,11 +99,14 @@ shape = SubResource( 12 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
 position = Vector2( -24, 24 )
-amount = 512
-preprocess = 5.0
-explosiveness = 0.1
+amount = 256
 randomness = 1.0
 visibility_rect = Rect2( -1000, -1000, 2000, 2000 )
 local_coords = false
 process_material = SubResource( 17 )
 texture = ExtResource( 3 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+rect = Rect2( -524, 524, 1000, -1000 )
+
+[connection signal="screen_exited" from="VisibilityEnabler2D" to="." method="_on_VisibilityEnabler2D_screen_exited"]

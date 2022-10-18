@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rock_ledge_test.png-b61768475534f597356cfb945dcede1e.stex"
+path="res://.import/galaxy1.png-b70f9364294a268659971c4f8af17f5f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/rocks/rock_ledge_test.png"
-dest_files=[ "res://.import/rock_ledge_test.png-b61768475534f597356cfb945dcede1e.stex" ]
+source_file="res://import/images/Aether/galaxy1.png"
+dest_files=[ "res://.import/galaxy1.png-b70f9364294a268659971c4f8af17f5f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

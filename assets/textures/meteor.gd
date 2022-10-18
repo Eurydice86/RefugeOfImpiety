@@ -17,14 +17,20 @@ func init(pos, scaleF):
 func _ready():
 	position = init_position
 	var scaleMult = randf()
-	scale =  scaleFactor * scaleMult * Vector2(1, 1).normalized()
+	$AnimatedSprite.scale =  scaleFactor * scaleMult * Vector2(1, 1).normalized()
+	$VisibilityEnabler2D.rect = Rect2( -524, 524, 1000, -1000)
 	if rnd:
 		speed = scaleFactor * (speedMin + randi() % (speedMax-speedMin))
 	velocity = Vector2(-1, 1).normalized()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if position.y > init_position.y + 2000:
-		queue_free()
+func _physics_process(delta):
 	move_and_collide(speed * delta * velocity)
+
+func _draw():
+	Rect2(-524, 524, 1000, -1000)
+
+func _on_VisibilityEnabler2D_screen_exited():
+	print("out")
+	queue_free()
