@@ -44,7 +44,8 @@ position = Vector2( 6144, 512 )
 [node name="ParallaxAether" parent="." instance=ExtResource( 4 )]
 
 [node name="TileMap" parent="." instance=ExtResource( 7 )]
+visible = false
 tile_data = PoolIntArray( -196604, 0, 0 )
 
 [node name="player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 288, -48 )
+position = Vector2( 352, -48 )

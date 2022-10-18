@@ -22,7 +22,7 @@ Global="*res://assets/global.tscn"
 
 window/size/width=1920
 window/size/height=1080
-window/size/resizable=false
+window/vsync/use_vsync=false
 
 [input]
 
