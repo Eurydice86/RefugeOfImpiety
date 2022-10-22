@@ -146,4 +146,4 @@ trauma = 1.1
 
 [node name="camera_shake30" parent="camera_shake_points" instance=ExtResource( 5 )]
 position = Vector2( 16920, 928 )
-trauma = 1.1
+trauma = 1.0
