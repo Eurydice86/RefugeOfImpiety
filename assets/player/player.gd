@@ -63,14 +63,13 @@ func _physics_process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	if area.name[0] == "j" and is_on_floor():
+	if area.name == "jumpPoint" and is_on_floor():
 		velocity.y = jumpSpeed
-	elif area.name[0] == "c":
-		if area.name[1] == "a":
-			$Camera2D.trauma = area.trauma
-		elif area.name[1] == "h":
+	elif "camera_shake" in area.name:
+		$Camera2D.trauma = area.trauma
+	elif area.name == "changeLight":
 			Global.indoorsLightColor = pickRandomColor()
-	elif area.name[0] == "d":
+	elif area.name == "directionChange":
 		direction *= -1
 		$Camera2D.position.x *= -1
 		print($Camera2D.offset)
@@ -80,7 +79,6 @@ func _process(_delta):
 	counter += 1
 	if counter == 1000:
 		counter = 0
-		#print(get_node("./meteor_shower").position)
 	
 
 func _on_pause_pressed():
