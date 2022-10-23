@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/textures/camera_shake_params.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Spawn Meteor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -10,3 +11,6 @@ trauma = 0.55
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="Spawn Meteor" parent="." instance=ExtResource( 2 )]
+position = Vector2( -128, 0 )

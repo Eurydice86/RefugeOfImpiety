@@ -19,9 +19,10 @@ func init(pos, ispeed, itime, isize):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AnimatedSprite.play("default")
 	$Timer.wait_time = init_time
 	$Timer.start()
-	position = init_position
+	global_position = init_position
 	speed = init_speed
 	velocity = Vector2(-1, 1).normalized()
 	scale = Vector2(init_size,init_size)
@@ -33,8 +34,13 @@ func _physics_process(delta):
 	$Particles2D.process_material.set("scale", init_size)
 
 
-func _draw():
-	Rect2(-524, 524, 1000, -1000)
-
 func _on_Timer_timeout():
 	queue_free()
+
+
+func _on_Area2D_body_entered(body):
+	if body.name == "TileMap":
+		explosion()
+
+func explosion():
+	$AnimatedSprite.play("explosion")
