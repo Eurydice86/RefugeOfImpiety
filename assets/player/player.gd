@@ -17,6 +17,7 @@ var walking
 
 var velocity = Vector2()
 var jumping = false
+export var targetCamPos = 100.0
 
 func _ready():
 	running = true
@@ -55,6 +56,8 @@ func get_input():
 			$AnimatedSprite.play("jump")
 
 func _physics_process(delta):
+	print($Camera2D.position.x)
+	$Camera2D.position.x = lerp($Camera2D.position.x, targetCamPos, 0.01)
 	get_input()
 	velocity.y += gravity * delta
 	if jumping and is_on_floor():
@@ -63,16 +66,16 @@ func _physics_process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	if area.name == "jumpPoint" and is_on_floor():
+	if "jumpPoint" in area.name and is_on_floor():
 		velocity.y = jumpSpeed
 	elif "camera_shake" in area.name:
 		$Camera2D.trauma = area.trauma
-	elif area.name == "changeLight":
+	elif "changeLight" in area.name:
 			Global.indoorsLightColor = pickRandomColor()
-	elif area.name == "directionChange":
+	elif "directionChange" in area.name:
 		direction *= -1
-		$Camera2D.position.x *= -1
-		print($Camera2D.offset)
+		targetCamPos = -$Camera2D.position.x
+		print(targetCamPos)
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 
 func _process(_delta):
