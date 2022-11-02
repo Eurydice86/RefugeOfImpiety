@@ -8,17 +8,17 @@
 [sub_resource type="CircleShape2D" id=12]
 
 [sub_resource type="Curve" id=14]
-_data = [ Vector2( 0, 1 ), 0.0, -2.80082, 0, 0, Vector2( 1, 0 ), -0.080917, 0.0, 0, 0 ]
+_data = [ Vector2( 0, 0.627273 ), 0.0, -0.784923, 0, 0, Vector2( 1, 0 ), -0.080917, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=15]
 curve = SubResource( 14 )
 
-[sub_resource type="ParticlesMaterial" id=13]
+[sub_resource type="ParticlesMaterial" id=37]
 emission_shape = 1
-emission_sphere_radius = 7.0
+emission_sphere_radius = 5.0
 flag_disable_z = true
 direction = Vector3( 0, 0, 0 )
-spread = 10.0
+spread = 120.0
 gravity = Vector3( 0, 0, 0 )
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
@@ -132,17 +132,17 @@ position = Vector2( -24, 24 )
 shape = SubResource( 12 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
-position = Vector2( -16, 16 )
-lifetime = 2.0
+position = Vector2( -24, 24 )
 visibility_rect = Rect2( -1000, -1000, 2000, 2000 )
 local_coords = false
-process_material = SubResource( 13 )
+process_material = SubResource( 37 )
 texture = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 rotation = 0.785398
 frames = SubResource( 11 )
-frame = 9
+animation = "explosion"
+frame = 6
 playing = true
 
 [node name="Timer" type="Timer" parent="."]

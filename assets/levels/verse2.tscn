@@ -200,10 +200,10 @@ shape = SubResource( 5 )
 
 [node name="Forever" type="Label" parent="static_text"]
 visible = false
-margin_left = 6168.0
-margin_top = 136.0
-margin_right = 6967.0
-margin_bottom = 218.0
+margin_left = 6166.0
+margin_top = 198.0
+margin_right = 6965.0
+margin_bottom = 280.0
 custom_fonts/font = SubResource( 1 )
 text = "Forever"
 __meta__ = {
@@ -212,10 +212,10 @@ __meta__ = {
 
 [node name="on_this" type="Label" parent="static_text"]
 visible = false
-margin_left = 6416.0
-margin_top = 240.0
-margin_right = 6660.0
-margin_bottom = 322.0
+margin_left = 6420.0
+margin_top = 285.0
+margin_right = 6664.0
+margin_bottom = 367.0
 custom_fonts/font = SubResource( 6 )
 text = "on this"
 __meta__ = {
@@ -224,10 +224,10 @@ __meta__ = {
 
 [node name="toxic" type="Label" parent="static_text"]
 visible = false
-margin_left = 6104.0
-margin_top = 344.0
-margin_right = 6298.0
-margin_bottom = 464.0
+margin_left = 6096.0
+margin_top = 374.0
+margin_right = 6290.0
+margin_bottom = 494.0
 custom_colors/font_color = Color( 0.203922, 0.87451, 0.0705882, 1 )
 custom_fonts/font = SubResource( 10 )
 text = "toxic"
@@ -237,10 +237,10 @@ __meta__ = {
 
 [node name="Earth" type="Label" parent="static_text"]
 visible = false
-margin_left = 6392.0
-margin_top = 536.0
-margin_right = 6527.0
-margin_bottom = 613.0
+margin_left = 6330.0
+margin_top = 515.0
+margin_right = 6465.0
+margin_bottom = 592.0
 custom_fonts/font = SubResource( 8 )
 text = "Earth"
 __meta__ = {
