@@ -19,6 +19,7 @@
 0/z_index = 0
 
 [node name="TileMap_rocks" type="TileMap"]
+modulate = Color( 0.45098, 0.45098, 0.45098, 1 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 268, 378 )
 format = 1

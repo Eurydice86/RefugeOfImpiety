@@ -21,11 +21,12 @@ z_index = -1000
 texture = ExtResource( 3 )
 centered = false
 
-[node name="meteor_shower" parent="ParallaxBackground" instance=ExtResource( 1 )]
-position = Vector2( -312, -296 )
-z_index = -750
-meteorsN = 30.0
-size = 0.1
+[node name="meteors_far" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="meteor_shower" parent="ParallaxBackground/meteors_far" instance=ExtResource( 1 )]
+meteorsN = 1
+size = 0.2
 speed = 200.0
 
 [node name="far_rocks" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -35,12 +36,13 @@ motion_mirroring = Vector2( 3840, 0 )
 
 [node name="farRocksSprite" type="Sprite" parent="ParallaxBackground/far_rocks"]
 position = Vector2( 0, 100 )
-z_index = -100
+z_index = 1
 texture = ExtResource( 2 )
 centered = false
 offset = Vector2( 0, -1150 )
 
-[node name="meteor_shower2" parent="ParallaxBackground" instance=ExtResource( 1 )]
-meteorsN = 10.0
-size = 0.5
-time = 1.5
+[node name="meteors_not_that_far" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="meteor_shower" parent="ParallaxBackground/meteors_not_that_far" instance=ExtResource( 1 )]
+size = 0.7

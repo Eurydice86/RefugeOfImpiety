@@ -56,7 +56,6 @@ func get_input():
 			$AnimatedSprite.play("jump")
 
 func _physics_process(delta):
-	print($Camera2D.position.x)
 	$Camera2D.position.x = lerp($Camera2D.position.x, targetCamPos, 0.01)
 	get_input()
 	velocity.y += gravity * delta
