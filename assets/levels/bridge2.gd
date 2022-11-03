@@ -9,16 +9,14 @@ export var start = 207.2
 func _ready():
 	#Global.audio.seek(start)
 	#Global.audio.stream_paused = false
-	$colorRectNode/ColorRect.visible = false
+	$colorRectNode/ColorRect.visible = true
 	pass
 
 
 func _on_change_scene_body_entered(body):
 	if body.name == "player":
-		if get_tree().change_scene("res://Part4.tscn") != OK:
-			print ("An unexpected error occured when trying to switch to the Readme scene")
-		else:
-			get_tree().change_scene("res://Part4.tscn")
+		get_tree().change_scene("res://Part4.tscn")
+
 
 
 func _on_fadeOut_body_entered(body):
