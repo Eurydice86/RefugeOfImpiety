@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/levels/bridge2.gd" type="Script" id=1]
 [ext_resource path="res://import/images/caveEntrance.png" type="Texture" id=2]
@@ -12,7 +12,9 @@
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/textures/Rock Ledges Tilemap.tscn" type="PackedScene" id=11]
 [ext_resource path="res://import/images/rocks/rock_ledge_right.png" type="Texture" id=12]
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=13]
 [ext_resource path="res://import/images/rocks/cave_entrance.png" type="Texture" id=14]
+[ext_resource path="res://import/images/rocks/rocks_left.png" type="Texture" id=15]
 
 [sub_resource type="Animation" id=6]
 resource_name = "colorRectFadeOut"
@@ -74,9 +76,6 @@ anims/colorRectFadeOut = SubResource( 6 )
 [node name="TileMap" parent="." instance=ExtResource( 3 )]
 visible = false
 tile_data = PoolIntArray( -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 65592, 0, 0, 65593, 0, 0, 65594, 0, 0, 131125, 0, 0, 131126, 0, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 0, 0, 196655, 0, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 0, 0, 196668, 0, 0, 196669, 0, 0, 196670, 0, 0, 196671, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524357, 0, 0, 524358, 0, 0, 524359, 0, 0, 524360, 0, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 0, 0, 524366, 0, 0, 524367, 0, 0, 524368, 0, 0, 524369, 0, 0, 524370, 0, 0, 524371, 0, 0, 589910, 0, 0, 589911, 0, 0, 589912, 0, 0, 720986, 0, 0, 720987, 0, 0, 720988, 0, 0, 852061, 0, 0, 852062, 0, 0, 852063, 0, 0, 852064, 0, 0, 852065, 0, 0, 852066, 0, 0, 852067, 0, 0, 1638507, 0, 0, 1638508, 0, 0, 1638509, 0, 0, 1638510, 0, 0, 1638511, 0, 0, 1638512, 0, 0, 1638513, 0, 0, 1638514, 0, 0, 1638515, 0, 0, 1638516, 0, 0, 1638517, 0, 0, 1966199, 0, 0, 1966200, 0, 0, 1966201, 0, 0, 1966202, 0, 0, 1966203, 0, 0, 1966204, 0, 0, 1966205, 0, 0, 1966206, 0, 0, 1966207, 0, 0, 1966208, 0, 0, 1966209, 0, 0, 1966210, 0, 0, 1966211, 0, 0, 1966214, 0, 0, 1966215, 0, 0, 1966216, 0, 0, 1966217, 0, 0, 1966218, 0, 0, 1966219, 0, 0, 1966220, 0, 0, 1966221, 0, 0, 1966224, 0, 0, 1966225, 0, 0, 1966226, 0, 0, 1966227, 0, 0, 1966230, 0, 0, 1966231, 0, 0, 1966232, 0, 0, 1966233, 0, 0, 1966234, 0, 0, 1966235, 0, 0, 1966236, 0, 0, 1966237, 0, 0, 1966238, 0, 0, 1966239, 0, 0, 1966240, 0, 0, 1966241, 0, 0, 1966242, 0, 0, 1966243, 0, 0, 1966244, 0, 0, 1966245, 0, 0, 1966246, 0, 0, 1966247, 0, 0, 1966248, 0, 0, 1966249, 0, 0, 1966250, 0, 0, 1966251, 0, 0, 1966252, 0, 0 )
-
-[node name="Rock Ledges Tilemap" parent="." instance=ExtResource( 11 )]
-tile_data = PoolIntArray( 6, 1, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 5, 0, 14, 5, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 2, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 5, 0, 196655, 5, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 2, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 2, 0, 524354, 1, 0, 524355, 0, 0, 524356, 0, 0, 524357, 0, 0, 524358, 5, 0, 524359, 0, 0, 524360, 5, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 5, 0, 524366, 0, 0, 524367, 0, 0, 524368, 5, 0, 524369, 5, 0, 524370, 5, 0, 524371, 0, 0, 589910, 1, 0, 589911, 0, 0, 589912, 2, 0, 720986, 1, 0, 720987, 0, 0, 720988, 2, 0, 852061, 1, 0, 852062, 0, 0, 852063, 0, 0, 852064, 0, 0, 852065, 0, 0, 852066, 0, 0, 852067, 2, 0, 1638507, 3, 0, 1638508, 5, 0, 1638509, 5, 0, 1638510, 5, 0, 1638511, 5, 0, 1638512, 5, 0, 1638513, 5, 0, 1638514, 5, 0, 1638515, 5, 0, 1638516, 5, 0, 1638517, 4, 0, 1966199, 3, 0, 1966200, 5, 0, 1966201, 5, 0, 1966202, 5, 0, 1966203, 5, 0, 1966204, 5, 0, 1966205, 5, 0, 1966206, 5, 0, 1966207, 5, 0, 1966208, 5, 0, 1966209, 5, 0, 1966210, 5, 0, 1966211, 4, 0, 1966214, 3, 0, 1966215, 5, 0, 1966216, 5, 0, 1966217, 5, 0, 1966218, 5, 0, 1966219, 5, 0, 1966220, 5, 0, 1966221, 4, 0, 1966224, 3, 0, 1966225, 5, 0, 1966226, 5, 0, 1966227, 4, 0, 1966230, 3, 0, 1966231, 5, 0, 1966232, 5, 0, 1966233, 0, 0 )
 
 [node name="i_have_saved_you_from" type="Label" parent="."]
 margin_left = 616.0
@@ -216,23 +215,30 @@ position = Vector2( 9448, 1896 )
 position = Vector2( 5408, 534 )
 image = ExtResource( 12 )
 
-[node name="caveEntranceDarkness" type="Sprite" parent="."]
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 9776, 1808 )
-scale = Vector2( 1, 1.124 )
-z_index = 5
-texture = ExtResource( 2 )
-
-[node name="TileMap_rocks_foreground" parent="." instance=ExtResource( 7 )]
-position = Vector2( 256, -216 )
-z_index = 5
-tile_data = PoolIntArray( 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, 0, 0 )
-
 [node name="CaveEntrance" type="Sprite" parent="."]
 modulate = Color( 0.45098, 0.45098, 0.45098, 1 )
-position = Vector2( 9770, 1863 )
-z_index = 5
+position = Vector2( 9822, 1741 )
 texture = ExtResource( 14 )
+
+[node name="TileMap_rocks" parent="." instance=ExtResource( 7 )]
+modulate = Color( 0.45098, 0.45098, 0.45098, 1 )
+position = Vector2( 40, 40 )
+tile_data = PoolIntArray( 196644, 0, 0, 196645, 0, 0, 196646, 0, 0, 327716, 0, 0, 327717, 0, 0 )
+
+[node name="RocksLeft" type="Sprite" parent="TileMap_rocks"]
+position = Vector2( 9597, 1701 )
+texture = ExtResource( 15 )
+
+[node name="RocksLeft2" type="Sprite" parent="TileMap_rocks"]
+position = Vector2( 9597, 2079 )
+texture = ExtResource( 15 )
+
+[node name="RocksLeft3" type="Sprite" parent="TileMap_rocks"]
+position = Vector2( 9597, 1323 )
+texture = ExtResource( 15 )
+
+[node name="Rock Ledges Tilemap" parent="." instance=ExtResource( 11 )]
+tile_data = PoolIntArray( 6, 1, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 5, 0, 14, 5, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 2, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 5, 0, 196655, 5, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 2, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 2, 0, 524354, 1, 0, 524355, 0, 0, 524356, 0, 0, 524357, 0, 0, 524358, 5, 0, 524359, 0, 0, 524360, 5, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 5, 0, 524366, 0, 0, 524367, 0, 0, 524368, 5, 0, 524369, 5, 0, 524370, 5, 0, 524371, 0, 0, 589910, 1, 0, 589911, 0, 0, 589912, 2, 0, 720986, 1, 0, 720987, 0, 0, 720988, 2, 0, 852061, 1, 0, 852062, 0, 0, 852063, 0, 0, 852064, 0, 0, 852065, 0, 0, 852066, 0, 0, 852067, 2, 0, 1638507, 3, 0, 1638508, 5, 0, 1638509, 5, 0, 1638510, 5, 0, 1638511, 5, 0, 1638512, 5, 0, 1638513, 5, 0, 1638514, 5, 0, 1638515, 5, 0, 1638516, 5, 0, 1638517, 4, 0, 1966199, 3, 0, 1966200, 5, 0, 1966201, 5, 0, 1966202, 5, 0, 1966203, 5, 0, 1966204, 5, 0, 1966205, 5, 0, 1966206, 5, 0, 1966207, 5, 0, 1966208, 5, 0, 1966209, 5, 0, 1966210, 5, 0, 1966211, 4, 0, 1966214, 3, 0, 1966215, 5, 0, 1966216, 5, 0, 1966217, 5, 0, 1966218, 5, 0, 1966219, 5, 0, 1966220, 5, 0, 1966221, 4, 0, 1966224, 3, 0, 1966225, 5, 0, 1966226, 5, 0, 1966227, 4, 0, 1966230, 3, 0, 1966231, 5, 0, 1966232, 5, 0, 1966233, 0, 0, 1966234, 2, 0 )
 
 [node name="fadeOut" type="Area2D" parent="."]
 position = Vector2( 9672, 1888 )
@@ -241,11 +247,27 @@ position = Vector2( 9672, 1888 )
 position = Vector2( -27, -23 )
 shape = SubResource( 7 )
 
-[node name="TileMap_rocks_background" parent="." instance=ExtResource( 7 )]
+[node name="caveEntranceDarkness" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 9816, 1780 )
+scale = Vector2( 0.650001, 0.527999 )
+texture = ExtResource( 2 )
+
+[node name="player" parent="." instance=ExtResource( 13 )]
+position = Vector2( 8096, 1865 )
+
+[node name="TileMap_rocks2" parent="." instance=ExtResource( 7 )]
 modulate = Color( 0.45098, 0.45098, 0.45098, 1 )
-position = Vector2( 256, -216 )
-z_index = -1
-tile_data = PoolIntArray( 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 327715, 0, 0, 327717, 0, 0, 327718, 0, 0, 327719, 0, 0, 327720, 0, 0 )
+position = Vector2( 344, 40 )
+tile_data = PoolIntArray( 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0 )
+
+[node name="RocksLeft" type="Sprite" parent="TileMap_rocks2"]
+position = Vector2( 9597, 1701 )
+texture = ExtResource( 15 )
+
+[node name="RocksLeft2" type="Sprite" parent="TileMap_rocks2"]
+position = Vector2( 9597, 2079 )
+texture = ExtResource( 15 )
 
 [connection signal="body_entered" from="ANNIHILATION/Area2D" to="ANNIHILATION" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="fadeOut" to="." method="_on_fadeOut_body_entered"]
