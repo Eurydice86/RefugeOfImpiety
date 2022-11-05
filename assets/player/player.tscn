@@ -139,10 +139,10 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 22 )
 animation = "run"
-frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 23 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -158,6 +158,7 @@ script = ExtResource( 3 )
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
 scale = Vector2( 3, 3 )
 shape = SubResource( 24 )
 
