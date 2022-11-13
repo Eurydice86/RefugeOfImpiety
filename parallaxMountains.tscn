@@ -41,7 +41,7 @@ motion_scale = Vector2( 0.7, 0.7 )
 motion_mirroring = Vector2( 3000, 0 )
 
 [node name="trees" type="Sprite" parent="ParallaxBackground/trees"]
-position = Vector2( 0, 5680 )
+position = Vector2( 0, 5670 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 4 )
 centered = false
@@ -51,7 +51,7 @@ motion_scale = Vector2( 0.75, 0.7 )
 motion_mirroring = Vector2( 3000, 0 )
 
 [node name="trees" type="Sprite" parent="ParallaxBackground/trees2"]
-position = Vector2( 0, 5700 )
+position = Vector2( 0, 5690 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 4 )
 centered = false
