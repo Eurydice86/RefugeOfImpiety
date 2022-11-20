@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Mountain.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=2]
@@ -10,9 +10,6 @@ extents = Vector2( 92, 352 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 64, 64 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 100, 100 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 5886.46, 133.128 )
@@ -54,13 +51,13 @@ forceDirection = Vector2( 1, 0 )
 forceStrength = 0.8
 
 [node name="dive" type="Area2D" parent="."]
-position = Vector2( 10744, -6784 )
+position = Vector2( 10752, -6840 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dive"]
 shape = SubResource( 1 )
 
 [node name="eagleTurn4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 11392, -6704 )
+position = Vector2( 11392, -6744 )
 forceDirection = Vector2( 0, 1 )
 forceStrength = 3.0
 
@@ -72,16 +69,8 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zoomOut"]
 shape = SubResource( 2 )
 
-[node name="zoomIn" type="Area2D" parent="."]
-position = Vector2( 240, -176 )
-collision_layer = 512
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="zoomIn"]
-shape = SubResource( 3 )
-
 [node name="flashStart" type="Area2D" parent="."]
-position = Vector2( 12787.7, 7944 )
+position = Vector2( 13632, 8216 )
 collision_mask = 513
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="flashStart"]
@@ -99,6 +88,5 @@ shape = SubResource( 5 )
 [node name="Mountain" parent="." instance=ExtResource( 1 )]
 
 [connection signal="body_entered" from="zoomOut" to="." method="_on_zoomOut_body_entered"]
-[connection signal="body_entered" from="zoomIn" to="." method="_on_zoomIn_body_entered"]
 [connection signal="body_entered" from="flashStart" to="." method="_on_flashStart_body_entered"]
 [connection signal="body_entered" from="changeScene" to="." method="_on_changeScene_body_entered"]

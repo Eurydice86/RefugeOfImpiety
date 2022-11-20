@@ -26,3 +26,9 @@ func shake():
 
 func reset():
 	offset = Vector2(0,0)
+
+func perma_shake():
+	var amount = 0.7
+	rotation = max_roll * amount * rand_range(-1, 1)
+	offset.x = max_offset.x * amount * rand_range(-1, 1)
+	offset.y = max_offset.y * amount * rand_range(-1, 1)	

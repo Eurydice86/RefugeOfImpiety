@@ -19,6 +19,9 @@ var velocity = Vector2()
 var jumping = false
 export var targetCamPos = 100.0
 
+var zoomOut = false
+var zoomRate = 0.005
+
 func _ready():
 	running = true
 	walking = false
@@ -62,6 +65,8 @@ func _physics_process(delta):
 	if jumping and is_on_floor():
 		jumping = false
 	velocity = move_and_slide(velocity, Vector2(0, -1))
+	if zoomOut:
+		zoom_out()
 
 
 func _on_Area2D_area_entered(area):
@@ -95,3 +100,8 @@ func pickRandomColor():
 	b /= norm
 	g /= norm
 	return Color(r, g, b)
+
+
+func zoom_out():
+	if $Camera2D.zoom.x < 5:
+		$Camera2D.zoom += Vector2(zoomRate,zoomRate)
