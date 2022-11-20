@@ -12,6 +12,7 @@ var scaleMin = 0.25
 var scaleMax = 2.5
 
 var sprites = [
+	"res://import/images/Aether/quasar.png",
 	"res://import/images/Aether/quazar.png",
 	"res://import/images/Aether/galaxy-1.png",
 	"res://import/images/Aether/galaxy-2.png",

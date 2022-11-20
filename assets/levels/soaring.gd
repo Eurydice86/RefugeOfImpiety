@@ -34,7 +34,7 @@ func _process(delta):
 
 	if changeAlpha:
 		if alpha <=1:
-			alpha += delta
+			alpha += 0.8 * delta
 	$Node2D/ColorRect.color = Color(1, 1, 1, alpha)
 
 

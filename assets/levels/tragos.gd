@@ -4,8 +4,6 @@ var bpm = Global.bpm
 export var start = 344.9
 
 
-var zoomOut = false
-var zoomRate = 0.01
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,16 +12,15 @@ func _ready():
 	pass
 
 func _physics_process(_delta):
-	if zoomOut:
-		if $player/Camera2D.zoom.x < 5:
-			$player/Camera2D.zoom += Vector2(zoomRate,zoomRate)
-
+	pass
 
 func _on_stop_moving_body_entered(body):
 	if body.name == "player":
+		$spaceship/doorSprite.play("door_close")
+		$spaceship/doorSprite.z_index = 1
 		body.walking = false
 		body.running = false
-		zoomOut = true
+		body.zoomOut = true
 
 
 func _on_start_walking_body_entered(body):

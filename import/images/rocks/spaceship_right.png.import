@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cave_manmade_tiles.png-09d3e1b076ac4eabe4d1f28caf3e1da3.stex"
+path="res://.import/spaceship_right.png-3ad0066daafb943b4e0246109dc74e53.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/rocks/cave_manmade_tiles.png"
-dest_files=[ "res://.import/cave_manmade_tiles.png-09d3e1b076ac4eabe4d1f28caf3e1da3.stex" ]
+source_file="res://import/images/rocks/spaceship_right.png"
+dest_files=[ "res://.import/spaceship_right.png-3ad0066daafb943b4e0246109dc74e53.stex" ]
 
 [params]
 

@@ -41,6 +41,7 @@ func _physics_process(delta):
 			currentZoom += zoomSpeed * delta
 	elif zooming == -1:
 		if currentZoom > minZoom:
+			print("yep, still here")
 			currentZoom -= zoomSpeed * delta
 	$Camera2D.zoom = Vector2(currentZoom, currentZoom)
 
@@ -55,10 +56,10 @@ func _on_pause_pressed():
 
 
 func _on_Area2D_area_entered(area):
-	if area.name[0] == "e":
+	if "Turn" in area.name:
 		forceStrength = area.forceStrength
 		forceDirection = area.forceDirection
-	elif area.name[0] == "d":
+	elif "dive" in area.name:
 		$AnimatedSprite.play("soar")
 		$Timer.start()
 
@@ -67,4 +68,4 @@ func _on_Timer_timeout():
 	$AnimatedSprite.play("dive")
 	gravity = 1000
 	zooming = -1
-	zoomSpeed *= 2
+	zoomSpeed *= 3

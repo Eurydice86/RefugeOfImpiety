@@ -224,19 +224,19 @@ position = Vector2( 82.5, 0 )
 z_index = 1
 texture = ExtResource( 13 )
 
-[node name="TileMap_rocks" parent="." instance=ExtResource( 7 )]
+[node name="TileMap_rocks_background" parent="." instance=ExtResource( 7 )]
 position = Vector2( 40, 40 )
 tile_data = PoolIntArray( 196644, 0, 0, 196645, 0, 0, 196646, 0, 0, 327716, 0, 0, 327717, 0, 0 )
 
-[node name="RocksLeft" type="Sprite" parent="TileMap_rocks"]
+[node name="RocksLeft" type="Sprite" parent="TileMap_rocks_background"]
 position = Vector2( 9597, 1701 )
 texture = ExtResource( 15 )
 
-[node name="RocksLeft2" type="Sprite" parent="TileMap_rocks"]
+[node name="RocksLeft2" type="Sprite" parent="TileMap_rocks_background"]
 position = Vector2( 9597, 2079 )
 texture = ExtResource( 15 )
 
-[node name="RocksLeft3" type="Sprite" parent="TileMap_rocks"]
+[node name="RocksLeft3" type="Sprite" parent="TileMap_rocks_background"]
 position = Vector2( 9597, 1323 )
 texture = ExtResource( 15 )
 
@@ -250,12 +250,12 @@ position = Vector2( 9672, 1888 )
 position = Vector2( -27, -23 )
 shape = SubResource( 7 )
 
-[node name="TileMap_rocks2" parent="." instance=ExtResource( 7 )]
+[node name="TileMap_rocks_foreground" parent="." instance=ExtResource( 7 )]
 position = Vector2( 308, 40 )
 z_index = 1
 tile_data = PoolIntArray( 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0 )
 
-[node name="RocksLeft2" type="Sprite" parent="TileMap_rocks2"]
+[node name="RocksLeft2" type="Sprite" parent="TileMap_rocks_foreground"]
 position = Vector2( 9598, 2079 )
 texture = ExtResource( 15 )
 
