@@ -79,7 +79,6 @@ func _on_Area2D_area_entered(area):
 	elif "directionChange" in area.name:
 		direction *= -1
 		targetCamPos = -$Camera2D.position.x
-		print(targetCamPos)
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 
 func _process(_delta):
@@ -103,5 +102,5 @@ func pickRandomColor():
 
 
 func zoom_out():
-	if $Camera2D.zoom.x < 5:
+	if $Camera2D.zoom.x < 3.5:
 		$Camera2D.zoom += Vector2(zoomRate,zoomRate)

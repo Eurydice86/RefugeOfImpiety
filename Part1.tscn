@@ -31,10 +31,10 @@ start = 52.5
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
 visible = false
 position = Vector2( 64, 0 )
-tile_data = PoolIntArray( 1179723, 0, 0 )
+tile_data = PoolIntArray( 1179726, 0, 0 )
 
 [node name="ParallaxWasteland" parent="." instance=ExtResource( 3 )]
 z_as_relative = false
 
 [node name="player" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4992, 1288 )
+position = Vector2( 3968, 1296 )
