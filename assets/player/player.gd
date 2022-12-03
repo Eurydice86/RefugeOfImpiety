@@ -5,8 +5,6 @@ export (int) var jumpSpeed = -512
 export (float) var gravity = 1200.0
 export (int) var tilesPerSec = 2
 
-var counter = 0 
-
 export var tileWidth = 64
 export var tileHeight = 64
 
@@ -68,7 +66,6 @@ func _physics_process(delta):
 	if zoomOut:
 		zoom_out()
 
-
 func _on_Area2D_area_entered(area):
 	if "jumpPoint" in area.name and is_on_floor():
 		velocity.y = jumpSpeed
@@ -80,15 +77,6 @@ func _on_Area2D_area_entered(area):
 		direction *= -1
 		targetCamPos = -$Camera2D.position.x
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
-
-func _process(_delta):
-	counter += 1
-	if counter == 1000:
-		counter = 0
-	
-
-func _on_pause_pressed():
-	get_tree().paused = !get_tree().paused
 
 func pickRandomColor():
 	var r = randf()
@@ -102,5 +90,5 @@ func pickRandomColor():
 
 
 func zoom_out():
-	if $Camera2D.zoom.x < 3.5:
+	if $Camera2D.zoom.x < 3.0:
 		$Camera2D.zoom += Vector2(zoomRate,zoomRate)

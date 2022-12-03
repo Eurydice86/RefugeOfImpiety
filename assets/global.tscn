@@ -1,10 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://import/audio/Mammuten - 06 - Refuge of Impiety.mp3" type="AudioStream" id=1]
 [ext_resource path="res://assets/global.gd" type="Script" id=2]
 
 [node name="global" type="Node"]
+pause_mode = 2
 script = ExtResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 1 )
