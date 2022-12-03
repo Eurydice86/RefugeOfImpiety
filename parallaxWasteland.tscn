@@ -25,6 +25,7 @@ centered = false
 motion_scale = Vector2( 0, 0 )
 
 [node name="meteor_shower" parent="ParallaxBackground/meteors_far" instance=ExtResource( 1 )]
+position = Vector2( 0, -20 )
 meteorsN = 1
 size = 0.2
 speed = 200.0

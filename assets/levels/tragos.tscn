@@ -582,4 +582,5 @@ tile_data = PoolIntArray( 0, 1, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 
 [connection signal="body_entered" from="start_walking" to="." method="_on_start_walking_body_entered"]
 [connection signal="body_entered" from="stop_moving" to="." method="_on_stop_moving_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 [connection signal="timeout" from="doorTimer" to="." method="_on_doorTimer_timeout"]
