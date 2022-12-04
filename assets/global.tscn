@@ -7,3 +7,4 @@ pause_mode = 2
 script = ExtResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
