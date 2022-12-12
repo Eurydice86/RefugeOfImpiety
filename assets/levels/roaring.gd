@@ -15,6 +15,7 @@ func _ready():
 	################################################
 	################################################
 	# remove the next two lines for the overall scene
+	#Global.audio.play()
 	#Global.audio.seek(start)
 	#Global.audio.stream_paused = false
 	$ColorRect.visible = true
