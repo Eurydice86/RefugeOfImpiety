@@ -1,19 +1,18 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/levels/bridge2.gd" type="Script" id=1]
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/themes/menu.tres" type="Theme" id=4]
 [ext_resource path="res://assets/textures/jumpPoint.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/textures/explodingTile.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/textures/TileMap_rocks.tscn" type="PackedScene" id=7]
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://assets/ui/ANNIHILATION.gd" type="Script" id=9]
 [ext_resource path="res://assets/appearingText.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/textures/Rock Ledges Tilemap.tscn" type="PackedScene" id=11]
-[ext_resource path="res://import/images/rocks/rock_ledge_right.png" type="Texture" id=12]
 [ext_resource path="res://import/images/rocks/cave_entrance_right.png" type="Texture" id=13]
 [ext_resource path="res://import/images/rocks/cave_entrance.png" type="Texture" id=14]
 [ext_resource path="res://import/images/rocks/rocks_left.png" type="Texture" id=15]
+[ext_resource path="res://assets/textures/TileMapGrassyRocks.tscn" type="PackedScene" id=16]
 
 [sub_resource type="Animation" id=6]
 resource_name = "colorRectFadeOut"
@@ -104,10 +103,6 @@ script = ExtResource( 9 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ANNIHILATION/Area2D"]
 position = Vector2( 16, 216 )
 shape = SubResource( 3 )
-
-[node name="and_inside_this_ark" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2576, 232 )
-text = "and inside this ark"
 
 [node name="I am" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3272, 72 )
@@ -210,10 +205,6 @@ position = Vector2( 9056, 1904 )
 [node name="jumpPoint11" parent="." instance=ExtResource( 5 )]
 position = Vector2( 9448, 1896 )
 
-[node name="explodingTile" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5408, 534 )
-image = ExtResource( 12 )
-
 [node name="CaveEntrance" type="Sprite" parent="."]
 modulate = Color( 0.45098, 0.45098, 0.45098, 1 )
 position = Vector2( 9822, 1741 )
@@ -241,7 +232,15 @@ position = Vector2( 9597, 1323 )
 texture = ExtResource( 15 )
 
 [node name="Rock Ledges Tilemap" parent="." instance=ExtResource( 11 )]
-tile_data = PoolIntArray( 6, 1, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 5, 0, 14, 5, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 2, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 5, 0, 196655, 5, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 2, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 2, 0, 524354, 1, 0, 524355, 0, 0, 524356, 0, 0, 524357, 0, 0, 524358, 5, 0, 524359, 0, 0, 524360, 5, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 5, 0, 524366, 0, 0, 524367, 0, 0, 524368, 5, 0, 524369, 5, 0, 524370, 5, 0, 524371, 0, 0, 589910, 1, 0, 589911, 0, 0, 589912, 2, 0, 720986, 1, 0, 720987, 0, 0, 720988, 2, 0, 852061, 1, 0, 852062, 0, 0, 852063, 0, 0, 852064, 0, 0, 852065, 0, 0, 852066, 0, 0, 852067, 2, 0, 1638507, 3, 0, 1638508, 5, 0, 1638509, 5, 0, 1638510, 5, 0, 1638511, 5, 0, 1638512, 5, 0, 1638513, 5, 0, 1638514, 5, 0, 1638515, 5, 0, 1638516, 5, 0, 1638517, 4, 0, 1966199, 3, 0, 1966200, 5, 0, 1966201, 5, 0, 1966202, 5, 0, 1966203, 5, 0, 1966204, 5, 0, 1966205, 5, 0, 1966206, 5, 0, 1966207, 5, 0, 1966208, 5, 0, 1966209, 5, 0, 1966210, 5, 0, 1966211, 4, 0, 1966214, 3, 0, 1966215, 5, 0, 1966216, 5, 0, 1966217, 5, 0, 1966218, 5, 0, 1966219, 5, 0, 1966220, 5, 0, 1966221, 4, 0, 1966224, 3, 0, 1966225, 5, 0, 1966226, 5, 0, 1966227, 4, 0, 1966230, 3, 0, 1966231, 5, 0, 1966232, 5, 0, 1966233, 0, 0, 1966234, 0, 0, 1966235, 0, 0 )
+tile_data = PoolIntArray( 6, 1, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 5, 0, 14, 5, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 2, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 5, 0, 196655, 5, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 2, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0 )
+
+[node name="GrassyRocks" parent="." instance=ExtResource( 16 )]
+position = Vector2( 0, -32 )
+tile_data = PoolIntArray( 196650, 1, 0, 196651, 8, 0, 196652, 2, 0, 196653, 2, 0, 196654, 2, 0, 196655, 2, 0, 196656, 8, 0, 196657, 8, 0, 196658, 8, 0, 196659, 0, 0, 262178, 7, 0, 262179, 8, 0, 262180, 8, 0, 262181, 8, 0, 262182, 8, 0, 262183, 8, 0, 262184, 6, 0, 524354, 7, 0, 524355, 8, 0, 524356, 8, 0, 524357, 8, 0, 524358, 8, 0, 524359, 8, 0, 524360, 8, 0, 524361, 8, 0, 524362, 8, 0, 524363, 8, 0, 524364, 8, 0, 524365, 8, 0, 524366, 8, 0, 524367, 8, 0, 524368, 8, 0, 524369, 8, 0, 524370, 8, 0, 524371, 8, 0, 524372, 6, 0, 589910, 7, 0, 589911, 8, 0, 589912, 6, 0, 720986, 1, 0, 720987, 2, 0, 720988, 0, 0, 852061, 7, 0, 852062, 8, 0, 852063, 8, 0, 852064, 8, 0, 852065, 8, 0, 852066, 8, 0, 852067, 6, 0, 1114204, 4, 0, 1245279, 9, 0, 1245280, 9, 0, 1245281, 9, 0, 1245282, 9, 0, 1245283, 4, 0, 1441891, 4, 0, 1638507, 1, 0, 1638508, 2, 0, 1638509, 3, 0, 1638517, 0, 0, 1966199, 1, 0, 1966200, 3, 0, 1966208, 2, 0, 1966209, 2, 0, 1966210, 2, 0, 1966211, 0, 0, 1966214, 1, 0, 1966215, 2, 0, 1966216, 2, 0, 1966217, 2, 0, 1966218, 2, 0, 1966219, 2, 0, 1966220, 2, 0, 1966221, 0, 0, 1966224, 1, 0, 1966225, 2, 0, 1966226, 2, 0, 1966227, 0, 0, 1966230, 1, 0, 1966231, 2, 0, 1966232, 2, 0, 1966233, 2, 0, 1966234, 2, 0, 2031725, 5, 0, 2031733, 4, 0 )
+
+[node name="and_inside_this_ark" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2576, 232 )
+text = "and inside this ark"
 
 [node name="fadeOut" type="Area2D" parent="."]
 position = Vector2( 9672, 1888 )
