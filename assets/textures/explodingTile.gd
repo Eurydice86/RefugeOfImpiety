@@ -11,6 +11,6 @@ func _ready():
 
 
 func _on_explodingArea2D_body_entered(body):
-	if body.name == "player":
+	if "player" in body.name:
 		$Sprite.visible = false
 		set_emitting(true)

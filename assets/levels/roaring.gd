@@ -14,10 +14,10 @@ func _ready():
 	################ MOVE THE PLAYER ONE TILE FORWARD
 	################################################
 	################################################
-	# remove the next two lines for the overall scene
-	#Global.audio.play()
-	#Global.audio.seek(start)
-	#Global.audio.stream_paused = false
+	# remove the next three lines for the overall scene
+	Global.audio.play()
+	Global.audio.seek(start)
+	Global.audio.stream_paused = false
 	$ColorRect.visible = true
 	$ColorRect.color = Color(1,1,1,alpha)
 
