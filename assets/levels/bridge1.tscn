@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/textures/Rock Ledges Tilemap.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/textures/directionChange.tscn" type="PackedScene" id=7]
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://assets/ui/appearingText_left.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/textures/waterfall.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFontData" id=4]
 font_path = "res://import/fonts/Dark Mage.ttf"
@@ -183,3 +184,6 @@ position = Vector2( 3096, 4544 )
 text = "perversion"
 fontSize = 120
 offset = -400
+
+[node name="waterfall" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2500, 2016 )
