@@ -17,4 +17,5 @@ func _on_stop_body_entered(body):
 
 func _on_start_eagle_body_entered(body):
 	if body.name == "player":
+		$eagle.visible = true
 		$eagle.set_physics_process(true)
