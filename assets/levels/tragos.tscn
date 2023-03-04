@@ -499,7 +499,7 @@ position = Vector2( 17912, 2256 )
 shape = SubResource( 1 )
 
 [node name="spaceship" type="Sprite" parent="."]
-position = Vector2( 17688, 1888 )
+position = Vector2( 17688, 1872 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
