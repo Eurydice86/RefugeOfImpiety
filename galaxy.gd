@@ -10,7 +10,8 @@ var scaleMax = 2.5
 var sprites = [
 	"res://import/images/Aether/quasar.png",
 	"res://import/images/Aether/galaxy1.png",
-	"res://import/images/Aether/galaxy2.png"]
+	"res://import/images/Aether/galaxy2.png",
+	"res://import/images/Aether/galaxy3.png"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
