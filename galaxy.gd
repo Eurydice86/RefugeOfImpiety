@@ -1,9 +1,5 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var scl_x
 var scl_y
 var rot
@@ -13,7 +9,6 @@ var scaleMax = 2.5
 
 var sprites = [
 	"res://import/images/Aether/quasar.png",
-	"res://import/images/Aether/quazar.png",
 	"res://import/images/Aether/galaxy1.png",
 	"res://import/images/Aether/galaxy2.png"]
 
