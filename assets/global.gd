@@ -1,5 +1,12 @@
 extends Node
 
+onready var part1 = preload("res://Part1.tscn")
+onready var part2 = preload("res://Part2.tscn")
+onready var part3 = preload("res://Part3.tscn")
+onready var part4 = preload("res://Part4.tscn")
+
+onready var explodingTile = preload("res://assets/textures/explodingTile.tscn")
+
 onready var audio = $AudioStreamPlayer
 var song = preload("res://import/audio/Mammuten - 06 - Refuge of Impiety.mp3")
 export (int) var bpm = 186

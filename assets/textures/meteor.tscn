@@ -142,7 +142,7 @@ texture = ExtResource( 3 )
 rotation = 0.785398
 frames = SubResource( 11 )
 animation = "explosion"
-frame = 6
+frame = 7
 playing = true
 
 [node name="Timer" type="Timer" parent="."]

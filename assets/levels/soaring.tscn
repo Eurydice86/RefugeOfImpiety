@@ -18,6 +18,7 @@ extents = Vector2( 5886.46, 133.128 )
 extents = Vector2( 3428, 75.2598 )
 
 [node name="soaring" type="Node2D"]
+position = Vector2( -387, 11 )
 script = ExtResource( 3 )
 
 [node name="Node2D" type="Node2D" parent="."]
@@ -51,14 +52,14 @@ forceDirection = Vector2( 1, 0 )
 forceStrength = 0.8
 
 [node name="dive" type="Area2D" parent="."]
-position = Vector2( 10752, -6840 )
+position = Vector2( 10632, -6904 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dive"]
 shape = SubResource( 1 )
 
 [node name="eagleTurn4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 11392, -6744 )
-forceDirection = Vector2( 0, 1 )
+position = Vector2( 11159, -6743 )
+forceDirection = Vector2( 0.15, 1 )
 forceStrength = 3.0
 
 [node name="zoomOut" type="Area2D" parent="."]
@@ -78,11 +79,14 @@ position = Vector2( 4077.83, 0 )
 shape = SubResource( 4 )
 
 [node name="changeScene" type="Area2D" parent="."]
-position = Vector2( 13416, 14368 )
+position = Vector2( 14598, 19455 )
 collision_mask = 513
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="changeScene"]
-position = Vector2( 3981, 4456 )
+position = Vector2( 3325, -1 )
 shape = SubResource( 5 )
 
 [node name="Mountain" parent="." instance=ExtResource( 1 )]

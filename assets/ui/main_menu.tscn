@@ -56,5 +56,21 @@ margin_bottom = 164.0
 theme = ExtResource( 1 )
 text = "Quit"
 
+[node name="Part2" type="Button" parent="VBoxContainer"]
+margin_top = 168.0
+margin_right = 133.0
+margin_bottom = 248.0
+theme = ExtResource( 1 )
+text = "Part2"
+
+[node name="Part3" type="Button" parent="VBoxContainer"]
+margin_top = 252.0
+margin_right = 133.0
+margin_bottom = 332.0
+theme = ExtResource( 1 )
+text = "Part3"
+
 [connection signal="button_up" from="VBoxContainer/Start" to="." method="_on_Start_button_up"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Part2" to="." method="_on_Part2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Part3" to="." method="_on_Part3_pressed"]

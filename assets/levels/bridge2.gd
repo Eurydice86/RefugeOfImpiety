@@ -23,4 +23,4 @@ func _on_fadeOut_body_entered(body):
 	$colorRectNode/ColorRect.visible = true
 	$colorRectNode/AnimationPlayer.play("colorRectFadeOut")
 	yield($colorRectNode/AnimationPlayer, "animation_finished")
-	get_tree().change_scene("res://Part4.tscn")
+	get_tree().change_scene_to(Global.part4)

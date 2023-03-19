@@ -3,8 +3,7 @@ extends Node2D
 
 var alpha = 0.0
 var alphaChange = false
-var aplhaSpeed = 2.3
-
+var aplhaSpeed = 2.8
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#Global.audio.seek(start)
@@ -20,7 +19,7 @@ func _process(delta):
 	$cRect/ColorRect.color = Color(1, 1, 1, alpha)
 
 func _on_change_scene_body_entered(_body):
-	get_tree().change_scene("res://Part3.tscn")
+	get_tree().change_scene_to(Global.part3)
 
 func _on_flashStart_body_entered(body):
 	if body.name == "player":

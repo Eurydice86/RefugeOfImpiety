@@ -7,6 +7,7 @@ var direction = Vector2()
 var forceStrength = 0
 var forceDirection = direction
 export var speed = 1000
+var acceleration = 0
 
 var gravity = 0
 
@@ -26,23 +27,19 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	if gravity == 0:
-		direction += forceStrength * forceDirection * delta
-		direction = direction.normalized()
-		velocity = direction * speed
-	else:
-		direction = Vector2(0,1)
-	velocity.y += gravity * delta
+	direction += forceStrength * forceDirection * delta
+	direction = direction.normalized()
+	speed += acceleration * delta
+	velocity = direction * speed
 	velocity = move_and_slide(velocity, Vector2(0, -1))
-	$AnimatedSprite.rotation = 	direction.angle()
-	
+	$AnimatedSprite.rotation = velocity.normalized().angle()
+
 	# zooming in or out
 	if zooming == 1:
 		if currentZoom < maxZoom:
 			currentZoom += zoomSpeed * delta
 	elif zooming == -1:
 		if currentZoom > minZoom:
-			print("yep, still here")
 			currentZoom -= zoomSpeed * delta
 	$Camera2D.zoom = Vector2(currentZoom, currentZoom)
 
@@ -67,6 +64,6 @@ func _on_Area2D_area_entered(area):
 
 func _on_Timer_timeout():
 	$AnimatedSprite.play("dive")
-	gravity = 1000
+	acceleration = 1000
 	zooming = -1
 	zoomSpeed *= 3

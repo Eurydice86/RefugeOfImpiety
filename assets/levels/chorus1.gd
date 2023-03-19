@@ -11,11 +11,11 @@ func _ready():
 	pass
 
 func _on_stop_body_entered(body):
-	if body.name == "player":
+	if "player" in body.name:
 		body.walking = false
 		body.running = false
 
 func _on_start_eagle_body_entered(body):
-	if body.name == "player":
+	if "player" in body.name:
 		$eagle.visible = true
 		$eagle.set_physics_process(true)
