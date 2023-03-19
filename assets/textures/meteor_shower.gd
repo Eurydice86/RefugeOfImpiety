@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var meteor = load("res://assets/textures/meteor.tscn")
+onready var meteor = preload("res://assets/textures/meteor.tscn")
 export var meteorsN = 1
 export var size = 1.0
 export var speed = 1000.0
@@ -20,5 +20,6 @@ func _on_Timer_timeout():
 	var posY = 0
 	var m = meteor.instance()
 	m.init(Vector2(posX, posY), speed, time + time*rand_range(0, 2*time), size)
-	add_child(m)
+	add_child(m)	
+
 	$Timer.start()

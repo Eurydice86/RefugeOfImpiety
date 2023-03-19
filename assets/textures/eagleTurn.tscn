@@ -3,11 +3,12 @@
 [ext_resource path="res://assets/textures/eagleTurn.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 128, 128 )
+extents = Vector2( 128, 241 )
 
 [node name="eagleTurn" type="Area2D"]
 collision_mask = 513
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -113 )
 shape = SubResource( 1 )

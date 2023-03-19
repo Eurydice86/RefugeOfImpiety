@@ -136,9 +136,10 @@ position = Vector2( -16, -96 )
 shape = SubResource( 3 )
 
 [node name="change_scene" type="Area2D" parent="."]
-position = Vector2( 6720, 1744 )
+position = Vector2( 6711, 1650 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="change_scene"]
+position = Vector2( 1, 0 )
 shape = SubResource( 4 )
 
 [node name="cRect" type="Node2D" parent="."]

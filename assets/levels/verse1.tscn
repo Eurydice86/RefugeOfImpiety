@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/levels/verse1.gd" type="Script" id=2]
@@ -25,6 +25,12 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 64
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 140
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
@@ -110,9 +116,6 @@ margin_right = 860.0
 margin_bottom = -163.0
 custom_fonts/font = SubResource( 2 )
 text = "Spent"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="and" type="Label" parent="static_text"]
 margin_left = 872.0
@@ -146,6 +149,22 @@ text = "they"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="MOAN" type="Label" parent="static_text"]
+margin_left = 3084.0
+margin_top = 272.0
+margin_right = 3375.0
+margin_bottom = 440.0
+custom_fonts/font = SubResource( 9 )
+text = "MOAN"
+
+[node name="BED" type="Label" parent="static_text"]
+margin_left = 1987.0
+margin_top = 272.0
+margin_right = 2278.0
+margin_bottom = 440.0
+custom_fonts/font = SubResource( 9 )
+text = "BED"
 
 [node name="in a" type="Label" parent="static_text"]
 margin_left = 3280.0
@@ -221,9 +240,6 @@ margin_right = 8391.0
 margin_bottom = 1358.0
 custom_fonts/font = SubResource( 6 )
 text = "CREATE"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="appearing_text" type="Node2D" parent="."]
 
@@ -242,17 +258,6 @@ fontSize = 50
 position = Vector2( 1664, 96 )
 text = "my"
 fontSize = 50
-
-[node name="bed" parent="appearing_text" instance=ExtResource( 6 )]
-position = Vector2( 1904, 284 )
-text = "BED"
-fontSize = 140
-
-[node name="MOAN" parent="appearing_text" instance=ExtResource( 6 )]
-position = Vector2( 2808, 264 )
-text = "MOAN"
-fontSize = 160
-offset = 250
 
 [node name="I" parent="appearing_text" instance=ExtResource( 6 )]
 position = Vector2( 7488, 504 )
@@ -276,9 +281,6 @@ margin_bottom = 608.0
 custom_fonts/normal_font = SubResource( 7 )
 text = "  Survivors in my"
 script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Area2D" type="Area2D" parent="appearing_text/survivors"]
 

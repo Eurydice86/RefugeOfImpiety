@@ -26,7 +26,7 @@ func _ready():
 	speed = init_speed
 	velocity = Vector2(-1, 1).normalized()
 	scale = Vector2(init_size,init_size)
-	$Particles2D.amount = 512*init_size
+	$Particles2D.amount = 192*init_size
 	#$Particles2D.process_material.set("scale", init_size)
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.

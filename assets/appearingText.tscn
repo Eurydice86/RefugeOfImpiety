@@ -1,12 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://import/fonts/Dark Mage.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/appearingText.gd" type="Script" id=2]
-
-[sub_resource type="DynamicFont" id=1]
-outline_size = 1
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 1 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8, 176 )
@@ -15,13 +9,9 @@ extents = Vector2( 8, 176 )
 script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 1 )
+margin_right = 523.0
+margin_bottom = 322.0
 text = "TEXT"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Area2D" type="Area2D" parent="."]
 

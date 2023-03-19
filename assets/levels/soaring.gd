@@ -52,4 +52,4 @@ func _on_flashStart_body_entered(body):
 
 func _on_changeScene_body_entered(body):
 	if body.name == "eagle":
-		get_tree().change_scene("res://Part2.tscn")
+		get_tree().change_scene_to(Global.part2)
