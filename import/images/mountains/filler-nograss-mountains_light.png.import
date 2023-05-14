@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/right-grass-mountains.png-98ebadf2f739a6b5a89b508a2967844b.stex"
+path="res://.import/filler-nograss-mountains_light.png-8d4a176b2b013543a72f0f6c7cd6289d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/images/mountains/right-grass-mountains.png"
-dest_files=[ "res://.import/right-grass-mountains.png-98ebadf2f739a6b5a89b508a2967844b.stex" ]
+source_file="res://import/images/mountains/filler-nograss-mountains_light.png"
+dest_files=[ "res://.import/filler-nograss-mountains_light.png-8d4a176b2b013543a72f0f6c7cd6289d.stex" ]
 
 [params]
 
