@@ -49,6 +49,6 @@
 6/z_index = 0
 
 [node name="TileMapFounta" type="TileMap"]
-z_index = 1
+position = Vector2( 0, 32 )
 tile_set = SubResource( 1 )
 format = 1

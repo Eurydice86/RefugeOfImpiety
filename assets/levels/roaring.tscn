@@ -51,7 +51,7 @@ position = Vector2( 1536, 208 )
 position = Vector2( 3464, 240 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 736, -288 )
+position = Vector2( 424, -288 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false

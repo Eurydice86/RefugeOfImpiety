@@ -16,7 +16,7 @@ func _ready():
 func _process(delta):
 	$ColorRect.color = Color(1, 1, 1, alpha)
 	if alpha > 0:
-		alpha -=  delta
+		alpha -=  0.5 * delta
 
 
 
