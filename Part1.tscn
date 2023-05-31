@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/textures/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/levels/intro.tscn" type="PackedScene" id=2]
@@ -8,10 +8,9 @@
 [ext_resource path="res://assets/levels/chorus1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Part1.gd" type="Script" id=7]
 [ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=8]
-[ext_resource path="res://cache_loading.gd" type="Script" id=9]
 
 [sub_resource type="Animation" id=1]
-length = 0.001
+length = 10.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
 tracks/0/interp = 1
@@ -19,15 +18,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( -0.4, 0, 0.1 ),
+"transitions": PoolRealArray( 2.54912, 1, 1 ),
 "update": 0,
-"values": [ Color( 0, 0, 0, 1 ) ]
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ) ]
 }
 
 [sub_resource type="Animation" id=2]
 resource_name = "fade out"
-length = 8.0
+length = 10.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
 tracks/0/interp = 1
@@ -35,8 +34,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( 1, -0.5 ),
+"times": PoolRealArray( 0, 8 ),
+"transitions": PoolRealArray( 1, -2.21914 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
@@ -45,7 +44,6 @@ tracks/0/keys = {
 script = ExtResource( 7 )
 
 [node name="cache" type="Node" parent="."]
-script = ExtResource( 9 )
 
 [node name="soaring" parent="." instance=ExtResource( 5 )]
 position = Vector2( 39928, 9600 )
@@ -68,13 +66,13 @@ tile_data = PoolIntArray( 1179726, 0, 0 )
 z_as_relative = false
 
 [node name="player" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3968, 1296 )
+position = Vector2( 4000, 1296 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 1530.0
-margin_top = 320.0
-margin_right = 7275.0
-margin_bottom = 2051.0
+margin_left = 1528.0
+margin_top = 312.0
+margin_right = 9528.0
+margin_bottom = 2312.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
