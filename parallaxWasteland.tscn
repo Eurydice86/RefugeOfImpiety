@@ -16,7 +16,9 @@ motion_scale = Vector2( 0, 0 )
 motion_mirroring = Vector2( 3840, 0 )
 
 [node name="skySprite" type="Sprite" parent="ParallaxBackground/sky"]
-position = Vector2( 0, -3170 )
+self_modulate = Color( 0.984314, 0.172549, 0.0627451, 0.839216 )
+position = Vector2( 0, -1760 )
+scale = Vector2( 1, 0.477778 )
 z_index = -1000
 texture = ExtResource( 3 )
 centered = false

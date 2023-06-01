@@ -52,7 +52,7 @@ forceDirection = Vector2( 1, 0 )
 forceStrength = 0.8
 
 [node name="dive" type="Area2D" parent="."]
-position = Vector2( 10632, -6904 )
+position = Vector2( 10419, -6907 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dive"]
 shape = SubResource( 1 )
