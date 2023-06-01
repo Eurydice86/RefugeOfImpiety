@@ -78,7 +78,6 @@ position = Vector2( 3712, 224 )
 position = Vector2( 6048.2, 417.401 )
 
 [node name="static_text" type="Node2D" parent="."]
-z_index = -100
 
 [node name="The world" type="Label" parent="static_text"]
 margin_left = 744.0
