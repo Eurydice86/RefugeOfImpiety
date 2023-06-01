@@ -66,7 +66,7 @@ tile_data = PoolIntArray( 1179726, 0, 0 )
 z_as_relative = false
 
 [node name="player" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4000, 1296 )
+position = Vector2( 4032, 1296 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = 1528.0
