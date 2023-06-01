@@ -78,6 +78,7 @@ position = Vector2( 3712, 224 )
 position = Vector2( 6048.2, 417.401 )
 
 [node name="static_text" type="Node2D" parent="."]
+z_index = -100
 
 [node name="The world" type="Label" parent="static_text"]
 margin_left = 744.0
@@ -86,9 +87,6 @@ margin_right = 1473.0
 margin_bottom = -150.0
 custom_fonts/font = SubResource( 1 )
 text = "The world outside is"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="DECIMATED" type="RichTextLabel" parent="static_text"]
 margin_left = 1232.0

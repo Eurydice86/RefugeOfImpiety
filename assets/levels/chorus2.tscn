@@ -74,9 +74,6 @@ margin_right = 1752.0
 margin_bottom = -120.0
 custom_fonts/normal_font = SubResource( 2 )
 text = "has brought you"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="to" type="RichTextLabel" parent="appearing_text"]
 margin_left = 1768.0
